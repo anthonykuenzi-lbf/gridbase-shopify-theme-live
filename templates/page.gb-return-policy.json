@@ -15,20 +15,38 @@
         "block_tEpxEi": {
           "type": "block",
           "settings": {
-            "textarea_block_title": "01 - Custom Built Cyberdecks.",
-            "checkbox_show_image": true,
-            "richtext_block_text": "<p>Tailored to your specific requirements, our custom-built cyberdecks offer cutting-edge computing power for your unique needs.</p>"
+            "textarea_block_title": "01 - Non-Refundable Items",
+            "checkbox_show_image": false,
+            "richtext_block_text": "<ul><li>Custom-built or modified equipment.</li><li>Consulting services and one-on-one training.</li><li>Items damaged due to user mishandling.</li><li>Shipping fees (unless due to an error on our part).</li></ul>"
+          }
+        },
+        "block_4y9wBx": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "02 - Return Process",
+            "checkbox_show_image": false,
+            "richtext_block_text": "<ul><li>Contact info@gridbase.net with your order details and reason for return.</li><li>If approved, you will receive an RMA (Return Merchandise Authorization) number.</li><li>Ship the item back using a trackable method; we are not responsible for lost returns.</li><li>Once received and inspected, refunds will be processed within 7–10 business days to the original payment method.</li></ul>"
+          }
+        },
+        "block_6jAACy": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "03 - Damaged or Defective Items",
+            "checkbox_show_image": false,
+            "richtext_block_text": "<p>If you receive a defective product, notify us within 7 days of delivery for a replacement or store credit.</p>"
           }
         }
       },
       "block_order": [
-        "block_tEpxEi"
+        "block_tEpxEi",
+        "block_4y9wBx",
+        "block_6jAACy"
       ],
       "settings": {
-        "textarea_headline": "Return Policy",
+        "textarea_headline": "Refund Policy",
         "checkbox_top_text_toggle": true,
-        "richtext_top_text": "<p>At Gridbase, we're constantly seeking to demystify and excite innovation in off-grid technology. Explore some of our featured projects below, where we leverage decentralized technology to provide security, capability, and more freedom to our customers.</p>",
-        "richtext_bottom_text": "<p>At Gridbase, innovation is at the heart of everything we do. Stay tuned for more exciting projects as we continue to explore new ways to harness decentralized technology for the benefit of our customers.</p>"
+        "richtext_top_text": "<p>We offer refunds on eligible products and services under the following conditions:</p><ul><li>Physical products must be returned in unused, original condition within 30 days of purchase.</li><li>Digital products, software, and training courses are non-refundable once accessed or downloaded.</li><li>Subscription-based services are refundable only within the first 7 days of the billing cycle.</li></ul>",
+        "richtext_bottom_text": "<p>For further assistance, <br/>reach out to info@gridbase.net.</p>"
       }
     }
   },
