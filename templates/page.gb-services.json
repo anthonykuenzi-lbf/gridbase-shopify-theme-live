@@ -34,17 +34,17 @@
         "service_item_block_9UmPeb": {
           "type": "service-item-block",
           "settings": {
-            "textarea_service_item_type": "Type",
-            "textarea_service_item_description": "Lorem Ipsum Dolor",
-            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+            "textarea_service_item_type": "Custom Install",
+            "textarea_service_item_description": "Decentralized, censorship-resistant internet options using mesh networks, satellite, and peer-to-peer systems for private and resilient connectivity.",
+            "textarea_service_item_text": "Alternative internet solutions"
           }
         },
         "service_item_block_MLApyi": {
           "type": "service-item-block",
           "settings": {
-            "textarea_service_item_type": "Type",
-            "textarea_service_item_description": "Lorem Ipsum Dolor",
-            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+            "textarea_service_item_type": "Consulting",
+            "textarea_service_item_description": "Discreet security tools for intelligence gathering, counter-surveillance, and situational awareness in high-risk environments.",
+            "textarea_service_item_text": "Surveillance & covert devices"
           }
         },
         "service_item_block_DCrcYi": {
