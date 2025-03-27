@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="566.12" height="707.4" viewBox="0 0 566.12 707.4">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #e5e5e5;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="Layer 1">
+    <g>
+      <rect class="d" x=".5" y=".5" width="565.12" height="706.4"/>
+      <g>
+        <polyline class="d" points=".5 515.43 190.09 325.84 385.5 521.26 475.99 430.77 565.62 520.41"/>
+        <circle class="d" cx="400.2" cy="277.61" r="91.46"/>
+      </g>
+    </g>
+  </g>
+</svg>

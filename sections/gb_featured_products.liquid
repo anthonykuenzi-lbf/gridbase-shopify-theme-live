@@ -1,0 +1,14 @@
+<div class="product_list-wrapper w-dyn-list"><div role="list" class="product_list w-dyn-items">{% for product in section.settings.collection_collection.products limit: section.settings.collection_collection_limit %}
+<div role="listitem" class="product_list-item w-dyn-item">
+    
+    {% render 'product_item', product: product %}
+
+    
+</div>
+{% endfor %}
+</div><div class="hide w-dyn-empty"><div>No items found.</div></div></div><div class="featured-product-wrapper"><a href="#" class="featured-product-card w-inline-block"><div class="featured-product-card-image"></div><div class="featured-product-card-info"><div>Lorem Ipsum<br>
+$299</div></div></a><a href="#" class="featured-product-card w-inline-block"><div class="featured-product-card-image"></div><div class="featured-product-card-info"><div>Lorem Ipsum<br>
+$299</div></div></a><a href="#" class="featured-product-card w-inline-block"><div class="featured-product-card-image"></div><div class="featured-product-card-info"><div>Lorem Ipsum<br>
+$299</div></div></a><a href="#" class="featured-product-card w-inline-block"><div class="featured-product-card-image"></div><div class="featured-product-card-info"><div>Lorem Ipsum<br>
+$299</div></div></a></div><div class="line dark"></div><a href="{{ section.settings.url_button_url }}" class="button-gb black w-button"> {{ section.settings.text_button_text }} </a>
+ {% schema %} {"tag":"section","name":"gb-featured-products","class":"section featured-products","settings":[{"id":"collection_collection","type":"collection","label":"Collection"},{"type":"range","id":"collection_collection_limit","min":1,"max":99,"step":1,"label":"Limit: Collection","default":6},{"id":"url_button_url","type":"url","label":"Button URL"},{"id":"text_button_text","type":"text","label":"Button Text","default":"Shop All"}],"presets":[{"name":"gb-featured-products","category":"Liquify","blocks":[]}]} {% endschema %}

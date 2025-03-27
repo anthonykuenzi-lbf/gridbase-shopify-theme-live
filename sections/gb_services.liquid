@@ -1,0 +1,194 @@
+<div class="w-embed w-script">{% comment %}
+          Services Grid Script Tag - No Data Indexes Required
+          Usage: Include this script in any section that needs the services grid functionality.
+          The script matches bullet items with slides based on their position in the DOM,
+          eliminating the need for data-index attributes.
+          {% endcomment %}
+          <script>(function() {
+    // Get section settings if available
+    const sectionId = '{{ section.id | escape }}';
+    const sectionConfig = {
+      autoAdvance: {{ section.settings.enable_auto_advance | default: true }},
+      autoAdvanceDelay: {{ section.settings.auto_advance_delay | default: 5 }} * 1000
+    };
+    // Services Grid Component
+    const ServicesGrid = function(sectionElement, options = {}) {
+      // Default configuration with section settings taking priority if available
+      this.config = {
+        containerSelector: '.services-grid',        // Main container class
+        bulletItemSelector: '.service-bullet-item', // Bullet items class
+        slideSelector: '.service-bullet-slide',     // Slide items class
+        activeClass: 'active',                      // Class for active state
+        autoAdvance: sectionConfig.autoAdvance,     // Use section setting or default
+        autoAdvanceDelay: sectionConfig.autoAdvanceDelay, // Use section setting or default
+        ...options                                  // Override with passed options
+      };
+      // Component state
+      this.currentIndex = 0;
+      this.autoAdvanceInterval = null;
+      this.autoPausedByClick = false;
+      this.container = sectionElement;
+      this.bulletItems = this.container.querySelectorAll(this.config.bulletItemSelector);
+      this.slides = this.container.querySelectorAll(this.config.slideSelector);
+      // Initialize component
+      this.init = function() {
+        // Skip if no items found
+        if (this.bulletItems.length === 0 || this.slides.length === 0) {
+          console.warn('Services items or slides not found in section', sectionId);
+          return this;
+        }
+        // Set first item as active initially
+        this.activateServiceByIndex(0);
+        // Start auto-advancing if enabled
+        if (this.config.autoAdvance) {
+          this.startAutoAdvance();
+        }
+        // Add interaction listeners
+        this.addEventListeners();
+        // Add required styles
+        this.addStyles();
+        return this; // For method chaining
+      };
+      // Function to activate a specific service by index
+      this.activateServiceByIndex = (index) => {
+        if (index >= this.bulletItems.length || index >= this.slides.length) {
+          console.warn('Index out of bounds');
+          return;
+        }
+        // Remove active class from all bullet items
+        this.bulletItems.forEach(item => {
+          item.classList.remove(this.config.activeClass);
+        });
+        // Hide all slides
+        this.slides.forEach(slide => {
+          slide.classList.remove(this.config.activeClass);
+        });
+        // Add active class to selected bullet item
+        this.bulletItems[index].classList.add(this.config.activeClass);
+        // Show the corresponding slide (using same index)
+        this.slides[index].classList.add(this.config.activeClass);
+        this.currentIndex = index;
+      };
+      // Function to stop auto-advancing
+      this.stopAutoAdvance = () => {
+        if (this.autoAdvanceInterval) {
+          clearInterval(this.autoAdvanceInterval);
+          this.autoAdvanceInterval = null;
+        }
+      };
+      // Function to start auto-advancing
+      this.startAutoAdvance = () => {
+        if (!this.config.autoAdvance || this.autoPausedByClick) {
+          return;
+        }
+        // Clear any existing interval
+        this.stopAutoAdvance();
+        this.autoAdvanceInterval = setInterval(() => {
+          const nextIndex = (this.currentIndex + 1) % this.bulletItems.length;
+          this.activateServiceByIndex(nextIndex);
+        }, this.config.autoAdvanceDelay);
+      };
+      // Add event listeners to bullet items
+      this.addEventListeners = () => {
+        this.bulletItems.forEach((item, index) => {
+          // On hover, pause but don't permanently stop
+          item.addEventListener('mouseenter', () => {
+            this.stopAutoAdvance();
+            this.activateServiceByIndex(index);
+          });
+          // Resume auto-advance when mouse leaves (if enabled and not clicked)
+          item.addEventListener('mouseleave', () => {
+            if (this.config.autoAdvance && !this.autoPausedByClick) {
+              this.startAutoAdvance();
+            }
+          });
+          // On click, permanently pause auto-advance
+          item.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.autoPausedByClick = true;
+            this.stopAutoAdvance();
+            this.activateServiceByIndex(index);
+          });
+        });
+      };
+      // Add required styles for this section
+      this.addStyles = () => {
+        const styleId = `services-grid-styles-${sectionId}`;
+        // Only add styles if they don't exist for this section
+        if (!document.getElementById(styleId)) {
+          const styleEl = document.createElement('style');
+          styleEl.id = styleId;
+          styleEl.textContent = `
+            #shopify-section-${sectionId} ${this.config.bulletItemSelector} {
+              cursor: pointer;
+            }
+            #shopify-section-${sectionId} ${this.config.slideSelector} {
+              display: none;
+            }
+            #shopify-section-${sectionId} ${this.config.slideSelector}.${this.config.activeClass} {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 100%;
+            }
+            /* Base state for smooth transitions */
+            #shopify-section-${sectionId} .service-bullets {
+              transition: all 0.3s ease;
+            }
+            /* Apply effects on both hover and active states */
+            #shopify-section-${sectionId} ${this.config.bulletItemSelector}:hover .service-bullets,
+            #shopify-section-${sectionId} ${this.config.bulletItemSelector}.${this.config.activeClass} .service-bullets {
+              text-decoration: underline;
+              opacity: 0.8; /* 20% fade (80% opacity) */
+              transform: translateX(12px);
+            }
+          `;
+          document.head.appendChild(styleEl);
+        }
+      };
+    };
+    // Initialize on DOM content loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find the services grid in this section
+      const sectionElement = document.getElementById(`shopify-section-${sectionId}`);
+      if (!sectionElement) return;
+      const serviceGrids = sectionElement.querySelectorAll('.services-grid');
+      // Initialize each services grid found
+      serviceGrids.forEach(gridContainer => {
+        new ServicesGrid(gridContainer).init();
+      });
+    });
+  })();
+</script></div><div class="services-grid"><div class="service-bullet-column"><div class="service-bullet-list-wrapper"><div class="service-bullet-list">{% for block in section.blocks %}
+    {% if block.type == "service-item-block" %}
+                    <div li-block="Service-Item-Block" class="service-bullet-item">
+                                    
+                                    <div class="setting-block w-embed"></div>
+
+                                    
+                                    <div class="setting-block w-embed"></div>
+
+                                    
+                                    <div class="service-bullets"> {{ block.settings.textarea_service_item_text }} </div>
+
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+</div></div><div class="p1 services"> {{ section.settings.richtext_service_sub_text }} </div>
+</div><div class="service-bullet-slide-wrapper">{% for block in section.blocks %}
+    {% if block.type == "service-item-block" %}
+                    <div li-block="Service-Item-Block" class="service-bullet-slide">
+                                    <img src="{{ block.settings.image_banner_image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.image_banner_image.alt }}" class="service-bullet-slide-image">
+
+                                    
+                                    <div class="service-type-wrapper"><p class="service-slide-description caps"> {{ block.settings.textarea_service_item_type }} </p>
+</div>
+                                    
+                                    <p class="service-slide-description"> {{ block.settings.textarea_service_item_description }} </p>
+
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+</div></div> {% schema %} {"tag":"section","name":"gb-services","class":"section gb-services","blocks":[{"name":"Service-Item-Block","type":"service-item-block","settings":[{"id":"textarea_service_item_type","type":"textarea","label":"Service-Item-Type","default":"Type"},{"id":"textarea_service_item_description","type":"textarea","label":"Service-Item-Description","default":"Lorem Ipsum Dolor"},{"id":"textarea_service_item_text","type":"textarea","label":"Service-Item-Text","default":"Radio &amp; Comms Workshops"}]}],"settings":[{"id":"richtext_service_sub_text","type":"richtext","label":"Service Sub Text","default":"<p>Nothing we have ever done has been intended to be a \u201cone size fits all\u201d solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and\u00a0solved.<\/p>"}],"presets":[{"name":"gb-services","category":"Liquify","blocks":[{"type":"service-item-block"}]}]} {% endschema %}

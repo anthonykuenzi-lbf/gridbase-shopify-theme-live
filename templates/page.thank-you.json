@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "text_cta": {
+            "type": "text_cta"
+        }
+    },
+    "layout": "page.thank-you",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "text_cta"
+    ]
+}

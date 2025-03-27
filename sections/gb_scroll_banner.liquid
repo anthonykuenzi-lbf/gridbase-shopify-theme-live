@@ -1,0 +1,37 @@
+<div class="scroll-banner"><div class="scroll-banner-duplicate w-embed w-script"><script>// Check if this script has already run to prevent multiple executions
+if (!window.scrollBannerDuplicatorRun) {
+  window.scrollBannerDuplicatorRun = true;
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find all divs with the class 'scroll-banner-section'
+    const scrollBannerSections = document.querySelectorAll('div.scroll-banner-section');
+    // Loop through each section
+    scrollBannerSections.forEach(function(section) {
+      // Skip if it's already a clone
+      if (section.classList.contains('scroll-banner-section-clone')) {
+        return;
+      }
+      // Create a clone of the section
+      const clone = section.cloneNode(true);
+      // Insert the clone right after the original section
+      section.parentNode.insertBefore(clone, section.nextSibling);
+      // Add a class to the cloned element to identify it
+      clone.classList.add('scroll-banner-section-clone');
+    });
+    console.log(`Duplicated ${scrollBannerSections.length} scroll banner sections`);
+  });
+}
+</script></div><div data-w-id="a72ca1ce-352b-67bc-b316-d4a89a9c5292" class="scroll-banner-section">{% for block in section.blocks %}
+    {% if block.type == "bullet" %}
+                    <div li-block="bullet" class="scroll-banner-bullet">
+                                    <img src="{{ block.settings.image_icon | img_url: 'master' }}" alt="{{ block.settings.image_icon.alt }}" loading="lazy" class="scrolling-banner-icon">
+
+                                    
+                                    <div class="scroll-banner-text">
+{{ block.settings.text_text }}
+</div>
+
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+</div></div> {% schema %} {"tag":"section","name":"gb-scroll-banner","class":"scroll-banner-wrapper","blocks":[{"name":"bullet","type":"bullet","settings":[{"id":"image_icon","type":"image_picker","label":"Icon"},{"id":"text_text","type":"text","label":"Text","default":"Empowering communication without central control"}]}],"presets":[{"name":"gb-scroll-banner","category":"Liquify","blocks":[{"type":"bullet"}]}]} {% endschema %}

@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "gb_single_column": {
+            "type": "gb_single_column"
+        }
+    },
+    "layout": "page.gb-projects",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "gb_single_column"
+    ]
+}

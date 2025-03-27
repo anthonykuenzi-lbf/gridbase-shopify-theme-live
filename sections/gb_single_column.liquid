@@ -1,0 +1,29 @@
+<div class="culumn-single-wrapper"><div class="project-bullet-wrapper"><h1 class="h2"> {{ section.settings.textarea_headline }} </h1>
+{% if section.settings.checkbox_top_text_toggle == true %}
+<div class="single-column-top-text-wrapper"><div class="line dark"></div><div class="p1"> {{ section.settings.richtext_top_text }} </div>
+</div>{% endif %}
+</div>{% for block in section.blocks %}
+    {% if block.type == "block" %}
+                    <div li-block="Block" class="project-bullet-wrapper">
+                                    
+                                    <p class="p1 bold"> {{ block.settings.textarea_block_title }} </p>
+
+                                    
+                                    <div class="line dark"></div>
+                                    
+                                    <div class="w-embed"></div>
+
+                                    
+                                    {% if block.settings.checkbox_show_image == true %}    <div li-if="block.settings.checkbox_show_image == true" class="column-single-image-wrapper">
+    <img class="column-single-image-wide" src="{{ block.settings.image_block_image | img_url: 'master' }}" alt="{{ block.settings.image_block_image.alt }}">
+    </div>
+{% endif %}
+                                    
+                                    <div class="p1"> {{ block.settings.richtext_block_text }} </div>
+
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+<div class="p1"> {{ section.settings.richtext_bottom_text }} </div>
+</div> {% schema %} {"tag":"section","name":"gb-single-column","class":"section-2 projects","blocks":[{"name":"Block","type":"block","settings":[{"id":"textarea_block_title","type":"textarea","label":"Block Title","default":"01 - Custom Built Cyberdecks."},{"id":"checkbox_show_image","type":"checkbox","label":"Show Image","default":true},{"id":"image_block_image","type":"image_picker","label":"Block Image"},{"id":"richtext_block_text","type":"richtext","label":"Block Text","default":"<p>Tailored to your specific requirements, our custom-built cyberdecks offer cutting-edge computing power for your unique\u00a0needs.<\/p>"}]}],"settings":[{"id":"textarea_headline","type":"textarea","label":"Headline","default":"Gridbase Projects."},{"id":"checkbox_top_text_toggle","type":"checkbox","label":"Top Text Toggle","default":true},{"id":"richtext_top_text","type":"richtext","label":"Top Text","default":"<p>At Gridbase, we're constantly seeking to demystify and excite innovation in off-grid technology. Explore some of our featured projects below, where we leverage decentralized technology to provide security, capability, and more freedom to\u00a0our\u00a0customers.<\/p>"},{"id":"richtext_bottom_text","type":"richtext","label":"Bottom Text","default":"<p>At Gridbase, innovation is at the heart of everything we do. Stay tuned for more exciting projects as we continue to explore new ways to harness decentralized technology for the benefit of\u00a0our\u00a0customers.<\/p>"}],"presets":[{"name":"gb-single-column","category":"Liquify","blocks":[{"type":"block"}]}]} {% endschema %}

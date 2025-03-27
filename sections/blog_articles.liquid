@@ -1,0 +1,16 @@
+<div class="padding-global padding-section-small"><div class="container-large"><div class="blog_cms-wrapper w-dyn-list">{% if blog.articles != blank %}    <div li-if="blog.articles != blank" role="list" class="blog_list w-dyn-items">
+    {% for article in blog.articles %}    <div li-for="article in blog.articles" role="listitem" class="blog_cms-item w-dyn-item">
+                                    
+                            <a li-object:href="article.url" href="{{ article.url }}" class="blog_item-grid w-inline-block"><div id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7be-4b06a7bd" class="blog_tags-wrapper"><img src="{{ article.image | img_url: 'master' }}" loading="lazy" id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7bf-4b06a7bd" li-object:src="article.image | img_url: 'master'" alt="{{ article.image.alt }}" li-object:alt="article.image.alt" class="blog_img">
+<div class="blog_tag-row">{% for tag in article.tags %}    <div li-for="tag in article.tags" class="blog_tag">
+                                    
+                            <div li-object="tag">{{ tag }}</div>
+                            
+                        </div>
+{% endfor %}</div></div><div class="blog_info-wrapper"><h3 li-object="article.title" class="h3 blog-title">{{ article.title }}</h3><div li-object="article.created_at | date: '%B %d, %Y'" class="blog-date">{{ article.created_at | date: '%B %d, %Y' }}</div></div></a>
+                            
+                        </div>
+{% endfor %}    </div>
+{% endif %}{% if blog.articles == blank %}    <div li-if="blog.articles == blank" class="blog_cms-empty w-dyn-empty">
+    <div>No blog items found.</div>    </div>
+{% endif %}</div></div></div> {% schema %} {"tag":"section","name":"Blog-Articles","class":"section_blog-list","presets":[{"name":"Blog-Articles","category":"Liquify","blocks":[]}]} {% endschema %}

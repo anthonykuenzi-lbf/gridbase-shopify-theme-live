@@ -1,0 +1,12 @@
+{% if recommendations.products.size > 0 %}    <div li-if="recommendations.products.size > 0" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related" class="padding-global padding-section-medium product-recommendations">
+    <div class="container-large"><div class="headline-wrapper"><h2 class="h3">
+{{ section.settings.text_headline }}
+</h2>
+</div><div class="product_list-wrapper"><ul role="list" class="product_list w-list-unstyled">{% for product in recommendations.products %}    <li li-for="product in recommendations.products" class="product_list-item">
+                                    
+                            {% render 'product_item', product: product %}
+
+                            
+                        </li>
+{% endfor %}</ul></div></div>    </div>
+{% endif %} {% schema %} {"tag":"section","name":"Product-Recommended","class":"section_product-recommended","settings":[{"id":"text_headline","type":"text","label":"Headline","default":"Recommended"}],"presets":[{"name":"Product-Recommended","category":"Liquify","blocks":[]}]} {% endschema %}

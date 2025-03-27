@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "default": {
+            "type": "default"
+        }
+    },
+    "layout": "page",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "default"
+    ]
+}

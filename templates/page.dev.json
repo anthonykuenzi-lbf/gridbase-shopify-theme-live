@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "product_hero": {
+            "type": "product_hero"
+        }
+    },
+    "layout": "page.dev",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "product_hero"
+    ]
+}
