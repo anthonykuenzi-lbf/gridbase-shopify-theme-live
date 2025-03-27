@@ -9,19 +9,14 @@
  */
 {
   "sections": {
-    "gb_contact_PMybMU": {
-      "type": "gb_contact",
-      "settings": {
-        "textarea_page_title": "Contact",
-        "textarea_text": "Have a question or want to learn more about our products? We'd love to hear from you! reach out to us using any of the methods below.",
-        "textarea_contact_email": "info@gridbase.net",
-        "socials_menu": "gb-socials"
-      }
+    "default_Cfne3f": {
+      "type": "default",
+      "settings": {}
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "gb_contact_PMybMU"
+    "default_Cfne3f"
   ]
 }
