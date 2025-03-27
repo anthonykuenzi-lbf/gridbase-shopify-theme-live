@@ -47,9 +47,9 @@
         "faq_item_WQxW6t": {
           "type": "faq-item",
           "settings": {
-            "text_number": "1",
-            "text_question": "How does Pocket work?",
-            "richtext_answer": "<p><br/>                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                        </p>"
+            "text_number": "5",
+            "text_question": "Where can I use Pocket?",
+            "richtext_answer": "<p>Pocket can be used anywhere and does not raise TSA alarms, making it perfect for traveling to those locations without traditional internet access—whether on a plane, in an off-grid cabin, or during other connectivity-limited situations.</p>"
           }
         },
         "faq_item_8HTNC3": {
