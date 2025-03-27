@@ -181,6 +181,14 @@
             "text_question": "Can other people access my data on it?",
             "richtext_answer": "<ul><li>Only if you want them to. The internal wireless modem is password protected, if you choose to give others the password, they can log in from another smartphone or computer to access all the locally hosted repositories. </li></ul><p></p><ul><li>If you’re using the device like a normal computer connected to Wi-Fi, the internal modem can use its VPN to protect your activity online.</li></ul>"
           }
+        },
+        "faq_item_LFAPmJ": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "14",
+            "text_question": "Is it waterproof?",
+            "richtext_answer": "<ul><li>When the device is closed, it is water resistant. </li></ul><p></p><ul><li>It uses IPX6 rated connectors on the outside of the case, and the case itself is IPX6 rated </li></ul>"
+          }
         }
       },
       "block_order": [
@@ -196,7 +204,8 @@
         "faq_item_GbtKRC",
         "faq_item_FRgaPk",
         "faq_item_VqY7GG",
-        "faq_item_GMHfPq"
+        "faq_item_GMHfPq",
+        "faq_item_LFAPmJ"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
