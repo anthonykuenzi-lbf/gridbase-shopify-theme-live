@@ -1,12 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "gb_faq": {
-            "type": "gb_faq"
-        }
+  "sections": {
+    "gb_faq": {
+      "type": "gb_faq",
+      "settings": {
+        "textarea_title": "A. Pocket",
+        "richtext_text": "<p>Complete, off-line ownership over their survival library. It’s a compact, portable, and secure database that operates independently of cell towers or satellites, requiring no pesky updates, subscriptions or external connections.</p>",
+        "image_illustration": "shopify://shop_images/gb-pocket-illustration-01-black.svg"
+      }
     },
-    "layout": "page.faq",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "gb_faq"
-    ]
+    "gb_faq_GHqMUj": {
+      "type": "gb_faq",
+      "blocks": {
+        "faq_item_abniQy": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p>\n                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        </p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_abniQy"
+      ],
+      "settings": {
+        "textarea_title": "A. Pocket",
+        "richtext_text": "<p>Complete, off-line ownership over their survival library. It’s a compact, portable, and secure database that operates independently of cell towers or satellites, requiring no pesky updates, subscriptions or external connections.</p>",
+        "image_illustration": "shopify://shop_images/gg-cyberdeck-illustration-01-black.svg"
+      }
+    },
+    "gb_faq_UBArLN": {
+      "type": "gb_faq",
+      "blocks": {
+        "faq_item_ypVE4g": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p>\n                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        </p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_ypVE4g"
+      ],
+      "settings": {
+        "textarea_title": "A. Pocket",
+        "richtext_text": "<p>Complete, off-line ownership over their survival library. It’s a compact, portable, and secure database that operates independently of cell towers or satellites, requiring no pesky updates, subscriptions or external connections.</p>",
+        "image_illustration": "shopify://shop_images/gb-plate-illustration-black.svg"
+      }
+    }
+  },
+  "layout": "page.faq",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "gb_faq",
+    "gb_faq_GHqMUj",
+    "gb_faq_UBArLN"
+  ]
 }

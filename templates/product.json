@@ -11,8 +11,22 @@
   "sections": {
     "product_hero": {
       "type": "product_hero",
+      "blocks": {
+        "faq_item_awWHmn": {
+          "type": "faq-item",
+          "repeater": "{{ product.metafields.custom.product_faq.value }}",
+          "settings": {
+            "text_number": "{{ block.repeater.question.value }}",
+            "text_question": "{{ block.repeater.question_number.value }}",
+            "richtext_answer": "{{ block.repeater.answer_ | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_awWHmn"
+      ],
       "settings": {
-        "text_disclosure": "Proudly Designed &amp; Assembled in Texas"
+        "text_disclosure": "Proudly Designed & Assembled in Texas"
       }
     }
   },
