@@ -165,6 +165,14 @@
             "text_question": "What’s included with The Base Station?",
             "richtext_answer": "<p>Everything you need to be operating and functional out of the box.</p><ul><li>USB GPS dongle</li></ul><p></p><ul><li>120v wall power block </li></ul><p></p><ul><li>Wireless Keyboard, touch screen, and wireless folding mouse</li></ul><p></p><ul><li>1TB hard drive with 650GB of free-use storage space. 350GB is the operating system and repositories</li></ul>"
           }
+        },
+        "faq_item_VqY7GG": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "12",
+            "text_question": "Can you message people with it?",
+            "richtext_answer": "<p>If someone else is connected to the wireless modem housed inside a complete deck, they can use the command line to communicate with other devices on the same network. Much the way people did during “LAN Parties” in the early days of the internet.</p>"
+          }
         }
       },
       "block_order": [
@@ -178,7 +186,8 @@
         "faq_item_YxmLnr",
         "faq_item_TPW9An",
         "faq_item_GbtKRC",
-        "faq_item_FRgaPk"
+        "faq_item_FRgaPk",
+        "faq_item_VqY7GG"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
