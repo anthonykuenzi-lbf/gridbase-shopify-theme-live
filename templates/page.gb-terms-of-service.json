@@ -15,7 +15,7 @@
         "rich_text_section_7aTCbL": {
           "type": "rich-text-section",
           "settings": {
-            "richtext_section_text": "<p>\n                <strong>Lorem Ipsum Title</strong>‍\n                This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\"></p>"
+            "richtext_section_text": "<p><strong>Lorem Ipsum Title</strong>‍</p><p>This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at</p>"
           }
         }
       },
