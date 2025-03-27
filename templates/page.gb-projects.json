@@ -1,12 +1,58 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "gb_single_column": {
-            "type": "gb_single_column"
+  "sections": {
+    "gb_single_column": {
+      "type": "gb_single_column",
+      "blocks": {
+        "block_mQa3Vc": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "01 - Custom Built Cyberdecks.",
+            "checkbox_show_image": true,
+            "richtext_block_text": "<p>Tailored to your specific requirements, our custom-built cyberdecks offer cutting-edge computing power for your unique needs.</p>"
+          }
+        },
+        "block_nCEjr3": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "02 - Free .STL Files.",
+            "checkbox_show_image": true,
+            "richtext_block_text": "<p>Have some fun with our <a href=\"https://github.com/gridbasedotnet/FIGHTERWING\"><span style=\"text-decoration:underline\">free .STL files</span></a>, including accessories like spare mag holders that integrate seamlessly with the <a href=\"https://www.trex-arms.com/store/trex-arms-sidecar-holster/?color_ref=1&hardwared_holster_accessory_and_color_refs=%5B%7B%22holster_accessory_ref%22%3A5%2C%22color_ref%22%3A1%7D%5D&non_hardwared_holster_accessory_and_color_refs=%5B%5D&clip_material=%22plastic%22&hardwared_holster_accessories=%5B%7B%22holster_accessory_variation_ref%22%3A5%2C%22color_ref%22%3A1%7D%5D&non_hardwared_holster_accessories=%5B%5D&holster_availability_ref=289&handedness=%22Right%22&threaded=false\"><span style=\"text-decoration:underline\">T-Rex Arms Sidecar</span></a> holster.</p>"
+          }
+        },
+        "block_rTpiLC": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "03 - SDR-Driven Police Scanner.",
+            "checkbox_show_image": true,
+            "richtext_block_text": "<p><a href=\"https://gridbasedotnet.radio12345.com/\"><span style=\"text-decoration:underline\">Gain insights</span></a> into your community with our SDR-driven police scanner, available for public listening to promote transparency and awareness. Here, we are listening to the North Texas Interoperable Radio Network, which covers essentially all of North Texas' dispatch for Police, Ambulatory Services, Fire, & more.</p>"
+          }
         }
-    },
-    "layout": "page.gb-projects",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "gb_single_column"
-    ]
+      },
+      "block_order": [
+        "block_mQa3Vc",
+        "block_nCEjr3",
+        "block_rTpiLC"
+      ],
+      "settings": {
+        "textarea_headline": "Gridbase Projects.",
+        "checkbox_top_text_toggle": true,
+        "richtext_top_text": "<p>At Gridbase, we're constantly seeking to demystify and excite innovation in off-grid technology. Explore some of our featured projects below, where we leverage decentralized technology to provide security, capability, and more freedom to our customers.</p>",
+        "richtext_bottom_text": "<p>At Gridbase, innovation is at the heart of everything we do. Stay tuned for more exciting projects as we continue to explore new ways to harness decentralized technology for the benefit of our customers.</p>"
+      }
+    }
+  },
+  "layout": "page.gb-projects",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "gb_single_column"
+  ]
 }
