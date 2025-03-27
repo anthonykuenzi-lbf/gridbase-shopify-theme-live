@@ -125,6 +125,14 @@
             "text_question": "Are there any limitations to what an off-grid computer can do compared to a regular computer?",
             "richtext_answer": "<p>While an off-grid computer may not have the same level of processing power as a regular computer, it can still perform many of the same functions and tasks. However, certain applications or tasks may be more difficult or impossible to perform without access to the internet or other online resources.</p>"
           }
+        },
+        "faq_item_FbPzDw": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "7",
+            "text_question": "How does the power source for an off-grid computer work and how long can it run on a single charge?",
+            "richtext_answer": "<p>Much the same way any other computer would, only using specific battery packs and power supplies.</p>"
+          }
         }
       },
       "block_order": [
@@ -133,7 +141,8 @@
         "faq_item_7yC7E9",
         "faq_item_3NrnKG",
         "faq_item_7ArJNd",
-        "faq_item_LpUh6c"
+        "faq_item_LpUh6c",
+        "faq_item_FbPzDw"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
