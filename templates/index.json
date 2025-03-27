@@ -1,48 +1,132 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "liquify_hero": {
-            "type": "liquify_hero"
-        },
-        "hero": {
-            "type": "hero"
-        },
-        "links": {
-            "type": "links"
-        },
-        "content": {
-            "type": "content"
-        },
-        "gb_hero": {
-            "type": "gb_hero"
-        },
-        "gb_product_highlight": {
-            "type": "gb_product_highlight"
-        },
-        "gb_featured_products": {
-            "type": "gb_featured_products"
-        },
-        "gb_where_would_i_use_this": {
-            "type": "gb_where_would_i_use_this"
-        },
-        "gb_brand_values": {
-            "type": "gb_brand_values"
-        },
-        "gb_scroll_banner": {
-            "type": "gb_scroll_banner"
-        }
+  "sections": {
+    "gb_hero_974wpx": {
+      "type": "gb_hero",
+      "settings": {
+        "textarea_headline": "Pocket V2<br>Available Now.",
+        "richtext_text": "<p>Gridbase is your one stop shop for alternative internet solutions and communication networks. We specialize in providing products that hold the power of the internet in your hand with off-grid capabilities.</p>",
+        "url_url": "shopify://products/pocket",
+        "text_button_text": "Shop Now"
+      }
     },
-    "layout": "theme",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "liquify_hero",
-        "hero",
-        "links",
-        "content",
-        "gb_hero",
-        "gb_product_highlight",
-        "gb_featured_products",
-        "gb_where_would_i_use_this",
-        "gb_brand_values",
-        "gb_scroll_banner"
-    ]
+    "gb_product_highlight_fGptkF": {
+      "type": "gb_product_highlight",
+      "settings": {
+        "textarea_headline": "Portable and<br>Stream-able<br>Database.",
+        "richtext_text": "<p>Your internet alternative. Easy to use, packed with the internet, off-grid out of the box, and it all fits in the palm of your hand. Pocket operates similarly to a standard internet server with one key difference: Pocket references its own data. Unlike traditional Internet Service Providers (ISPs) that connect users to a bank of external servers hosting various websites, Pocket functions as a local server. While access to sites like Facebook is not available through Pocket, u</p>",
+        "url_url": "",
+        "text_button_text": "Learn More"
+      }
+    },
+    "gb_featured_products_qiXgid": {
+      "type": "gb_featured_products",
+      "settings": {
+        "collection_collection": "turn-key",
+        "collection_collection_limit": 6,
+        "url_button_url": "",
+        "text_button_text": "Shop All"
+      }
+    },
+    "gb_where_would_i_use_HQ9NhY": {
+      "type": "gb_where_would_i_use",
+      "settings": {
+        "textarea_headline": "Where would<br>I use this?",
+        "richtext_text": "<p>Pocket can be deployed anywhere, anytime. Some of our customers enjoy using Pocket on a plane when there is no inflight wi-fi; Others use it in their off-grid cabins. There is really no end to the uses Pocket could have but it shines most when access to traditional internet is limited or not permitted.</p>",
+        "text_button_1_text": "Dirty Civilian",
+        "url_button_1_url": "",
+        "url_button_2_url": "",
+        "text_button_2_text": "TREX Labs",
+        "image_banner_image": "shopify://shop_images/FullSizeRender.heic"
+      }
+    },
+    "gb_brand_values_FXWCqf": {
+      "type": "gb_brand_values",
+      "settings": {
+        "image_illustration": "shopify://shop_images/gg-cyberdeck-illustration-01-black.svg",
+        "richtext_01_text": "<p>Every day, the infrastructure we have built our modern world around shows its fragile face. With the influx of 20 million potential migrants into the United States, our already failing systems are being placed under an immense load.</p>",
+        "richtext_02_text": "<p>Additionally, our largest infrastructure supplier is also one of our most advanced adversaries, China.</p>",
+        "richtext_03_text": "<p>It is for these reasons and many more that Gridbase LLC has been developing Decentralized, Autonomous, and Collaborative systems that operate free from traditional infrastructure methods.</p>",
+        "richtext_04_text": "<p>In addition to creating a hardware down-grid solutions, Gridbase has continued to provide radio and communications courses, consulting services, and network communication setup and systems across the world including boutique and curated custom radio and communication devices.</p>",
+        "url_button_1_url": "",
+        "text_button_1_text": "Shop Our Offerings",
+        "text_button_2_text": "Reach Out",
+        "url_button_2_url": ""
+      }
+    },
+    "scroll_banner_wcmHJq": {
+      "type": "gb_scroll_banner",
+      "blocks": {
+        "bullet_aMahDJ": {
+          "type": "bullet",
+          "settings": {
+            "image_icon": "shopify://shop_images/gb-filler-icon-orange.svg",
+            "text_text": "Empowering communication  without central control"
+          }
+        },
+        "bullet_WhYi6X": {
+          "type": "bullet",
+          "settings": {
+            "image_icon": "shopify://shop_images/gb-filler-icon-orange.svg",
+            "text_text": "Privacy-focused solutions for safe, independent networks"
+          }
+        },
+        "bullet_AU6KLM": {
+          "type": "bullet",
+          "settings": {
+            "image_icon": "shopify://shop_images/gb-filler-icon-orange.svg",
+            "text_text": "Always connected, even in emergencies"
+          }
+        },
+        "bullet_N6rwhe": {
+          "type": "bullet",
+          "settings": {
+            "image_icon": "shopify://shop_images/gb-filler-icon-orange.svg",
+            "text_text": "Pioneering next-gen tech for resilient communication"
+          }
+        },
+        "bullet_w3mHwf": {
+          "type": "bullet",
+          "settings": {
+            "image_icon": "shopify://shop_images/gb-filler-icon-orange.svg",
+            "text_text": "Built for and by those who value freedom"
+          }
+        },
+        "bullet_CNi8Cf": {
+          "type": "bullet",
+          "settings": {
+            "image_icon": "shopify://shop_images/gb-filler-icon-orange.svg",
+            "text_text": "Unrestricted, borderless access to information"
+          }
+        }
+      },
+      "block_order": [
+        "bullet_aMahDJ",
+        "bullet_WhYi6X",
+        "bullet_AU6KLM",
+        "bullet_N6rwhe",
+        "bullet_w3mHwf",
+        "bullet_CNi8Cf"
+      ],
+      "settings": {}
+    }
+  },
+  "layout": "theme",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "gb_hero_974wpx",
+    "gb_product_highlight_fGptkF",
+    "gb_featured_products_qiXgid",
+    "gb_where_would_i_use_HQ9NhY",
+    "gb_brand_values_FXWCqf",
+    "scroll_banner_wcmHJq"
+  ]
 }
