@@ -50,9 +50,9 @@
         "service_item_block_DCrcYi": {
           "type": "service-item-block",
           "settings": {
-            "textarea_service_item_type": "Type",
-            "textarea_service_item_description": "Lorem Ipsum Dolor",
-            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+            "textarea_service_item_type": "Consulting",
+            "textarea_service_item_description": "Advanced counter-surveillance solutions to detect and prevent unauthorized monitoring. Protect sensitive communications, mitigate espionage risks, and enhance security with cutting-edge technology designed for high-risk environments.",
+            "textarea_service_item_text": "Counter-surveillance"
           }
         },
         "service_item_block_tqideH": {
