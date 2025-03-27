@@ -93,11 +93,20 @@
             "text_question": "Why would someone want to use an off-grid computer instead of a regular computer?",
             "richtext_answer": "<p>An off-grid computer can be useful in a variety of situations, such as when access to traditional power and internet infrastructure is limited or unreliable. It can also provide increased privacy and security by operating independently of online networks and servers.</p>"
           }
+        },
+        "faq_item_7yC7E9": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "3",
+            "text_question": "What are some common applications or tasks that can be performed on an off-grid computer?",
+            "richtext_answer": "<p>Some common applications and tasks that can be performed on an off-grid computer include word processing, data analysis, programming, and multimedia editing. In addition, specialized software can be used to run simulations, control sensors and other devices such as SDR & GPS, and perform other tasks related to survival, sigint, special awareness and more.</p>"
+          }
         }
       },
       "block_order": [
         "faq_item_GUNB9g",
-        "faq_item_abniQy"
+        "faq_item_abniQy",
+        "faq_item_7yC7E9"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
