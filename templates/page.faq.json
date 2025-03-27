@@ -221,6 +221,14 @@
             "text_question": "Is the battery internal?",
             "richtext_answer": "<ul><li>No, having an external battery provides you with the opportunity to swap out batteries without having to crack open the case, this way you can keep multiple batteries and swap as needed.</li></ul><p></p><ul><li>The flexibility of having an external battery allows you to get creative with power options.</li></ul><p></p><ul><li>The device is customizable, If you choose to add an internal battery that is possible on your own.</li></ul>"
           }
+        },
+        "faq_item_mt3mHA": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "19",
+            "text_question": "How long does the battery that comes with the complete deck last?",
+            "richtext_answer": "<p>Approximately 8 hours during normal use.</p>"
+          }
         }
       },
       "block_order": [
@@ -241,7 +249,8 @@
         "faq_item_8jcKGb",
         "faq_item_GMLXQg",
         "faq_item_MXV6mh",
-        "faq_item_68wK9Y"
+        "faq_item_68wK9Y",
+        "faq_item_mt3mHA"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
