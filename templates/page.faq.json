@@ -296,11 +296,31 @@
             "text_question": "{{ metaobjects.gb_covert_plate_faq[\"are-they-made-out-of-decent-quality-materials\"].question.value }}",
             "richtext_answer": "{{ metaobjects.gb_covert_plate_faq[\"are-they-made-out-of-decent-quality-materials\"].question_answer | metafield_tag }}"
           }
+        },
+        "faq_item_GdLGYp": {
+          "type": "faq-item",
+          "source": "{{ metaobjects.gb_covert_plate_faq[\"what-all-comes-with-the-covers\"] }}",
+          "settings": {
+            "text_number": "{{ metaobjects.gb_covert_plate_faq[\"what-all-comes-with-the-covers\"].question_number.value }}",
+            "text_question": "{{ metaobjects.gb_covert_plate_faq[\"what-all-comes-with-the-covers\"].question.value }}",
+            "richtext_answer": "{{ metaobjects.gb_covert_plate_faq[\"what-all-comes-with-the-covers\"].question_answer | metafield_tag }}"
+          }
+        },
+        "faq_item_8dgNad": {
+          "type": "faq-item",
+          "source": "{{ metaobjects.gb_covert_plate_faq[\"is-it-a-wireless-activation-or-is-it-a-wired-switch-or-both\"] }}",
+          "settings": {
+            "text_number": "{{ metaobjects.gb_covert_plate_faq[\"is-it-a-wireless-activation-or-is-it-a-wired-switch-or-both\"].question_number.value }}",
+            "text_question": "{{ metaobjects.gb_covert_plate_faq[\"is-it-a-wireless-activation-or-is-it-a-wired-switch-or-both\"].question.value }}",
+            "richtext_answer": "{{ metaobjects.gb_covert_plate_faq[\"is-it-a-wireless-activation-or-is-it-a-wired-switch-or-both\"].question_answer | metafield_tag }}"
+          }
         }
       },
       "block_order": [
         "faq_item_ypVE4g",
-        "faq_item_Nn3teJ"
+        "faq_item_Nn3teJ",
+        "faq_item_GdLGYp",
+        "faq_item_8dgNad"
       ],
       "settings": {
         "textarea_title": "C. Covert License Plate",
