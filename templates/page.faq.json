@@ -197,6 +197,14 @@
             "text_question": "Can I use the case when it’s closed?",
             "richtext_answer": "<p>Using the included VNC software, you can connect to the device from any smartphone or computer remotely. </p>"
           }
+        },
+        "faq_item_GMLXQg": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "16",
+            "text_question": "Why would I use it closed?",
+            "richtext_answer": "<ul><li>If you were at a campsite or in a cabin with other people, you could leave it plugged in somewhere and it would just act as a personal server for people to access at will</li></ul><p></p><ul><li>Guests can only access the repositories, so your personal data can’t be touched by guests. </li></ul>"
+          }
         }
       },
       "block_order": [
@@ -214,7 +222,8 @@
         "faq_item_VqY7GG",
         "faq_item_GMHfPq",
         "faq_item_LFAPmJ",
-        "faq_item_8jcKGb"
+        "faq_item_8jcKGb",
+        "faq_item_GMLXQg"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
