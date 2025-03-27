@@ -11,7 +11,21 @@
   "sections": {
     "gb_policy": {
       "type": "gb_policy",
-      "settings": {}
+      "blocks": {
+        "rich_text_section_UfrRr4": {
+          "type": "rich-text-section",
+          "settings": {
+            "richtext_section_text": "<p><strong>Lorem Ipsum Title</strong>‍</p><p>This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at </p>"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_section_UfrRr4"
+      ],
+      "settings": {
+        "textarea_heading": "Privacy Policy",
+        "richtext_text": "<p>This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\">info@gridbase.net</a>.</p>"
+      }
     }
   },
   "layout": "page.gb-policy",
