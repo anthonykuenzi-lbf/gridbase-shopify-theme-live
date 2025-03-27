@@ -237,6 +237,14 @@
             "text_question": "Can I customize the colors and storage size of the device?",
             "richtext_answer": "<ul><li>At this time, no customizations can be made on my end.</li></ul><p></p><ul><li>The device is open source and non proprietary in nature, so you can modify to suit your needs</li></ul>"
           }
+        },
+        "faq_item_9YJFGY": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "21",
+            "text_question": "If I buy the complete kit is there anything else I would need to buy?",
+            "richtext_answer": "<ul><li>No, however I highly recommend customers back-up their hard drive. </li></ul><p></p><ul><li>Using an internal program you can make a carbon copy of the operating system.</li></ul><p></p><ul><li>The hard drive must be at least 500GB to hold the entire OS.</li></ul>"
+          }
         }
       },
       "block_order": [
@@ -259,7 +267,8 @@
         "faq_item_MXV6mh",
         "faq_item_68wK9Y",
         "faq_item_mt3mHA",
-        "faq_item_bMcaC7"
+        "faq_item_bMcaC7",
+        "faq_item_9YJFGY"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
