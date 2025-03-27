@@ -26,8 +26,8 @@
         "service_item_block_RPnERc": {
           "type": "service-item-block",
           "settings": {
-            "textarea_service_item_type": "Type",
-            "textarea_service_item_description": "Lorem Ipsum Dolor",
+            "textarea_service_item_type": "Class",
+            "textarea_service_item_description": "Hands-on training in ham radio, emergency comms, and secure messaging to build self-reliant communication skills for any scenario.",
             "textarea_service_item_text": "Radio &amp; Comms Workshops"
           }
         },
