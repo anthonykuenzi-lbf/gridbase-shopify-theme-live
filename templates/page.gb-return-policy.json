@@ -35,12 +35,21 @@
             "checkbox_show_image": false,
             "richtext_block_text": "<p>If you receive a defective product, notify us within 7 days of delivery for a replacement or store credit.</p>"
           }
+        },
+        "block_GphkFy": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "04 - Chargebacks & Disputes",
+            "checkbox_show_image": false,
+            "richtext_block_text": "<p>Unauthorized chargebacks will be contested. Please contact us first to resolve any issues.</p>"
+          }
         }
       },
       "block_order": [
         "block_tEpxEi",
         "block_4y9wBx",
-        "block_6jAACy"
+        "block_6jAACy",
+        "block_GphkFy"
       ],
       "settings": {
         "textarea_headline": "Refund Policy",
