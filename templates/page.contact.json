@@ -1,16 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "contact": {
-            "type": "contact"
-        },
-        "gb_contact": {
-            "type": "gb_contact"
-        }
-    },
-    "layout": "page.contact",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "contact",
-        "gb_contact"
-    ]
+  "sections": {
+    "gb_contact": {
+      "type": "gb_contact",
+      "settings": {
+        "textarea_page_title": "Contact",
+        "textarea_text": "Have a question or want to learn more about our products? We'd love to hear from you! reach out to us using any of the methods below.",
+        "textarea_contact_email": "info@gridbase.net",
+        "socials_menu": "footer"
+      }
+    }
+  },
+  "layout": "page.contact",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "gb_contact"
+  ]
 }
