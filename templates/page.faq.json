@@ -157,6 +157,14 @@
             "text_question": "What’s included in the kit?",
             "richtext_answer": "<p>Everything but the raspberry pi, the cables, hardware, & the harddrive/operating system. </p>"
           }
+        },
+        "faq_item_FRgaPk": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "11",
+            "text_question": "What’s included with The Base Station?",
+            "richtext_answer": "<ol><li>Everything you need to be operating and functional out of the box.</li><li>USB GPS dongle</li><li>120v wall power block </li><li>Wireless Keyboard, touch screen, and wireless folding mouse</li><li>1TB hard drive with 650GB of free-use storage space. 350GB is the operating system and repositories</li></ol>"
+          }
         }
       },
       "block_order": [
@@ -169,7 +177,8 @@
         "faq_item_FbPzDw",
         "faq_item_YxmLnr",
         "faq_item_TPW9An",
-        "faq_item_GbtKRC"
+        "faq_item_GbtKRC",
+        "faq_item_FRgaPk"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
