@@ -16,14 +16,14 @@
           "announcement_6qXP3h": {
             "type": "announcement",
             "settings": {
-              "url_link": "",
+              "url_link": "shopify://products/off-grid-cyberdeck",
               "text_announcement": "Sample Announcement"
             }
           },
           "announcement_hr69F7": {
             "type": "announcement",
             "settings": {
-              "url_link": "",
+              "url_link": "shopify://products/pocket",
               "text_announcement": "Sample Announcement number two"
             }
           }
