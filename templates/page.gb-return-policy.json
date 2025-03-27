@@ -17,7 +17,7 @@
           "settings": {
             "textarea_block_title": "01 - Eligibility for Refunds",
             "checkbox_show_image": false,
-            "richtext_block_text": "<p>We offer refunds on eligible products and services under the following conditions:</p><ul><li>Physical products must be returned in unused, original condition within 30 days of purchase.</li><li>Digital products, software, and training courses are non-refundable once accessed or downloaded.</li><li>Subscription-based services are refundable only within the first 7 days of the billing cycle.</li></ul>"
+            "richtext_block_text": "<p>We offer refunds on eligible products and services under the following conditions:</p><ul><li>Physical products must be returned in unused, original condition within 30 days of purchase.</li><li>Digital products, software, and training courses are non-refundable once accessed or downloaded.</li><li>Subscription-based services are refundable only within the first 7 days of the&nbspbilling&nbspcycle.</li></ul>"
           }
         },
         "block_tEpxEi": {
@@ -33,7 +33,7 @@
           "settings": {
             "textarea_block_title": "03 - Return Process",
             "checkbox_show_image": false,
-            "richtext_block_text": "<ul><li>Contact info@gridbase.net with your order details and reason for return.</li><li>If approved, you will receive an RMA (Return Merchandise Authorization) number.</li><li>Ship the item back using a trackable method; we are not responsible for lost returns.</li><li>Once received and inspected, refunds will be processed within 7–10 business days to the original payment method.</li></ul>"
+            "richtext_block_text": "<ul><li>Contact info@gridbase.net with your order details and reason for return.</li><li>If approved, you will receive an RMA (Return Merchandise Authorization)&nbspnumber.</li><li>Ship the item back using a trackable method; we are not responsible for lost&nbspreturns.</li><li>Once received and inspected, refunds will be processed within 7–10 business days to the original payment method.</li></ul>"
           }
         },
         "block_6jAACy": {
@@ -49,7 +49,7 @@
           "settings": {
             "textarea_block_title": "05 - Chargebacks & Disputes",
             "checkbox_show_image": false,
-            "richtext_block_text": "<p>Unauthorized chargebacks will be contested. Please contact us first to resolve any issues.</p>"
+            "richtext_block_text": "<p>Unauthorized chargebacks will be contested. Please contact us first to resolve&nbspany&nbspissues.</p>"
           }
         }
       },
