@@ -281,10 +281,11 @@
       "blocks": {
         "faq_item_ypVE4g": {
           "type": "faq-item",
+          "source": "{{ metaobjects.gb_covert_plate_faq[\"is-it-just-one-cover-or-is-there-2-im-not-sure-how-i-feel-about-spending-400-on-2-license-plate-covers\"] }}",
           "settings": {
-            "text_number": "1",
-            "text_question": "How does Pocket work?",
-            "richtext_answer": "<p>\n                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        </p>"
+            "text_number": "{{ metaobjects.gb_covert_plate_faq[\"is-it-just-one-cover-or-is-there-2-im-not-sure-how-i-feel-about-spending-400-on-2-license-plate-covers\"].question_number.value }}",
+            "text_question": "{{ metaobjects.gb_covert_plate_faq[\"is-it-just-one-cover-or-is-there-2-im-not-sure-how-i-feel-about-spending-400-on-2-license-plate-covers\"].question.value }}",
+            "richtext_answer": "{{ metaobjects.gb_covert_plate_faq[\"is-it-just-one-cover-or-is-there-2-im-not-sure-how-i-feel-about-spending-400-on-2-license-plate-covers\"].question_answer | metafield_tag }}"
           }
         }
       },
