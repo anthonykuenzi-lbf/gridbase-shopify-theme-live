@@ -58,9 +58,9 @@
         "service_item_block_tqideH": {
           "type": "service-item-block",
           "settings": {
-            "textarea_service_item_type": "Type",
-            "textarea_service_item_description": "Lorem Ipsum Dolor",
-            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+            "textarea_service_item_type": "Custom Install",
+            "textarea_service_item_description": "Description - Independent, self-sustaining communication systems using radio, solar power, and encrypted tech to stay connected without reliance on traditional infrastructure.",
+            "textarea_service_item_text": "Off-grid networks"
           }
         }
       },
