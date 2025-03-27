@@ -287,10 +287,20 @@
             "text_question": "{{ metaobjects.gb_covert_plate_faq[\"is-it-just-one-cover-or-is-there-2-im-not-sure-how-i-feel-about-spending-400-on-2-license-plate-covers\"].question.value }}",
             "richtext_answer": "{{ metaobjects.gb_covert_plate_faq[\"is-it-just-one-cover-or-is-there-2-im-not-sure-how-i-feel-about-spending-400-on-2-license-plate-covers\"].question_answer | metafield_tag }}"
           }
+        },
+        "faq_item_Nn3teJ": {
+          "type": "faq-item",
+          "source": "{{ metaobjects.gb_covert_plate_faq[\"are-they-made-out-of-decent-quality-materials\"] }}",
+          "settings": {
+            "text_number": "{{ metaobjects.gb_covert_plate_faq[\"are-they-made-out-of-decent-quality-materials\"].question_number.value }}",
+            "text_question": "{{ metaobjects.gb_covert_plate_faq[\"are-they-made-out-of-decent-quality-materials\"].question.value }}",
+            "richtext_answer": "{{ metaobjects.gb_covert_plate_faq[\"are-they-made-out-of-decent-quality-materials\"].question_answer | metafield_tag }}"
+          }
         }
       },
       "block_order": [
-        "faq_item_ypVE4g"
+        "faq_item_ypVE4g",
+        "faq_item_Nn3teJ"
       ],
       "settings": {
         "textarea_title": "C. Covert License Plate",
