@@ -12,6 +12,26 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "announcement_6qXP3h": {
+            "type": "announcement",
+            "settings": {
+              "url_link": "",
+              "text_announcement": "Sample Announcement"
+            }
+          },
+          "announcement_hr69F7": {
+            "type": "announcement",
+            "settings": {
+              "url_link": "",
+              "text_announcement": "Sample Announcement number two"
+            }
+          }
+        },
+        "block_order": [
+          "announcement_6qXP3h",
+          "announcement_hr69F7"
+        ],
         "settings": {
           "checkbox_show_announcement_bar": true,
           "nav_menu": "gb-header-nav",
