@@ -133,6 +133,14 @@
             "text_question": "How does the power source for an off-grid computer work and how long can it run on a single charge?",
             "richtext_answer": "<p>Much the same way any other computer would, only using specific battery packs and power supplies.</p>"
           }
+        },
+        "faq_item_YxmLnr": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "8",
+            "text_question": "Can an off-grid computer be used in remote locations or areas with no access to traditional power sources?",
+            "richtext_answer": "<p>Yes, an off-grid computer can be particularly useful in remote locations or areas with no access to traditional power sources or internet infrastructure. It can provide otherwise unavailable information in a time when information is needed. Y'know. Sustainment. </p>"
+          }
         }
       },
       "block_order": [
@@ -142,7 +150,8 @@
         "faq_item_3NrnKG",
         "faq_item_7ArJNd",
         "faq_item_LpUh6c",
-        "faq_item_FbPzDw"
+        "faq_item_FbPzDw",
+        "faq_item_YxmLnr"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
