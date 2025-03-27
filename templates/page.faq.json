@@ -17,12 +17,57 @@
           "settings": {
             "text_number": "1",
             "text_question": "How does Pocket work?",
-            "richtext_answer": "<p>\n                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        </p>"
+            "richtext_answer": "<p>Pocket functions as a local server, providing access to a curated library of resources without relying on traditional \"internet\" infrastructure & hosts a vast range of critical, life saving survival information designed for offline accessibility when the grid is down.</p>"
+          }
+        },
+        "faq_item_XqJjqB": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "2",
+            "text_question": "Can I add my own information? ",
+            "richtext_answer": "<p>Pocket is built as a fixed drive to keep its library of content consistent and reliable. While you can save minor personal files on the device you’re using to access Pocket, the Pocket itself is intentionally set to maintain its carefully curated collection.</p>"
+          }
+        },
+        "faq_item_88iypK": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p><br/>                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                        </p>"
+          }
+        },
+        "faq_item_RGDVcf": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p><br/>                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                        </p>"
+          }
+        },
+        "faq_item_WQxW6t": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p><br/>                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                        </p>"
+          }
+        },
+        "faq_item_8HTNC3": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p><br/>                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                        </p>"
           }
         }
       },
       "block_order": [
-        "faq_item_aP97bC"
+        "faq_item_aP97bC",
+        "faq_item_XqJjqB",
+        "faq_item_88iypK",
+        "faq_item_RGDVcf",
+        "faq_item_WQxW6t",
+        "faq_item_8HTNC3"
       ],
       "settings": {
         "textarea_title": "A. Pocket",
