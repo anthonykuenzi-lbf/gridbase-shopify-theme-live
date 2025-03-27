@@ -149,6 +149,14 @@
             "text_question": "What are some potential privacy or security benefits of using an off-grid computer?",
             "richtext_answer": "<p>Using an off-grid computer can provide increased privacy and security by enabling users to operate independently of online networks and servers. This can make it more difficult for outside parties to intercept or monitor communications, access sensitive data, or launch cyber attacks.</p>"
           }
+        },
+        "faq_item_GbtKRC": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "10",
+            "text_question": "What’s included in the kit?",
+            "richtext_answer": "<p>Everything but the raspberry pi, the cables, hardware, & the harddrive/operating system. </p>"
+          }
         }
       },
       "block_order": [
@@ -160,7 +168,8 @@
         "faq_item_LpUh6c",
         "faq_item_FbPzDw",
         "faq_item_YxmLnr",
-        "faq_item_TPW9An"
+        "faq_item_TPW9An",
+        "faq_item_GbtKRC"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
