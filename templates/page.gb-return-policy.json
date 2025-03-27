@@ -12,10 +12,18 @@
     "gb_single_column_X8jApq": {
       "type": "gb_single_column",
       "blocks": {
+        "block_r3Ce3F": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "01 - Eligibility for Refunds",
+            "checkbox_show_image": false,
+            "richtext_block_text": "<p>We offer refunds on eligible products and services under the following conditions:</p><ul><li>Physical products must be returned in unused, original condition within 30 days of purchase.</li><li>Digital products, software, and training courses are non-refundable once accessed or downloaded.</li><li>Subscription-based services are refundable only within the first 7 days of the billing cycle.</li></ul>"
+          }
+        },
         "block_tEpxEi": {
           "type": "block",
           "settings": {
-            "textarea_block_title": "01 - Non-Refundable Items",
+            "textarea_block_title": "02 - Non-Refundable Items",
             "checkbox_show_image": false,
             "richtext_block_text": "<ul><li>Custom-built or modified equipment.</li><li>Consulting services and one-on-one training.</li><li>Items damaged due to user mishandling.</li><li>Shipping fees (unless due to an error on our part).</li></ul>"
           }
@@ -23,7 +31,7 @@
         "block_4y9wBx": {
           "type": "block",
           "settings": {
-            "textarea_block_title": "02 - Return Process",
+            "textarea_block_title": "03 - Return Process",
             "checkbox_show_image": false,
             "richtext_block_text": "<ul><li>Contact info@gridbase.net with your order details and reason for return.</li><li>If approved, you will receive an RMA (Return Merchandise Authorization) number.</li><li>Ship the item back using a trackable method; we are not responsible for lost returns.</li><li>Once received and inspected, refunds will be processed within 7–10 business days to the original payment method.</li></ul>"
           }
@@ -31,7 +39,7 @@
         "block_6jAACy": {
           "type": "block",
           "settings": {
-            "textarea_block_title": "03 - Damaged or Defective Items",
+            "textarea_block_title": "04 - Damaged or Defective Items",
             "checkbox_show_image": false,
             "richtext_block_text": "<p>If you receive a defective product, notify us within 7 days of delivery for a replacement or store credit.</p>"
           }
@@ -39,13 +47,14 @@
         "block_GphkFy": {
           "type": "block",
           "settings": {
-            "textarea_block_title": "04 - Chargebacks & Disputes",
+            "textarea_block_title": "05 - Chargebacks & Disputes",
             "checkbox_show_image": false,
             "richtext_block_text": "<p>Unauthorized chargebacks will be contested. Please contact us first to resolve any issues.</p>"
           }
         }
       },
       "block_order": [
+        "block_r3Ce3F",
         "block_tEpxEi",
         "block_4y9wBx",
         "block_6jAACy",
@@ -53,7 +62,7 @@
       ],
       "settings": {
         "textarea_headline": "Refund Policy",
-        "checkbox_top_text_toggle": true,
+        "checkbox_top_text_toggle": false,
         "richtext_top_text": "<p>We offer refunds on eligible products and services under the following conditions:</p><ul><li>Physical products must be returned in unused, original condition within 30 days of purchase.</li><li>Digital products, software, and training courses are non-refundable once accessed or downloaded.</li><li>Subscription-based services are refundable only within the first 7 days of the billing cycle.</li></ul>",
         "richtext_bottom_text": "<p>For further assistance, <br/>reach out to info@gridbase.net.</p>"
       }
