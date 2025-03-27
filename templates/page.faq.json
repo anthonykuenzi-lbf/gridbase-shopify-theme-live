@@ -11,6 +11,19 @@
   "sections": {
     "gb_faq": {
       "type": "gb_faq",
+      "blocks": {
+        "faq_item_aP97bC": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p>\n                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        </p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_aP97bC"
+      ],
       "settings": {
         "textarea_title": "A. Pocket",
         "richtext_text": "<p>Complete, off-line ownership over their survival library. It’s a compact, portable, and secure database that operates independently of cell towers or satellites, requiring no pesky updates, subscriptions or external connections.</p>",
