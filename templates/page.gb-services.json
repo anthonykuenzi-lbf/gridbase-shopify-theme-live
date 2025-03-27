@@ -9,14 +9,77 @@
  */
 {
   "sections": {
-    "default": {
-      "type": "default",
-      "settings": {}
+    "gb_large_heading_sol_8dgyfU": {
+      "type": "gb_large_heading_sol",
+      "settings": {
+        "textarea_headline": "Our team is composed of talented silent professionals who thrive off of solving evolving problems in a rapidly changing industry.",
+        "checkbox_show_buttons": true,
+        "url_button_1_url": "",
+        "text_button_1_text": "Reach Out",
+        "text_button_2_text": "Book a Class",
+        "url_button_2_url": ""
+      }
+    },
+    "gb_services_xP8FjX": {
+      "type": "gb_services",
+      "blocks": {
+        "service_item_block_RPnERc": {
+          "type": "service-item-block",
+          "settings": {
+            "textarea_service_item_type": "Type",
+            "textarea_service_item_description": "Lorem Ipsum Dolor",
+            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+          }
+        },
+        "service_item_block_9UmPeb": {
+          "type": "service-item-block",
+          "settings": {
+            "textarea_service_item_type": "Type",
+            "textarea_service_item_description": "Lorem Ipsum Dolor",
+            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+          }
+        },
+        "service_item_block_MLApyi": {
+          "type": "service-item-block",
+          "settings": {
+            "textarea_service_item_type": "Type",
+            "textarea_service_item_description": "Lorem Ipsum Dolor",
+            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+          }
+        },
+        "service_item_block_DCrcYi": {
+          "type": "service-item-block",
+          "settings": {
+            "textarea_service_item_type": "Type",
+            "textarea_service_item_description": "Lorem Ipsum Dolor",
+            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+          }
+        },
+        "service_item_block_tqideH": {
+          "type": "service-item-block",
+          "settings": {
+            "textarea_service_item_type": "Type",
+            "textarea_service_item_description": "Lorem Ipsum Dolor",
+            "textarea_service_item_text": "Radio &amp; Comms Workshops"
+          }
+        }
+      },
+      "block_order": [
+        "service_item_block_RPnERc",
+        "service_item_block_9UmPeb",
+        "service_item_block_MLApyi",
+        "service_item_block_DCrcYi",
+        "service_item_block_tqideH"
+      ],
+      "settings": {
+        "richtext_service_sub_text": "<p>Nothing we have ever done has been intended to be a “one size fits all” solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and solved.</p>"
+      }
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "default"
+    "gb_large_heading_sol_8dgyfU",
+    "gb_services_xP8FjX"
   ]
 }
