@@ -213,6 +213,14 @@
             "text_question": "Can I add to the repositories?",
             "richtext_answer": "<ul><li>At this time, that is not a functionality of the device. We are actively working on a “build-your-own” repository app but that will take time to develop</li></ul><p></p><ul><li>You can always download desired items to store personally on your desktop, they just wouldn’t be sharable on the local server. </li></ul>"
           }
+        },
+        "faq_item_68wK9Y": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "18",
+            "text_question": "Is the battery internal?",
+            "richtext_answer": "<ul><li>No, having an external battery provides you with the opportunity to swap out batteries without having to crack open the case, this way you can keep multiple batteries and swap as needed.</li></ul><p></p><ul><li>The flexibility of having an external battery allows you to get creative with power options.</li></ul><p></p><ul><li>The device is customizable, If you choose to add an internal battery that is possible on your own.</li></ul>"
+          }
         }
       },
       "block_order": [
@@ -232,7 +240,8 @@
         "faq_item_LFAPmJ",
         "faq_item_8jcKGb",
         "faq_item_GMLXQg",
-        "faq_item_MXV6mh"
+        "faq_item_MXV6mh",
+        "faq_item_68wK9Y"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
