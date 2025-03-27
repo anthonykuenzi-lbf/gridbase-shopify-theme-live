@@ -9,14 +9,28 @@
  */
 {
   "sections": {
-    "default": {
-      "type": "default",
-      "settings": {}
+    "gb_policy_jdgNty": {
+      "type": "gb_policy",
+      "blocks": {
+        "rich_text_section_7aTCbL": {
+          "type": "rich-text-section",
+          "settings": {
+            "richtext_section_text": "<p>\n                <strong>Lorem Ipsum Title</strong>‍\n                This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\"></p>"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_section_7aTCbL"
+      ],
+      "settings": {
+        "textarea_heading": "Terms of Service",
+        "richtext_text": "<p>For additional questions or comments.<br/>Please contact us at <a href=\"https://gridbase-1cf307.webflow.io/terms-of-service#\">info@gridbase.net</a></p><p>All rights reserved<br/>© Gridbase</p>"
+      }
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "default"
+    "gb_policy_jdgNty"
   ]
 }

@@ -9,14 +9,32 @@
  */
 {
   "sections": {
-    "default": {
-      "type": "default",
-      "settings": {}
+    "gb_single_column_X8jApq": {
+      "type": "gb_single_column",
+      "blocks": {
+        "block_tEpxEi": {
+          "type": "block",
+          "settings": {
+            "textarea_block_title": "01 - Custom Built Cyberdecks.",
+            "checkbox_show_image": true,
+            "richtext_block_text": "<p>Tailored to your specific requirements, our custom-built cyberdecks offer cutting-edge computing power for your unique needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_tEpxEi"
+      ],
+      "settings": {
+        "textarea_headline": "Return Policy",
+        "checkbox_top_text_toggle": true,
+        "richtext_top_text": "<p>At Gridbase, we're constantly seeking to demystify and excite innovation in off-grid technology. Explore some of our featured projects below, where we leverage decentralized technology to provide security, capability, and more freedom to our customers.</p>",
+        "richtext_bottom_text": "<p>At Gridbase, innovation is at the heart of everything we do. Stay tuned for more exciting projects as we continue to explore new ways to harness decentralized technology for the benefit of our customers.</p>"
+      }
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "default"
+    "gb_single_column_X8jApq"
   ]
 }
