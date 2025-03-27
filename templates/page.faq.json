@@ -117,6 +117,14 @@
             "text_question": "What kind of hardware or software is needed to set up an off-grid computer?",
             "richtext_answer": "<p>Setting up an off-grid computer typically requires specialized hardware such as solar panels, batteries, and power management systems. In addition, specialized software is needed to enable the computer to function without an internet connection or to interact with other devices in the vicinity. We have put together an off-grid operating system, complete with repositories for purchase here.</p>"
           }
+        },
+        "faq_item_LpUh6c": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "6",
+            "text_question": "Are there any limitations to what an off-grid computer can do compared to a regular computer?",
+            "richtext_answer": "<p>While an off-grid computer may not have the same level of processing power as a regular computer, it can still perform many of the same functions and tasks. However, certain applications or tasks may be more difficult or impossible to perform without access to the internet or other online resources.</p>"
+          }
         }
       },
       "block_order": [
@@ -124,7 +132,8 @@
         "faq_item_abniQy",
         "faq_item_7yC7E9",
         "faq_item_3NrnKG",
-        "faq_item_7ArJNd"
+        "faq_item_7ArJNd",
+        "faq_item_LpUh6c"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
