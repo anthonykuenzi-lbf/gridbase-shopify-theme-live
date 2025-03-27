@@ -78,6 +78,14 @@
     "gb_faq_GHqMUj": {
       "type": "gb_faq",
       "blocks": {
+        "faq_item_GUNB9g": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "What exactly is Base Station and how does it differ from a regular computer?",
+            "richtext_answer": "<p>An off-grid computer such as Base Station, is a computer system that can operate independently of traditional power and internet infrastructure. In addition to being able to operate in a traditional fashion, It can also use alternative sources of power, such as solar panels or batteries, and uses specialized software and hardware to function without an internet connection.</p>"
+          }
+        },
         "faq_item_abniQy": {
           "type": "faq-item",
           "settings": {
@@ -88,6 +96,7 @@
         }
       },
       "block_order": [
+        "faq_item_GUNB9g",
         "faq_item_abniQy"
       ],
       "settings": {
