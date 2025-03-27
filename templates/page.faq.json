@@ -163,7 +163,7 @@
           "settings": {
             "text_number": "11",
             "text_question": "What’s included with The Base Station?",
-            "richtext_answer": "<ol><li>Everything you need to be operating and functional out of the box.</li><li>USB GPS dongle</li><li>120v wall power block </li><li>Wireless Keyboard, touch screen, and wireless folding mouse</li><li>1TB hard drive with 650GB of free-use storage space. 350GB is the operating system and repositories</li></ol>"
+            "richtext_answer": "<p>Everything you need to be operating and functional out of the box.</p><ul><li>USB GPS dongle</li></ul><p></p><ul><li>120v wall power block </li></ul><p></p><ul><li>Wireless Keyboard, touch screen, and wireless folding mouse</li></ul><p></p><ul><li>1TB hard drive with 650GB of free-use storage space. 350GB is the operating system and repositories</li></ul>"
           }
         }
       },
