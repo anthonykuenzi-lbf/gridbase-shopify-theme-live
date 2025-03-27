@@ -8,5 +8,32 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {}
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "checkbox_show_announcement_bar": true,
+          "nav_menu": "gb-header-nav",
+          "collection_search_bestseller": "",
+          "collection_search_bestseller_limit": 6
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "nav_menu": "gb-footer-nav",
+          "socials_menu": "gb-socials",
+          "textarea_text": "At Gridbase, we're constantly seeking to <br>demystify and excite innovation for internal<br>alternatives. We leverage decentralized<br>technology to provide security, capability,<br>and more freedom to our customers.",
+          "text_contact": "info@gridbase.net",
+          "text_brand_name": "GRIDBASE",
+          "url_refund_policy_url": "",
+          "url_privacy_policy_url": "",
+          "url_terms_of_service_url": "",
+          "url_contact_url": ""
+        }
+      }
+    },
+    "content_for_index": []
+  }
 }
