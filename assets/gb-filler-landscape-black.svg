@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="381.1" height="195.95" viewBox="0 0 381.1 195.95">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #161616;
+        stroke-miterlimit: 10;
+        stroke-width: .48px;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="Layer 1">
+    <g>
+      <rect class="d" x=".24" y=".24" width="380.61" height="195.47" rx="1.02" ry="1.02"/>
+      <polyline class="d" points=".24 178.82 127.78 75.56 259.23 182 320.1 132.71 380.4 181.53"/>
+      <path class="d" d="M322.65.24c5.09,8.96,8,19.32,8,30.36,0,33.98-27.55,61.53-61.53,61.53s-61.53-27.55-61.53-61.53c0-11.04,2.91-21.4,8-30.36"/>
+    </g>
+  </g>
+</svg>

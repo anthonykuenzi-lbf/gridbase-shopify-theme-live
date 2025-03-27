@@ -1,0 +1,37 @@
+<div class="w-embed"></div>
+<div class="w-embed"></div>
+<div class="footer"><div class="footer-nav-wrapper-1"><a href="../index.html" class="w-inline-block"><img loading="lazy" src="{{ 'gridbase-wordmark-footer.svg' | asset_url }}" alt="" class="logo">
+</a><div class="footer-nav-wrapper-2"><div class="footer-nav-wrapper-3"><div class="footer-form w-form">{% form 'customer', class: 'form' %}
+<div class="style-overide w-embed"><style>.w-input{
+color:#e4e5df;
+}
+</style></div><input class="footer-text-field w-input" maxlength="256" name="contact[email]" data-name="Email 2" placeholder="Email-Comms" type="email" id="email-2" required="">
+<input type="submit" data-wait="Please wait..." class="footer-links w-button" value="Subscribe">
+{% endform %}
+<div class="success-message-2 w-form-done"><div class="footer-text">Thank you! Your submission has been received!</div></div><div class="error-message-2 w-form-fail"><div class="footer-text">Oops! Something went wrong while submitting the form.</div></div></div><p class="footer-text light"> {{ section.settings.textarea_text }} </p>
+</div><div class="footer-wrapper-4"><div class="footer-nav-list">{% for link in linklists[section.settings.nav_menu].links %}    <div li-for="link in linklists[section.settings.nav_menu].links" class="footer-nav-list-item">
+                                    
+                            <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="footer-links">{{ link.title }}</a>
+                            
+                        </div>
+{% endfor %}</div><div class="footer-nav-list">{% for link in linklists[section.settings.socials_menu].links %}    <div li-for="link in linklists[section.settings.socials_menu].links" class="footer-nav-list-item">
+                                    
+                            <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="footer-links">{{ link.title }}</a>
+                            
+                        </div>
+{% endfor %}</div></div></div><p class="footer-text light contact">
+{{ section.settings.text_contact }}
+</p>
+</div><div class="company-info-wrapper"><p class="footer-links copyright">© <span class="current-year">XXXX</span>, <a href="#" class="footer-links" href="#">
+{{ section.settings.text_brand_name }}
+</a>
+| <a href="{{ section.settings.url_refund_policy_url }}" class="footer-links"> Refund Policy </a>
+| <a href="{{ section.settings.url_privacy_policy_url }}" class="footer-links"> Privacy Policy </a>
+| <a href="{{ section.settings.url_terms_of_service_url }}" class="footer-links"> Terms of Service </a>
+| <a href="{{ section.settings.url_contact_url }}" class="footer-links"> Contact </a>
+</p></div></div><div class="footer_divider"></div><ul role="list" class="footer_payment-list w-list-unstyled">{% for type in shop.enabled_payment_types %}    <li li-for="type in shop.enabled_payment_types" class="footer_payment-item">
+                                    
+                            <div li-object="type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color'" class="footer_payment-svg">{{ type | payment_type_svg_tag: class: 'footer_payment-img icon--full-color' }}</div>
+                            
+                        </li>
+{% endfor %}</ul> {% schema %} {"tag":"footer","name":"footer","class":"section_footer","settings":[{"type":"link_list","id":"nav_menu","label":"Navigation","default":"footer"},{"type":"link_list","id":"socials_menu","label":"Socials","default":"footer"},{"id":"textarea_text","type":"textarea","label":"text","default":"At Gridbase, we're constantly seeking to <br\/>demystify and excite innovation for internal<br\/>alternatives. We leverage decentralized<br\/>technology to provide security, capability,<br\/>and more freedom to our customers."},{"id":"text_contact","type":"text","label":"contact","default":"info@gridbase.net"},{"id":"text_brand_name","type":"text","label":"Brand Name","default":"GRIDBASE"},{"id":"url_refund_policy_url","type":"url","label":"Refund Policy URL"},{"id":"url_privacy_policy_url","type":"url","label":"Privacy Policy URL"},{"id":"url_terms_of_service_url","type":"url","label":"Terms of Service URL"},{"id":"url_contact_url","type":"url","label":"Contact URL"}],"presets":[{"name":"footer","category":"Liquify","blocks":[]}]} {% endschema %}

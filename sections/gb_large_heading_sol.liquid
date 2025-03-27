@@ -1,0 +1,6 @@
+<h1 class="h1"> {{ section.settings.textarea_headline }} </h1>
+{% if section.settings.checkbox_show_buttons == true %}
+<div class="buton-bulti-wrapper-2"><a href="{{ section.settings.url_button_1_url }}" class="button-gb black w-button"> {{ section.settings.text_button_1_text }} </a>
+<p class="p1-7">or</p><a href="{{ section.settings.url_button_2_url }}" class="button-gb black w-button"> {{ section.settings.text_button_2_text }} </a>
+</div>{% endif %}
+ {% schema %} {"tag":"section","name":"gb-large-heading-sol","class":"section large-heading-solo","settings":[{"id":"textarea_headline","type":"textarea","label":"Headline","default":"Our team is composed of talented silent professionals who thrive off of solving evolving problems in a rapidly changing industry."},{"id":"checkbox_show_buttons","type":"checkbox","label":"Show Buttons","default":true},{"id":"url_button_1_url","type":"url","label":"Button 1 URL"},{"id":"text_button_1_text","type":"text","label":"Button 1 Text","default":"Reach Out"},{"id":"text_button_2_text","type":"text","label":"Button 2 Text","default":"Book a Class"},{"id":"url_button_2_url","type":"url","label":"Button 2 URL"}],"presets":[{"name":"gb-large-heading-sol","category":"Liquify","blocks":[]}]} {% endschema %}

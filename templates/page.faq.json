@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "gb_faq": {
+            "type": "gb_faq"
+        }
+    },
+    "layout": "page.faq",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "gb_faq"
+    ]
+}

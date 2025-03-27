@@ -1,0 +1,40 @@
+<div class="faq-section-grid"><div class="faq-title-column"><div class="faq-title-info-wrapper"><p class="p1-6 bold"> {{ section.settings.textarea_title }} </p>
+<div class="line dark"></div><div class="p1"> {{ section.settings.richtext_text }} </div>
+<img loading="lazy" alt="{{ section.settings.image_illustration.alt }}" src="{{ section.settings.image_illustration | img_url: 'master' }}" class="faq-illustrations">
+</div></div><div id="pocketfaq" class="faq-accordian-column w-node-bba8fbb4-0ffd-8713-e1ae-9bacf8fe27ed-dd504652"><div class="faq-list-wrapper"><div class="faq-list">{% for block in section.blocks %}
+    {% if block.type == "faq-item" %}
+                    <div li-block="faq-item" class="faq-item">
+                                    
+                                    <div class="accordian-item-wrapper"><div data-delay="0" data-hover="false" data-w-id="89c41e0d-1a71-6632-1b9d-ee7cbdbe0de0" class="accordian-item w-dropdown"><div class="accordian-toggle w-dropdown-toggle"><div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordian-icon w-icon-dropdown-toggle"></div><div class="accordian-title-wrapper"><div class="acordian-number-wrapper"><div class="p1-6 bold">
+{{ block.settings.text_number }}
+</div>
+<div class="p1-6 bold">.</div></div><div class="p1-6 bold">
+{{ block.settings.text_question }}
+</div>
+</div></div><nav style="height:0px" class="accordian-body-wrapper w-dropdown-list"><div class="rich-text-block w-richtext"> {{ block.settings.richtext_answer }} </div>
+</nav></div><div class="accordian-line"></div></div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+</div></div></div></div><div class="breakpoints-overide w-embed"><style>/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+.faq-section-grid{
+grid-template-columns: 1fr 1fr 1fr;
+}
+.faq-accordian-column{
+ grid-column: 2 / span 2;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+.faq-section-grid{
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.faq-accordian-column{
+grid-column: 2 / span 3;
+}
+}
+</style></div> {% schema %} {"tag":"section","name":"gb-faq","class":"section faq","blocks":[{"name":"faq-item","type":"faq-item","settings":[{"id":"text_number","type":"text","label":"number","default":"1"},{"id":"text_question","type":"text","label":"Question","default":"How does Pocket work?"},{"id":"richtext_answer","type":"richtext","label":"Answer","default":"<p>\n                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                        <\/p>"}]}],"settings":[{"id":"textarea_title","type":"textarea","label":"Title","default":"A. Pocket"},{"id":"richtext_text","type":"richtext","label":"Text","default":"<p>Complete, off-line ownership over their survival library. It\u2019s a compact, portable, and secure database that operates independently of cell towers or satellites, requiring no pesky updates, subscriptions or external connections.<\/p>"},{"id":"image_illustration","type":"image_picker","label":"Illustration"}],"presets":[{"name":"gb-faq","category":"Liquify","blocks":[{"type":"faq-item"}]}]} {% endschema %}

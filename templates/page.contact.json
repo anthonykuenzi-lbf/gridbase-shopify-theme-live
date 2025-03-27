@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "contact": {
+            "type": "contact"
+        },
+        "gb_contact": {
+            "type": "gb_contact"
+        }
+    },
+    "layout": "page.contact",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "contact",
+        "gb_contact"
+    ]
+}

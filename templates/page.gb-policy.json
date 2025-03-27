@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "gb_policy": {
+            "type": "gb_policy"
+        }
+    },
+    "layout": "page.gb-policy",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "gb_policy"
+    ]
+}

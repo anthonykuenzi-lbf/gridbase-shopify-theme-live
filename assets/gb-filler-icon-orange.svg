@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="18.14" height="22.43" viewBox="0 0 18.14 22.43">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #ff661a;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="Layer 1">
+    <g>
+      <polyline class="d" points="12.93 .5 12.94 5.2 17.64 5.22"/>
+      <polygon class="d" points="12.93 .5 .5 .5 .5 21.93 17.64 21.93 17.64 5.22 12.93 .5"/>
+      <g>
+        <polyline class="d" points=".5 17.81 6.25 12.06 12.18 17.99 14.92 15.25 17.64 17.96"/>
+        <circle class="d" cx="12.62" cy="10.6" r="2.77"/>
+      </g>
+    </g>
+  </g>
+</svg>

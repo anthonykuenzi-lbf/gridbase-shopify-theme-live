@@ -1,0 +1,256 @@
+<div class="breakpoints-overide w-embed"><style>/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+.faq-section-grid{
+grid-template-columns: 1fr 1fr 1fr;
+}
+.faq-accordian-column{
+ grid-column: 2 / span 2;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+.faq-section-grid{
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.faq-accordian-column{
+grid-column: 2 / span 3;
+}
+}
+</style></div><div class="faq-section-grid"><div class="rss-feed-column-wrapper"><div class="rss-scroll-wrapper"><div class="podcast-title-wrapper"><h1 class="h2">Podcast:<br>
+GRIDBASED</h1><div class="line dark"></div><p class="p1">Listen on:<br>
+<a href="https://feeds.buzzsprout.com/2314595.rss">RSS</a>| <a href="https://open.spotify.com/show/3lfS7Dfs8NAV6SAIHmtH9H">Spotify</a><br>
+‍<br>
+‍Or search "GRIDBASED" in your preferred<br>
+podcast streaming service.
+                </p></div><div class="rss-feed-code w-embed w-script"><div id="podcast-feed" class="podcast-feed"><!--  RSS Feed items will be dynamically loaded here  -->
+</div><div id="load-more-container" style="text-align: center; margin-top: 20px; display: none;"><button id="load-more-button" class="button-gb black">Load More Episodes</button></div><style>/* Custom audio player styling */
+    .podcast-audio {
+        margin-top: 16px;
+        background-color: transparent;
+    }
+    /* Webkit (Chrome, Safari) audio player styling */
+    .podcast-audio::-webkit-media-controls-enclosure {
+        background-color: transparent;
+    }
+    /* Firefox audio player styling */
+    .podcast-audio::-moz-range-track {
+        background-color: transparent;
+    }
+    /* Description styling */
+    .description-container {
+        position: relative;
+        overflow: hidden;
+    }
+    .description-preview {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 4px;
+    }
+    .description-full {
+        display: none;
+    }
+</style><script>/**
+ * CSS Class Reference:
+ * 
+ * Parent Container:
+ * - .podcast-feed       : Wrapper for entire feed collection
+ * 
+ * Individual Podcast Item Classes:
+ * - .podcast-item       : Container for each individual podcast episode
+ * - .podcast-title      : Styles for the episode title
+ * - .podcast-description: Styles for the episode description text
+ * - .podcast-audio      : Styles for the audio player
+ * - .podcast-date       : Styles for the publication date
+ * 
+ * Custom Data Attributes:
+ * - data-episode-id     : Unique identifier for the podcast episode
+ * - data-audio-url      : Direct link to the audio file
+ * - data-publish-date   : Original publication timestamp
+ */
+// Store all podcast items
+let allPodcastItems = [];
+// Number of items to show initially and with each "Load More" click
+const itemsPerLoad = 2;
+// Track the current number of loaded items
+let loadedItemsCount = 0;
+/**
+ * Format date to a shorter, more readable format
+ * @param {string} dateString - Original date string
+ * @returns {string} Formatted date string
+ */
+function formatShortDate(dateString) {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    const options = { 
+        month: 'short', 
+        day: 'numeric', 
+        year: 'numeric' 
+    };
+    return date.toLocaleDateString('en-US', options);
+}
+/**
+ * Convert plain text links to clickable hyperlinks
+ * @param {string} text - Original text containing plain URLs
+ * @returns {string} Text with converted hyperlinks
+ */
+function convertLinks(text) {
+    // Convert instagr.am links
+    text = text.replace(/instagr\.am\/([a-zA-Z0-9_]+)/g, function(match, username) {
+        return `<a href="https://www.instagram.com/${username}" target="_blank">instagr.am/${username}</a>`;
+    });
+    // Convert gridbase.net links
+    text = text.replace(/www\.gridbase\.net/g, function(match) {
+        return `<a href="https://www.gridbase.net" target="_blank">gridbase.net</a>`;
+    });
+    // Convert Patreon links
+    text = text.replace(/www\.patreon\.com\/gridbase/g, function(match) {
+        return `<a href="https://www.patreon.com/gridbase" target="_blank">patreon.com/gridbase</a>`;
+    });
+    return text;
+}
+/**
+ * Create podcast item element
+ * @param {Object} data - Podcast episode data
+ * @param {number} index - Index of the episode
+ * @returns {HTMLElement} Podcast item element
+ */
+function createPodcastItem(data, index) {
+    const { guid, title, description, audioUrl, pubDate } = data;
+    const episodeId = guid || `episode-${index}`;
+    // Create podcast item element
+    const podcastItem = document.createElement('div');
+    podcastItem.className = 'podcast-item';
+    // Add custom data attributes
+    podcastItem.setAttribute('data-episode-id', episodeId);
+    if (audioUrl) {
+        podcastItem.setAttribute('data-audio-url', audioUrl);
+    }
+    if (pubDate) {
+        podcastItem.setAttribute('data-publish-date', new Date(pubDate).toISOString());
+    }
+    // Convert links in description
+    const processedDescription = convertLinks(description || 'No description available');
+    podcastItem.innerHTML = `
+        <div class="p1 bold podcast">${title || 'Untitled Episode'}</div>
+        <div class="podcast-date">Gridbased ${formatShortDate(pubDate)}</div>
+        <div class="p1 podcast description-container">
+            <div id="preview-${episodeId}" class="description-preview">${processedDescription}</div>
+            <div id="full-${episodeId}" class="description-full">${processedDescription}</div>
+            <a href="#" id="toggle-${episodeId}" data-episode-id="${episodeId}">Read More...</a>
+        </div>
+        ${audioUrl ? `
+            <audio controls class="podcast-audio">
+                <source src="${audioUrl}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            
+        ` : ''}
+    `;
+    // Add event listener to the toggle button after the element is created
+    setTimeout(() => {
+        const toggleButton = podcastItem.querySelector(`a[data-episode-id="${episodeId}"]`);
+        if (toggleButton) {
+            toggleButton.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent the default anchor behavior
+                const id = this.getAttribute('data-episode-id');
+                const previewElement = document.getElementById(`preview-${id}`);
+                const fullElement = document.getElementById(`full-${id}`);
+                if (fullElement.style.display === 'none' || fullElement.style.display === '') {
+                    previewElement.style.display = 'none';
+                    fullElement.style.display = 'block';
+                    this.innerText = 'Show Less';
+                } else {
+                    previewElement.style.display = '-webkit-box';
+                    fullElement.style.display = 'none';
+                    this.innerText = 'Read More...';
+                }
+            });
+        }
+    }, 0);
+    return podcastItem;
+}
+/**
+ * Load more podcast items
+ */
+function loadMoreItems() {
+    const feedContainer = document.getElementById('podcast-feed');
+    const endIndex = Math.min(loadedItemsCount + itemsPerLoad, allPodcastItems.length);
+    for (let i = loadedItemsCount; i < endIndex; i++) {
+        feedContainer.appendChild(createPodcastItem(allPodcastItems[i], i));
+    }
+    loadedItemsCount = endIndex;
+    // Hide the "Load More" button if all items are loaded
+    if (loadedItemsCount >= allPodcastItems.length) {
+        document.getElementById('load-more-container').style.display = 'none';
+    }
+}
+async function fetchRSSFeed() {
+    try {
+        // Cors proxy to handle cross-origin requests
+        const corsProxy = 'https://api.allorigins.win/raw?url=';
+        const rssFeedUrl = 'https://feeds.buzzsprout.com/2314595.rss';
+        const response = await fetch(corsProxy + encodeURIComponent(rssFeedUrl));
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const text = await response.text();
+        // Parse the XML
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(text, 'text/xml');
+        // Get all channel items
+        const items = xmlDoc.querySelectorAll('item');
+        // Clear array to prevent duplicates if function is called multiple times
+        allPodcastItems = [];
+        // Process all items and store them
+        items.forEach((item, index) => {
+            // Extract podcast details
+            const guid = item.querySelector('guid')?.textContent;
+            const title = item.querySelector('title')?.textContent;
+            const description = item.querySelector('description')?.textContent;
+            const audioUrl = item.querySelector('enclosure')?.getAttribute('url');
+            const pubDate = item.querySelector('pubDate')?.textContent;
+            // Store item data
+            allPodcastItems.push({
+                guid,
+                title,
+                description,
+                audioUrl,
+                pubDate
+            });
+        });
+        // Load initial items
+        loadMoreItems();
+        // Show the "Load More" button if there are more items to load
+        if (allPodcastItems.length > itemsPerLoad) {
+            document.getElementById('load-more-container').style.display = 'block';
+        }
+    } catch (error) {
+        console.error('Error fetching RSS feed:', error);
+        document.getElementById('podcast-feed').innerHTML = 'Unable to load podcast feed. Error: ' + error.message;
+    }
+}
+// Set up event listener for the "Load More" button after DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('load-more-button').addEventListener('click', loadMoreItems);
+    // Fetch RSS feed when page loads
+    fetchRSSFeed();
+});
+</script></div></div></div><div id="pocketfaq" class="faq-accordian-column w-node-_2420851a-110c-1af7-5623-441a25854b5d-344a6dfb"><div class="blog_cms-wrapper w-dyn-list">{% if blog.articles != blank %}    <div li-if="blog.articles != blank" role="list" class="blog_list hq w-dyn-items">
+    {% for article in blog.articles %}    <div li-for="article in blog.articles" role="listitem" class="blog_cms-item hq w-dyn-item">
+                                    
+                            <a li-object:href="article.url" href="{{ article.url }}" class="blog_item-grid w-inline-block"><div id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7be-4b06a7bd" class="blog_tags-wrapper"><img src="{{ article.image | img_url: 'master' }}" loading="lazy" id="w-node-c45bff24-6242-fee4-5061-f2f14b06a7bf-4b06a7bd" li-object:src="article.image | img_url: 'master'" alt="{{ article.image.alt }}" li-object:alt="article.image.alt" class="blog_img">
+<div class="blog_tag-row">{% for tag in article.tags %}    <div li-for="tag in article.tags" class="blog_tag">
+                                    
+                            <div li-object="tag">{{ tag }}</div>
+                            
+                        </div>
+{% endfor %}</div></div><div class="blog_info-wrapper"><h3 li-object="article.title" class="h3 blog-title">{{ article.title }}</h3><div li-object="article.created_at | date: '%B %d, %Y'" class="blog-date">{{ article.created_at | date: '%B %d, %Y' }}</div></div></a>
+                            
+                        </div>
+{% endfor %}    </div>
+{% endif %}{% if blog.articles == blank %}    <div li-if="blog.articles == blank" class="blog_cms-empty w-dyn-empty">
+    <div class="h3">No blog items found.</div>    </div>
+{% endif %}</div></div></div><div ms-code-rss-limit="9" ms-code-rss-feed="" ms-code-rss-feed-url="https://rss.app/feeds/YWhOowpxqpWOILb3.xml" class="podcast-feed"><div ms-code-rss-link="" ms-code-rss-item="" class="podcast-item hide"><div ms-code-rss-title-length="40" ms-code-rss-title="" class="p1 bold podcast">Title</div><div ms-code-rss-date-format="short" ms-code-rss-date="" class="podcast-date">Date</div><div ms-code-rss-description-length="150" ms-code-rss-description="" class="p1 podcast">Description</div><a href="#" class="button-gb black w-button">Load More</a><div class="podcast-audio"></div></div></div> {% schema %} {"tag":"section","name":"gb-blog","class":"section hq","presets":[{"name":"gb-blog","category":"Liquify","blocks":[]}]} {% endschema %}

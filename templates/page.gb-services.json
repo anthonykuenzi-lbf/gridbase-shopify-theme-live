@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "gb_large_heading_solo": {
+            "type": "gb_large_heading_solo"
+        },
+        "gb_services": {
+            "type": "gb_services"
+        }
+    },
+    "layout": "page.gb-services",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "gb_large_heading_solo",
+        "gb_services"
+    ]
+}

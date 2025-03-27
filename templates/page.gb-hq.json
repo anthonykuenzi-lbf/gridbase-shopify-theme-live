@@ -1,0 +1,12 @@
+{
+    "sections": {
+        "gb_blog": {
+            "type": "gb_blog"
+        }
+    },
+    "layout": "page.gb-hq",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "gb_blog"
+    ]
+}
