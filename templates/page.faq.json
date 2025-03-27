@@ -101,12 +101,21 @@
             "text_question": "What are some common applications or tasks that can be performed on an off-grid computer?",
             "richtext_answer": "<p>Some common applications and tasks that can be performed on an off-grid computer include word processing, data analysis, programming, and multimedia editing. In addition, specialized software can be used to run simulations, control sensors and other devices such as SDR & GPS, and perform other tasks related to survival, sigint, special awareness and more.</p>"
           }
+        },
+        "faq_item_3NrnKG": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "4",
+            "text_question": "Can an off-grid computer be used for internet browsing or accessing online content?",
+            "richtext_answer": "<p>When internet is available, It may be used to browse the internet in a traditional fashion.</p>"
+          }
         }
       },
       "block_order": [
         "faq_item_GUNB9g",
         "faq_item_abniQy",
-        "faq_item_7yC7E9"
+        "faq_item_7yC7E9",
+        "faq_item_3NrnKG"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
