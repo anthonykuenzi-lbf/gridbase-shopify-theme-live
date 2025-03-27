@@ -205,6 +205,14 @@
             "text_question": "Why would I use it closed?",
             "richtext_answer": "<ul><li>If you were at a campsite or in a cabin with other people, you could leave it plugged in somewhere and it would just act as a personal server for people to access at will</li></ul><p></p><ul><li>Guests can only access the repositories, so your personal data can’t be touched by guests. </li></ul>"
           }
+        },
+        "faq_item_MXV6mh": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "17",
+            "text_question": "Can I add to the repositories?",
+            "richtext_answer": "<ul><li>At this time, that is not a functionality of the device. We are actively working on a “build-your-own” repository app but that will take time to develop</li></ul><p></p><ul><li>You can always download desired items to store personally on your desktop, they just wouldn’t be sharable on the local server. </li></ul>"
+          }
         }
       },
       "block_order": [
@@ -223,7 +231,8 @@
         "faq_item_GMHfPq",
         "faq_item_LFAPmJ",
         "faq_item_8jcKGb",
-        "faq_item_GMLXQg"
+        "faq_item_GMLXQg",
+        "faq_item_MXV6mh"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
