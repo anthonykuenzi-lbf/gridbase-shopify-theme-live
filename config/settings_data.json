@@ -27,10 +27,10 @@
           "textarea_text": "At Gridbase, we're constantly seeking to <br>demystify and excite innovation for internal<br>alternatives. We leverage decentralized<br>technology to provide security, capability,<br>and more freedom to our customers.",
           "text_contact": "info@gridbase.net",
           "text_brand_name": "GRIDBASE",
-          "url_refund_policy_url": "",
-          "url_privacy_policy_url": "",
-          "url_terms_of_service_url": "",
-          "url_contact_url": ""
+          "url_refund_policy_url": "shopify://policies/refund-policy",
+          "url_privacy_policy_url": "shopify://policies/privacy-policy",
+          "url_terms_of_service_url": "shopify://policies/terms-of-service",
+          "url_contact_url": "shopify://pages/contactx"
         }
       }
     },
