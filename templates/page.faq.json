@@ -39,9 +39,9 @@
         "faq_item_RGDVcf": {
           "type": "faq-item",
           "settings": {
-            "text_number": "1",
-            "text_question": "How does Pocket work?",
-            "richtext_answer": "<p><br/>                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                        </p>"
+            "text_number": "4",
+            "text_question": "Is Pocket EMP-hardened?",
+            "richtext_answer": "<p>Due to its Wi-Fi broadcasting functionality, Pocket cannot be intrinsically EMP-hardened; However, its design allows it to fit easily into various Faraday bags for added protection. We recommend SLNT for optimal storage and shielding.</p>"
           }
         },
         "faq_item_WQxW6t": {
