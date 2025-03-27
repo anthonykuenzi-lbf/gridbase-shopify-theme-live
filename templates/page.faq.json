@@ -141,6 +141,14 @@
             "text_question": "Can an off-grid computer be used in remote locations or areas with no access to traditional power sources?",
             "richtext_answer": "<p>Yes, an off-grid computer can be particularly useful in remote locations or areas with no access to traditional power sources or internet infrastructure. It can provide otherwise unavailable information in a time when information is needed. Y'know. Sustainment. </p>"
           }
+        },
+        "faq_item_TPW9An": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "9",
+            "text_question": "What are some potential privacy or security benefits of using an off-grid computer?",
+            "richtext_answer": "<p>Using an off-grid computer can provide increased privacy and security by enabling users to operate independently of online networks and servers. This can make it more difficult for outside parties to intercept or monitor communications, access sensitive data, or launch cyber attacks.</p>"
+          }
         }
       },
       "block_order": [
@@ -151,7 +159,8 @@
         "faq_item_7ArJNd",
         "faq_item_LpUh6c",
         "faq_item_FbPzDw",
-        "faq_item_YxmLnr"
+        "faq_item_YxmLnr",
+        "faq_item_TPW9An"
       ],
       "settings": {
         "textarea_title": "B. Base Station",
