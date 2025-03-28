@@ -1,10 +1,11 @@
-<div class="w-embed w-script">{% comment %}
-          Services Grid Script Tag - No Data Indexes Required
-          Usage: Include this script in any section that needs the services grid functionality.
-          The script matches bullet items with slides based on their position in the DOM,
-          eliminating the need for data-index attributes.
-          {% endcomment %}
-          <script>(function() {
+<div class="w-embed w-script">
+  {% comment %}
+    Services Grid Script Tag - No Data Indexes Required
+    Usage: Include this script in any section that needs the services grid functionality.
+    The script matches bullet items with slides based on their position in the DOM,
+    eliminating the need for data-index attributes.
+  {% endcomment %}
+  <script>(function() {
     // Get section settings if available
     const sectionId = '{{ section.id | escape }}';
     const sectionConfig = {
@@ -159,40 +160,51 @@
       });
     });
   })();
-</script></div><div class="services-grid"><div class="service-bullet-column"><div class="service-bullet-list-wrapper"><div class="service-bullet-list">{% for block in section.blocks %}
-    {% if block.type == "service-item-block" %}
-                    <div li-block="Service-Item-Block" class="service-bullet-item">
-                                    
-                                    <div class="setting-block w-embed"></div>
-
-                                    
-                                    <div class="setting-block w-embed"></div>
-
-                                    
-                                    <div class="setting-block w-embed"></div>
-
-                                    
-                                    <div class="service-bullets"> {{ block.settings.textarea_service_item_text }} </div>
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-</div></div><p class="p1 services"> {{ section.settings.textarea_service_sub_text }} </p>
-</div><div class="service-bullet-slide-wrapper">{% for block in section.blocks %}
-    {% if block.type == "service-item-block" %}
-                    <div li-block="Service-Item-Block" class="service-bullet-slide">
-                                    
-                                    <div class="service-bullet-slide-image--wrapper"><img src="{{ block.settings.image_block_image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.image_block_image.alt }}" class="service-bullet-slide-image">
+  </script>
 </div>
-                                    
-                                    <div class="service-type-wrapper"><p class="service-slide-description caps"> {{ block.settings.textarea_service_item_type }} </p>
-</div>
-                                    
-                                    <p class="service-slide-description"> {{ block.settings.textarea_service_item_description }} </p>
+<div class="services-grid">
+  <div class="service-bullet-column">
+    <div class="service-bullet-list-wrapper">
+      <div class="service-bullet-list">
+        {% for block in section.blocks %}
+          {% if block.type == 'service-item-block' %}
+            <div li-block="Service-Item-Block" class="service-bullet-item">
+              <div class="setting-block w-embed"></div>
 
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-</div></div> {% schema %} {"tag":"section","name":"gb-services","class":"section gb-services","blocks":[{"name":"Service-Item-Block","type":"service-item-block","settings":[{"id":"block_image","type":"image_picker","label":"Image"},{"id":"textarea_service_item_type","type":"textarea","label":"Service-Item-Type","default":"Type"},{"id":"textarea_service_item_description","type":"textarea","label":"Service-Item-Description","default":"Lorem Ipsum Dolor"},{"id":"textarea_service_item_text","type":"textarea","label":"Service-Item-Text","default":"Radio &amp; Comms Workshops"}]}],"settings":[{"id":"textarea_service_sub_text","type":"textarea","label":"Service Sub Text","default":"Nothing we have ever done has been intended to be a \u201cone size fits all\u201d solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and\u00a0solved."}],"presets":[{"name":"gb-services","category":"Liquify","blocks":[{"type":"service-item-block"}]}]} {% endschema %}
+              <div class="setting-block w-embed"></div>
+
+              <div class="setting-block w-embed"></div>
+
+              <div class="service-bullets">{{ block.settings.textarea_service_item_text }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <p class="p1 services">{{ section.settings.textarea_service_sub_text }}</p>
+  </div>
+  <div class="service-bullet-slide-wrapper">
+    {% for block in section.blocks %}
+      {% if block.type == 'service-item-block' %}
+        <div li-block="Service-Item-Block" class="service-bullet-slide">
+          <div class="service-bullet-slide-image--wrapper">
+            <img
+              src="{{ block.settings.image_block_image | img_url: 'master' }}"
+              loading="lazy"
+              alt="{{ block.settings.image_block_image.alt }}"
+              class="service-bullet-slide-image"
+            >
+          </div>
+
+          <div class="service-type-wrapper">
+            <p class="service-slide-description caps">{{ block.settings.textarea_service_item_type }}</p>
+          </div>
+
+          <p class="service-slide-description">{{ block.settings.textarea_service_item_description }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %} {"tag":"section","name":"gb-services","class":"section gb-services","blocks":[{"name":"Service-Item-Block","type":"service-item-block","settings":[{"id":"block_image","type":"image_picker","label":"Image"},{"id":"textarea_service_item_type","type":"textarea","label":"Service-Item-Type","default":"Type"},{"id":"textarea_service_item_description","type":"textarea","label":"Service-Item-Description","default":"Lorem Ipsum Dolor"},{"id":"textarea_service_item_text","type":"textarea","label":"Service-Item-Text","default":"Radio &amp; Comms Workshops"}]}],"settings":[{"id":"textarea_service_sub_text","type":"textarea","label":"Service Sub Text","default":"Nothing we have ever done has been intended to be a \u201cone size fits all\u201d solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and\u00a0solved."}],"presets":[{"name":"gb-services","category":"Liquify","blocks":[{"type":"service-item-block"}]}]} {% endschema %}
