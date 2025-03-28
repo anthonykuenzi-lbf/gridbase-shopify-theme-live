@@ -26,7 +26,7 @@
         "service_item_block_RPnERc": {
           "type": "service-item-block",
           "settings": {
-            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
+            "block_image": "shopify://shop_images/gridbase_DSC7426.webp",
             "textarea_service_item_type": "Class",
             "textarea_service_item_description": "Hands-on training in ham radio, emergency comms, and secure messaging to build self-reliant communication skills for any scenario.",
             "textarea_service_item_text": "Radio &amp; Comms Workshops"
@@ -71,7 +71,7 @@
         "service_item_block_R6cia9": {
           "type": "service-item-block",
           "settings": {
-            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
+            "block_image": "shopify://shop_images/gridbase_A7400061.webp",
             "textarea_service_item_type": "Consulting",
             "textarea_service_item_description": "Description - Expert guidance on secure, resilient communication setups, from emergency preparedness to decentralized networking solutions for businesses and individuals.",
             "textarea_service_item_text": "Communication Consulting"
