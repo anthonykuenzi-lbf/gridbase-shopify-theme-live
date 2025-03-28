@@ -17,7 +17,8 @@
           "settings": {
             "textarea_block_title": "01 - Custom Built Cyberdecks.",
             "checkbox_show_image": true,
-            "richtext_block_text": "<p>Tailored to your specific requirements, our custom-built cyberdecks offer cutting-edge computing power for your unique&nbspneeds.</p>"
+            "image_block_image": "shopify://shop_images/gb-projects-cyberdeck-banner.webp",
+            "richtext_block_text": "<p>Tailored to your specific requirements, our custom-built cyberdecks offer cutting-edge computing power for your unique needs.</p>"
           }
         },
         "block_nCEjr3": {
@@ -32,8 +33,8 @@
           "type": "block",
           "settings": {
             "textarea_block_title": "03 - SDR-Driven Police Scanner.",
-            "checkbox_show_image": true,
-            "richtext_block_text": "<p><a href=\"https://gridbasedotnet.radio12345.com/\"><span style=\"text-decoration:underline\">Gain insights</span></a> into your community with our SDR-driven police scanner, available for public listening to promote transparency and awareness. Here, we are listening to the North Texas Interoperable Radio Network, which covers essentially all of North Texas' dispatch for Police, Ambulatory Services, Fire,&nbsp&&nbspmore.</p>"
+            "checkbox_show_image": false,
+            "richtext_block_text": "<p><a href=\"https://gridbasedotnet.radio12345.com/\"><span style=\"text-decoration:underline\">Gain insights</span></a> into your community with our SDR-driven police scanner, available for public listening to promote transparency and awareness. Here, we are listening to the North Texas Interoperable Radio Network, which covers essentially all of North Texas' dispatch for Police, Ambulatory Services, Fire, & more.</p>"
           }
         }
       },
