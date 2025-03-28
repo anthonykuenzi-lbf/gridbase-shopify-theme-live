@@ -179,8 +179,9 @@
 </div><div class="service-bullet-slide-wrapper">{% for block in section.blocks %}
     {% if block.type == "service-item-block" %}
                     <div li-block="Service-Item-Block" class="service-bullet-slide">
-                                    <img src="{{ block.settings.image_banner_image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.image_banner_image.alt }}" class="service-bullet-slide-image">
-
+                                    
+                                    <div class="service-bullet-slide-image--wrapper"><img src="{{ block.settings.image_block_image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.image_block_image.alt }}" class="service-bullet-slide-image">
+</div>
                                     
                                     <div class="service-type-wrapper"><p class="service-slide-description caps"> {{ block.settings.textarea_service_item_type }} </p>
 </div>
