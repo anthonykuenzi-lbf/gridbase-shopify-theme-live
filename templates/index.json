@@ -41,11 +41,11 @@
       "settings": {
         "textarea_headline": "Where would<br>I use this?",
         "richtext_text": "<p>Pocket can be deployed anywhere, anytime. Some of our customers enjoy using Pocket on a plane when there is no inflight wi-fi; Others use it in their off-grid cabins. There is really no end to the uses Pocket could have but it shines most when access to traditional internet is limited or not permitted.</p>",
-        "text_button_1_text": "Dirty Civilian",
         "url_button_1_url": "",
-        "url_button_2_url": "",
+        "text_button_1_text": "Dirty Civilian",
         "text_button_2_text": "TREX Labs",
-        "image_banner_image": "shopify://shop_images/FullSizeRender.heic"
+        "url_button_2_url": "",
+        "image_banner_image": "shopify://shop_images/IMG_6684.jpg"
       }
     },
     "gb_brand_values_FXWCqf": {
