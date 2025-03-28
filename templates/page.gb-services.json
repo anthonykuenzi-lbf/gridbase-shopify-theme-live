@@ -26,6 +26,7 @@
         "service_item_block_RPnERc": {
           "type": "service-item-block",
           "settings": {
+            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
             "textarea_service_item_type": "Class",
             "textarea_service_item_description": "Hands-on training in ham radio, emergency comms, and secure messaging to build self-reliant communication skills for any scenario.",
             "textarea_service_item_text": "Radio &amp; Comms Workshops"
@@ -81,7 +82,7 @@
         "service_item_block_R6cia9"
       ],
       "settings": {
-        "richtext_service_sub_text": "<p>Nothing we have ever done has been intended to be a “one size fits all” solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and solved.</p>"
+        "textarea_service_sub_text": "Nothing we have ever done has been intended to be a “one size fits all” solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and solved."
       }
     }
   },
