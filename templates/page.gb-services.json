@@ -35,6 +35,7 @@
         "service_item_block_9UmPeb": {
           "type": "service-item-block",
           "settings": {
+            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
             "textarea_service_item_type": "Custom Install",
             "textarea_service_item_description": "Decentralized, censorship-resistant internet options using mesh networks, satellite, and peer-to-peer systems for private and resilient connectivity.",
             "textarea_service_item_text": "Alternative internet solutions"
@@ -43,6 +44,7 @@
         "service_item_block_MLApyi": {
           "type": "service-item-block",
           "settings": {
+            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
             "textarea_service_item_type": "Consulting",
             "textarea_service_item_description": "Discreet security tools for intelligence gathering, counter-surveillance, and situational awareness in high-risk environments.",
             "textarea_service_item_text": "Surveillance & covert devices"
@@ -51,6 +53,7 @@
         "service_item_block_DCrcYi": {
           "type": "service-item-block",
           "settings": {
+            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
             "textarea_service_item_type": "Consulting",
             "textarea_service_item_description": "Advanced counter-surveillance solutions to detect and prevent unauthorized monitoring. Protect sensitive communications, mitigate espionage risks, and enhance security with cutting-edge technology designed for high-risk environments.",
             "textarea_service_item_text": "Counter-surveillance"
@@ -59,6 +62,7 @@
         "service_item_block_tqideH": {
           "type": "service-item-block",
           "settings": {
+            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
             "textarea_service_item_type": "Custom Install",
             "textarea_service_item_description": "Description - Independent, self-sustaining communication systems using radio, solar power, and encrypted tech to stay connected without reliance on traditional infrastructure.",
             "textarea_service_item_text": "Off-grid networks"
@@ -67,6 +71,7 @@
         "service_item_block_R6cia9": {
           "type": "service-item-block",
           "settings": {
+            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
             "textarea_service_item_type": "Consulting",
             "textarea_service_item_description": "Description - Expert guidance on secure, resilient communication setups, from emergency preparedness to decentralized networking solutions for businesses and individuals.",
             "textarea_service_item_text": "Communication Consulting"
