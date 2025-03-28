@@ -189,7 +189,7 @@
         <div li-block="Service-Item-Block" class="service-bullet-slide">
           <div class="service-bullet-slide-image--wrapper">
             <img
-              src="{{ block.settings.image_block_image | img_url: 'master' }}"
+              src="{{ block.settings.block_image | img_url: 'master' }}"
               loading="lazy"
               alt="{{ block.settings.image_block_image.alt }}"
               class="service-bullet-slide-image"
@@ -206,4 +206,4 @@
     {% endfor %}
   </div>
 </div>
-{% schema %} {"tag":"section","name":"gb-services","class":"section gb-services","blocks":[{"name":"Service-Item-Block","type":"service-item-block","settings":[{"id":"image_block_image","type":"image_picker","label":"Image"},{"id":"textarea_service_item_type","type":"textarea","label":"Service-Item-Type","default":"Type"},{"id":"textarea_service_item_description","type":"textarea","label":"Service-Item-Description","default":"Lorem Ipsum Dolor"},{"id":"textarea_service_item_text","type":"textarea","label":"Service-Item-Text","default":"Radio &amp; Comms Workshops"}]}],"settings":[{"id":"textarea_service_sub_text","type":"textarea","label":"Service Sub Text","default":"Nothing we have ever done has been intended to be a \u201cone size fits all\u201d solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and\u00a0solved."}],"presets":[{"name":"gb-services","category":"Liquify","blocks":[{"type":"service-item-block"}]}]} {% endschema %}
+{% schema %} {"tag":"section","name":"gb-services","class":"section gb-services","blocks":[{"name":"Service-Item-Block","type":"service-item-block","settings":[{"id":"block_image","type":"image_picker","label":"Image"},{"id":"textarea_service_item_type","type":"textarea","label":"Service-Item-Type","default":"Type"},{"id":"textarea_service_item_description","type":"textarea","label":"Service-Item-Description","default":"Lorem Ipsum Dolor"},{"id":"textarea_service_item_text","type":"textarea","label":"Service-Item-Text","default":"Radio &amp; Comms Workshops"}]}],"settings":[{"id":"textarea_service_sub_text","type":"textarea","label":"Service Sub Text","default":"Nothing we have ever done has been intended to be a \u201cone size fits all\u201d solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and\u00a0solved."}],"presets":[{"name":"gb-services","category":"Liquify","blocks":[{"type":"service-item-block"}]}]} {% endschema %}
