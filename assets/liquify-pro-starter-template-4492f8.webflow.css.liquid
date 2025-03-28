@@ -4222,6 +4222,7 @@ figcaption {
   background-repeat: no-repeat;
   background-size: auto;
   border-radius: 8px;
+  max-height: 60vh;
 }
 
 .button-gb {
@@ -5264,8 +5265,8 @@ figcaption {
 }
 
 .culumn-single-wrapper {
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
+  grid-column-gap: .9rem;
+  grid-row-gap: .9rem;
   flex-flow: column;
   width: 100%;
   max-width: 600px;
@@ -6089,6 +6090,26 @@ figcaption {
 
 .body-2 {
   background-color: var(--gray-200);
+}
+
+.bannerr-image-wrapper {
+  aspect-ratio: 2.39;
+  background-color: #7d8477;
+  background-image: url({{ 'gb-filler-landscape-large-green.svg' | asset_url }});
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  max-height: 50vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.banner-image-asset {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -6919,6 +6940,11 @@ figcaption {
 
   .multi-column {
     column-count: 2;
+  }
+
+  .bannerr-image-wrapper {
+    aspect-ratio: 2;
+    min-height: auto;
   }
 }
 
@@ -8338,6 +8364,10 @@ figcaption {
   .multi-column {
     flex-flow: column;
     display: flex;
+  }
+
+  .bannerr-image-wrapper {
+    aspect-ratio: 1;
   }
 }
 

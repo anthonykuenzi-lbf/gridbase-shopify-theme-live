@@ -18,13 +18,9 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-column: 2 / span 3;
 }
 }
-</style></div><div class="faq-section-grid"><div class="rss-feed-column-wrapper"><div class="rss-scroll-wrapper"><div class="podcast-title-wrapper"><h1 class="h2">Podcast:<br>
-GRIDBASED</h1><div class="line dark"></div><p class="p1">Listen on:<br>
-<a href="https://feeds.buzzsprout.com/2314595.rss">RSS</a>| <a href="https://open.spotify.com/show/3lfS7Dfs8NAV6SAIHmtH9H">Spotify</a><br>
-‍<br>
-‍Or search "GRIDBASED" in your preferred<br>
-podcast streaming service.
-                </p></div><div class="rss-feed-code w-embed w-script"><div id="podcast-feed" class="podcast-feed"><!--  RSS Feed items will be dynamically loaded here  -->
+</style></div><div class="faq-section-grid"><div class="rss-feed-column-wrapper"><div class="rss-scroll-wrapper"><div class="podcast-title-wrapper"><h1 class="h2"> {{ section.settings.textarea_headline }} </h1>
+<div class="line dark"></div><div class="p1"> {{ section.settings.richtext_text }} </div>
+</div><div class="rss-feed-code w-embed w-script"><div id="podcast-feed" class="podcast-feed"><!--  RSS Feed items will be dynamically loaded here  -->
 </div><div id="load-more-container" style="text-align: center; margin-top: 20px; display: none;"><button id="load-more-button" class="button-gb black">Load More Episodes</button></div><style>/* Custom audio player styling */
     .podcast-audio {
         margin-top: 16px;
@@ -253,4 +249,4 @@ document.addEventListener('DOMContentLoaded', function() {
 {% endfor %}    </div>
 {% endif %}{% if blog.articles == blank %}    <div li-if="blog.articles == blank" class="blog_cms-empty w-dyn-empty">
     <div class="h3">No blog items found.</div>    </div>
-{% endif %}</div></div></div><div ms-code-rss-limit="9" ms-code-rss-feed="" ms-code-rss-feed-url="https://rss.app/feeds/YWhOowpxqpWOILb3.xml" class="podcast-feed"><div ms-code-rss-link="" ms-code-rss-item="" class="podcast-item hide"><div ms-code-rss-title-length="40" ms-code-rss-title="" class="p1 bold podcast">Title</div><div ms-code-rss-date-format="short" ms-code-rss-date="" class="podcast-date">Date</div><div ms-code-rss-description-length="150" ms-code-rss-description="" class="p1 podcast">Description</div><a href="#" class="button-gb black w-button">Load More</a><div class="podcast-audio"></div></div></div> {% schema %} {"tag":"section","name":"gb-blog","class":"section hq","presets":[{"name":"gb-blog","category":"Liquify","blocks":[]}]} {% endschema %}
+{% endif %}</div></div></div><div ms-code-rss-limit="9" ms-code-rss-feed="" ms-code-rss-feed-url="https://rss.app/feeds/YWhOowpxqpWOILb3.xml" class="podcast-feed"><div ms-code-rss-link="" ms-code-rss-item="" class="podcast-item hide"><div ms-code-rss-title-length="40" ms-code-rss-title="" class="p1 bold podcast">Title</div><div ms-code-rss-date-format="short" ms-code-rss-date="" class="podcast-date">Date</div><div ms-code-rss-description-length="150" ms-code-rss-description="" class="p1 podcast">Description</div><a href="#" class="button-gb black w-button">Load More</a><div class="podcast-audio"></div></div></div> {% schema %} {"tag":"section","name":"gb-blog","class":"section hq","settings":[{"id":"textarea_headline","type":"textarea","label":"Headline","default":"Podcast:<br\/>GRIDBASED"},{"id":"richtext_text","type":"richtext","label":"Text","default":"<p>Listen on:<br\/>\n                  <a href=\"https:\/\/feeds.buzzsprout.com\/2314595.rss\">RSS<\/a> | <a href=\"https:\/\/open.spotify.com\/show\/3lfS7Dfs8NAV6SAIHmtH9H\">Spotify<\/a> <br\/>\u200d<br\/>\u200dOr search \"GRIDBASED\" in your preferred<br\/>podcast\u00a0streaming\u00a0service.\n                <\/p>"}],"presets":[{"name":"gb-blog","category":"Liquify","blocks":[]}]} {% endschema %}
