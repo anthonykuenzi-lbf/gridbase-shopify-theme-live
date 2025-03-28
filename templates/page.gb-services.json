@@ -35,7 +35,7 @@
         "service_item_block_9UmPeb": {
           "type": "service-item-block",
           "settings": {
-            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
+            "block_image": "shopify://shop_images/gb-projects-cyberdeck-banner.webp",
             "textarea_service_item_type": "Custom Install",
             "textarea_service_item_description": "Decentralized, censorship-resistant internet options using mesh networks, satellite, and peer-to-peer systems for private and resilient connectivity.",
             "textarea_service_item_text": "Alternative internet solutions"
