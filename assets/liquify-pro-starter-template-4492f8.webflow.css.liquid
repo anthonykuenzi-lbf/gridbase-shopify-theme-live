@@ -984,9 +984,9 @@ figcaption {
   border: 1px solid var(--base-color-neutral--neutral-lighter);
   border-radius: var(--border-radius--medium);
   background-color: var(--base-color-neutral--neutral-lightest);
-  object-fit: contain;
-  width: 5rem;
-  height: 5rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .cart_info-order {
@@ -1582,9 +1582,9 @@ figcaption {
   border: 1px solid var(--base-color-neutral--neutral-lighter);
   border-radius: var(--border-radius--medium);
   background-color: var(--base-color-neutral--neutral-lightest);
-  object-fit: contain;
-  width: 5rem;
-  height: 5rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .mini-cart_full {
@@ -4622,6 +4622,13 @@ figcaption {
   padding: 32px;
 }
 
+.pocket-home-image-wrapper {
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  display: flex;
+}
+
 .pocket-home-wrapper {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -5563,6 +5570,7 @@ figcaption {
 .product-title {
   color: #161616;
   font-variation-settings: "wght" 400, "wdth" 90;
+  max-width: 48rem;
   margin-top: 8px;
   margin-bottom: 2rem;
   margin-left: -6px;
@@ -5986,7 +5994,14 @@ figcaption {
   display: flex;
 }
 
-.link-block-7, .dark {
+.link-block-7 {
+  background-color: var(--gray-200);
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.dark {
   background-color: var(--gray-200);
 }
 
@@ -6120,6 +6135,22 @@ figcaption {
   height: 100%;
   position: absolute;
   inset: 0%;
+}
+
+.mini-cart_line-item_img--wrappewr {
+  border: 1px solid var(--base-color-neutral--neutral-lighter);
+  border-radius: var(--border-radius--medium);
+  background-color: var(--base-color-neutral--neutral-lightest);
+  object-fit: contain;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.pocket-home-image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -6415,9 +6446,9 @@ figcaption {
   }
 
   .product-header_layout {
-    grid-column-gap: 5rem;
-    grid-row-gap: 2.5rem;
-    grid-template-columns: 1fr;
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+    grid-template-columns: 1fr 1fr;
     grid-auto-flow: row;
     min-height: auto;
   }
@@ -6787,6 +6818,10 @@ figcaption {
 
   .footer-links, .footer-text.light, .p1-2, .p1-3 {
     font-size: .8rem;
+  }
+
+  .pocket-home-image-wrapper {
+    padding: 16px;
   }
 
   .pocket-home-wrapper {
@@ -7593,9 +7628,9 @@ figcaption {
   .pocket-home-image-wrapper {
     width: 100%;
     height: 300px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
   }
 
   .pocket-home-wrapper {
