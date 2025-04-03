@@ -4199,11 +4199,13 @@ figcaption {
 }
 
 .text-wrapper._600 {
+  z-index: 1;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-items: flex-start;
   width: auto;
   max-width: 600px;
+  position: relative;
   overflow: visible;
 }
 
@@ -4620,13 +4622,6 @@ figcaption {
   padding: 32px;
 }
 
-.pocket-home-image-wrapper {
-  background-image: url({{ 'gb-filler-portrait-black.svg' | asset_url }});
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: 80%;
-}
-
 .pocket-home-wrapper {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -4725,15 +4720,15 @@ figcaption {
   padding-left: 0;
   display: flex;
   position: sticky;
-  top: 6rem;
-}
-
-.values-bullet-wrapper._2 {
   top: 10rem;
 }
 
-.values-bullet-wrapper._3 {
+.values-bullet-wrapper._2 {
   top: 14.5rem;
+}
+
+.values-bullet-wrapper._3 {
+  top: 19rem;
 }
 
 .value-illustrations-wrapper {
@@ -4752,6 +4747,7 @@ figcaption {
 }
 
 .value-bullet-marker {
+  background-color: var(--gray-200);
   padding-top: 16px;
 }
 
@@ -4999,6 +4995,7 @@ figcaption {
 }
 
 .scrolling-banner-icon {
+  max-width: 64px;
   height: 48px;
 }
 
@@ -5038,7 +5035,7 @@ figcaption {
 .product-item_image_asset {
   z-index: 1;
   border: 1px none var(--base-color-neutral--neutral-lighter);
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -6116,6 +6113,15 @@ figcaption {
   inset: 0%;
 }
 
+.hero-banner-wrapper {
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0%;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -6909,7 +6915,7 @@ figcaption {
     background-size: auto;
     width: 100%;
     height: 100%;
-    inset: -280px 0% auto;
+    inset: auto 0%;
   }
 
   .setting-block {
@@ -7699,6 +7705,10 @@ figcaption {
 
   .service-bullets {
     font-size: 1.6rem;
+  }
+
+  .service-bullet-slide {
+    position: relative;
   }
 
   .h2-3 {
