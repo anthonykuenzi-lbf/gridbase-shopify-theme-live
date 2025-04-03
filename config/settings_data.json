@@ -23,8 +23,8 @@
           "announcement_hr69F7": {
             "type": "announcement",
             "settings": {
-              "url_link": "shopify://products/pocket",
-              "text_announcement": "Sample Announcement number two"
+              "url_link": "shopify://pages/book-a-class-with-us",
+              "text_announcement": "Book a Comms Class"
             }
           }
         },
