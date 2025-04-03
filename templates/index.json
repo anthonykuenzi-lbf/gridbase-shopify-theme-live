@@ -75,7 +75,7 @@
         "bullet_WhYi6X": {
           "type": "bullet",
           "settings": {
-            "image_icon": "shopify://shop_images/gb-icon-eye-privacy-orange_dd4004ab-5e01-40d8-b315-a7dbd7b8f24c.svg",
+            "image_icon": "shopify://shop_images/gb-logo-orange.svg",
             "text_text": "Privacy-focused solutions for safe, independent networks"
           }
         },
@@ -96,7 +96,7 @@
         "bullet_w3mHwf": {
           "type": "bullet",
           "settings": {
-            "image_icon": "shopify://shop_images/gb-icon-texas-flag_93fcd327-fa0c-450f-b43a-e548cce675c1.svg",
+            "image_icon": "shopify://shop_images/gb-logo-orange.svg",
             "text_text": "Built for and by those who value freedom"
           }
         },
