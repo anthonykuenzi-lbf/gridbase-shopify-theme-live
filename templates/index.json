@@ -33,7 +33,7 @@
       "type": "gb_featured_products",
       "settings": {
         "collection_collection": "featured",
-        "collection_collection_limit": 6,
+        "collection_collection_limit": 4,
         "url_button_url": "",
         "text_button_text": "Shop All"
       }
