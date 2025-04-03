@@ -32,7 +32,7 @@
     "gb_featured_products_qiXgid": {
       "type": "gb_featured_products",
       "settings": {
-        "collection_collection": "turn-key",
+        "collection_collection": "featured",
         "collection_collection_limit": 6,
         "url_button_url": "",
         "text_button_text": "Shop All"
