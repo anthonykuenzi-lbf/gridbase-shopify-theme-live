@@ -9,14 +9,14 @@
  */
 {
   "sections": {
-    "collection_products": {
-      "type": "collection_products",
+    "gb_collection_qizpLi": {
+      "type": "gb_collection",
       "settings": {}
     }
   },
   "layout": "collection",
   "wrapper": "main.main-wrapper",
   "order": [
-    "collection_products"
+    "gb_collection_qizpLi"
   ]
 }
