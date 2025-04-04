@@ -9,4 +9,6 @@
     Sale    </div>
 {% endif %}</div></div><a li-object:href="product.url" href="{{ product.url }}" class="product-item_text-link mod w-inline-block"><div class="product-item_left"><div li-object="product.title" class="heading-style-h4 text-weight-normal">{{ product.title }}</div></div><div class="product-item_price">{% if product.compare_at_price_max > product.price %}    <div li-if="product.compare_at_price_max > product.price">
     <div li-object="product.compare_at_price | money" class="text-size-regular text-style-strikethrough text-style-muted">{{ product.compare_at_price | money }}</div>    </div>
-{% endif %}<div li-object="product.price | money" class="text-size-regular">{{ product.price | money }}</div></div></a></div></div>
+{% endif %}{% if product.price | money %}    <div li-if="product.selected_or_first_available_variant.available = true" li-object="product.price | money" class="text-size-regular">
+    $55    </div>
+{% endif %}</div></a></div></div>
