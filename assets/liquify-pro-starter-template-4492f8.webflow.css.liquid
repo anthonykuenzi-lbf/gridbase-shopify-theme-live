@@ -1658,8 +1658,9 @@ figcaption {
 }
 
 .product-item_image-link {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 4.7;
   border-radius: var(--border-radius--medium);
+  margin: 10%;
   display: block;
   position: relative;
   overflow: hidden;
@@ -1721,7 +1722,7 @@ figcaption {
 }
 
 .product-item_text-link.mod {
-  padding-top: 16px;
+  padding-top: 0;
 }
 
 .product-item_left {
@@ -3864,12 +3865,15 @@ figcaption {
 }
 
 .sort_select.filter_checkbox.mod {
+  font-variation-settings: "wght" 440, "wdth" 90;
+  text-transform: uppercase;
   border-style: none;
   border-width: 0;
   border-radius: 0;
   height: auto;
   margin-top: auto;
   margin-bottom: auto;
+  font-size: .7rem;
 }
 
 .sort_select.filter_checkbox.mod:hover {
@@ -3912,6 +3916,10 @@ figcaption {
   display: flex;
   position: absolute;
   inset: auto 1rem auto auto;
+}
+
+.filter_product-list-wrapper {
+  padding-top: 24px;
 }
 
 .footer_sub-footer {
