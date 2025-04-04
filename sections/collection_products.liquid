@@ -27,7 +27,7 @@
 {% endfor %}
                             
                         </div>
-{% endfor %}</div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox">
+{% endfor %}</div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox mod">
         {% for option in collection.sort_options %}                            
                             <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
                             
