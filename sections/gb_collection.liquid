@@ -1,15 +1,20 @@
-<div class="nav-bar-sub"><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox mod">
-        {% for option in collection.sort_options %}                            
-                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
-                            
-                    {% endfor %}    </select>
-<div class="code-embed-3 w-embed"></div>
-<div li-object="collection.title" class="nav-link">{{ collection.title }}</div><div>{% for link in linklists[section.settings.nav_menu].links %}    <div li-for="link in linklists[section.settings.nav_menu].links">
+<div class="nav-bar-sub"><div class="code-embed-3 w-embed"></div>
+<div class="shop-nav-inline-wrapper">{% for link in linklists[section.settings.nav_menu].links %}    <div li-for="link in linklists[section.settings.nav_menu].links">
                                     
                             <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
                             
                         </div>
-{% endfor %}</div></div><div id="w-node-_96fe950d-ffd0-dc9a-f06a-480a07bbe17d-3be0c65b" class="filter_feed"><div class="filter_product-list-wrapper w-dyn-list"><div role="list" class="shop-wrapper w-dyn-items">{% for product in collection.products %}    <div li-for="product in collection.products" role="listitem" class="filter_product-list-item w-dyn-item">
+{% endfor %}</div><div data-delay="0" data-hover="false" fs-cmssort-element="trigger" class="shop-nav-drop-down w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="icon-3 w-icon-dropdown-toggle"></div><div li-object="collection.title" class="nav-link">{{ collection.title }}</div></div><nav class="dropdown-list w-dropdown-list">{% for link in linklists[section.settings.nav_menu].links %}    <div li-for="link in linklists[section.settings.nav_menu].links">
+                                    
+                            <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
+                            
+                        </div>
+{% endfor %}</nav></div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox mod">
+        {% for option in collection.sort_options %}                            
+                            <option value="{{ option.value }}" {% if option.value == collection.sort_by %}selected{% elsif option.value == collection.default_sort_by %}selected{% endif %}>{{ option.name }}</option>
+                            
+                    {% endfor %}    </select>
+</div><div id="w-node-_96fe950d-ffd0-dc9a-f06a-480a07bbe17d-3be0c65b" class="filter_feed"><div class="filter_product-list-wrapper w-dyn-list"><div role="list" class="shop-wrapper w-dyn-items">{% for product in collection.products %}    <div li-for="product in collection.products" role="listitem" class="filter_product-list-item w-dyn-item">
                                     
                             {% render 'gb_item_card', product: product %}
 
