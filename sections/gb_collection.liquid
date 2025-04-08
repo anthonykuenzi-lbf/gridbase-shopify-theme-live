@@ -6,7 +6,7 @@
                         </div>
 {% endfor %}</div><div data-delay="0" data-hover="false" fs-cmssort-element="trigger" class="shop-nav-drop-down w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="icon-3 w-icon-dropdown-toggle"></div><div li-object="collection.title" class="nav-link">{{ collection.title }}</div></div><nav class="dropdown-list w-dropdown-list">{% for link in linklists[section.settings.nav_menu].links %}    <div li-for="link in linklists[section.settings.nav_menu].links">
                                     
-                            <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" class="nav-link">{{ link.title }}</a>
+                            <a li-object:href="link.url" li-object="link.title" href="{{ link.url }}" aria-current="page" class="nav-link w--current">{{ link.title }}</a>
                             
                         </div>
 {% endfor %}</nav></div><select id="sort-by" li-for:inside="option in collection.sort_options" class="sort_select filter_checkbox mod">
