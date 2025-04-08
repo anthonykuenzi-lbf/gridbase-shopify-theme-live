@@ -11,7 +11,9 @@
   "sections": {
     "gb_collection_qizpLi": {
       "type": "gb_collection",
-      "settings": {}
+      "settings": {
+        "nav_menu": "gb-shop-nav"
+      }
     }
   },
   "layout": "collection",
