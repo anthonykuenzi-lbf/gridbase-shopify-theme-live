@@ -20,8 +20,8 @@
   --base-color-neutral--neutral-lightest: #eee;
   --accessible-components-dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --sand: #9a9087;
-  --text-color--text-error: var(--base-color-system--error-red-dark);
   --black: black;
+  --text-color--text-error: var(--base-color-system--error-red-dark);
   --gray-700: #525757;
   --base-color-system--success-green-dark: #17660f;
   --base-color-system--error-red: #f8e4e4;
@@ -2219,7 +2219,8 @@ figcaption {
 }
 
 .section_product-recommended {
-  background-color: var(--gray-100);
+  background-color: var(--black);
+  color: var(--gray-200);
   position: relative;
   overflow: hidden;
 }
@@ -5182,7 +5183,11 @@ figcaption {
 }
 
 .faq-list-wrapper {
+  grid-column-gap: .9rem;
+  grid-row-gap: .9rem;
+  flex-flow: column;
   width: 100%;
+  display: flex;
 }
 
 .p1-6 {
@@ -6373,6 +6378,13 @@ figcaption {
 }
 
 .div-block-39 {
+  flex-flow: column;
+  display: flex;
+}
+
+.div-block-40 {
+  grid-column-gap: .9rem;
+  grid-row-gap: .9rem;
   flex-flow: column;
   display: flex;
 }
