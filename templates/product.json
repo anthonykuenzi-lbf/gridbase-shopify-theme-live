@@ -12,10 +12,6 @@
     "product_hero": {
       "type": "product_hero",
       "blocks": {
-        "judge_me_reviews_preview_badge_RggtGg": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "faq_item_awWHmn": {
           "type": "faq-item",
           "repeater": "{{ product.metafields.custom.product_faq.value }}",
@@ -27,7 +23,6 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_RggtGg",
         "faq_item_awWHmn"
       ],
       "settings": {
