@@ -12,6 +12,10 @@
     "product_hero": {
       "type": "product_hero",
       "blocks": {
+        "shop_shop_login_button_app_block_ECTxTD": {
+          "type": "shopify://apps/shop/blocks/shop-login-button-app-block/7cab7c4a-1dfc-4b7e-8e53-31f104f2fa4e",
+          "settings": {}
+        },
         "faq_item_awWHmn": {
           "type": "faq-item",
           "repeater": "{{ product.metafields.custom.product_faq.value }}",
@@ -21,18 +25,14 @@
             "richtext_answer": "<p>{{ block.repeater.answer_ | metafield_tag }}</p>"
           }
         },
-        "shop_shop_login_button_app_block_ECTxTD": {
-          "type": "shopify://apps/shop/blocks/shop-login-button-app-block/7cab7c4a-1dfc-4b7e-8e53-31f104f2fa4e",
-          "settings": {}
-        },
         "judge_me_reviews_preview_badge_Qw6R7f": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         }
       },
       "block_order": [
-        "faq_item_awWHmn",
         "shop_shop_login_button_app_block_ECTxTD",
+        "faq_item_awWHmn",
         "judge_me_reviews_preview_badge_Qw6R7f"
       ],
       "settings": {
