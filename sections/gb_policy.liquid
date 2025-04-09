@@ -43,57 +43,15 @@ column-count: 5;
             {% endif %}
 {% endfor %}
 {% for block in section.blocks %}
-    {% if block.type == "table-section-start" %}
-                    <div li-block="Table Section Start" class="cell-grid-wrapper start">
+    {% if block.type == "table" %}
+                    <div li-block="Table" class="cell-grid-wrapper">
                                     
-                                    <div class="cell-grid-2"><p class="mono cell">
-{{ block.settings.text_column_1_text }}
-</p>
-<p class="mono cell">
-{{ block.settings.text_column_2_text }}
-</p>
-<p class="mono cell">
-{{ block.settings.text_column_3_text }}
-</p>
+                                    <div li-content-for-theme-blocks="Table">
+{% content_for 'blocks' %}
 </div>
+
                                     
                             </div>
             {% endif %}
 {% endfor %}
-{% for block in section.blocks %}
-    {% if block.type == "table-section-middle" %}
-                    <div li-block="Table Section Middle" class="cell-grid-wrapper middle">
-                                    
-                                    <div class="cell-grid-2"><p class="mono cell">
-{{ block.settings.text_column_1_text }}
-</p>
-<p class="mono cell">
-{{ block.settings.text_column_2_text }}
-</p>
-<p class="mono cell">
-{{ block.settings.text_column_3_text }}
-</p>
-</div>
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-{% for block in section.blocks %}
-    {% if block.type == "table-section-end" %}
-                    <div li-block="Table Section End" class="cell-grid-wrapper end">
-                                    
-                                    <div class="cell-grid-2"><p class="mono cell">
-{{ block.settings.text_column_1_text }}
-</p>
-<p class="mono cell">
-{{ block.settings.text_column_2_text }}
-</p>
-<p class="mono cell">
-{{ block.settings.text_column_3_text }}
-</p>
-</div>
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-</div></div> {% schema %} {"tag":"section","name":"gb-policy","class":"section policy","blocks":[{"name":"Rich Text Section","type":"rich-text-section","settings":[{"id":"richtext_section_text","type":"richtext","label":"Section Text","default":"<p>\n                <strong>Lorem Ipsum Title<\/strong>\u200d\n                This Privacy Policy describes how www.gridbase.net (the \u201cSite\u201d or \u201cwe\u201d) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br\/><br\/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\"><\/p>"}]},{"name":"Table Section Start","type":"table-section-start","settings":[{"id":"text_column_1_text","type":"text","label":"Column 1 Text","default":"Name"},{"id":"text_column_2_text","type":"text","label":"Column 2 Text","default":"Function"},{"id":"text_column_3_text","type":"text","label":"Column 3 Text","default":"Duration"}]},{"name":"Table Section Middle","type":"table-section-middle","settings":[{"id":"text_column_1_text","type":"text","label":"Column 1 Text","default":"Name"},{"id":"text_column_2_text","type":"text","label":"Column 2 Text","default":"Function"},{"id":"text_column_3_text","type":"text","label":"Column 3 Text","default":"Duration"}]},{"name":"Table Section End","type":"table-section-end","settings":[{"id":"text_column_1_text","type":"text","label":"Column 1 Text","default":"Name"},{"id":"text_column_2_text","type":"text","label":"Column 2 Text","default":"Function"},{"id":"text_column_3_text","type":"text","label":"Column 3 Text","default":"Duration"}]}],"settings":[{"id":"textarea_heading","type":"textarea","label":"Heading","default":"Privacy Policy"},{"id":"richtext_text","type":"richtext","label":"Text","default":"<p>This Privacy Policy describes how www.gridbase.net (the \u201cSite\u201d or \u201cwe\u201d) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br\/><br\/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\">info@gridbase.net<\/a>.<\/p>"}],"presets":[{"name":"gb-policy","category":"Liquify","blocks":[{"type":"rich-text-section"},{"type":"table-section-start"},{"type":"table-section-middle"},{"type":"table-section-end"}]}]} {% endschema %}
+</div></div> {% schema %} {"tag":"section","name":"gb-policy","class":"section policy","blocks":[{"type":"row"},{"type":"@app"}],"settings":[{"id":"textarea_heading","type":"textarea","label":"Heading","default":"Privacy Policy"},{"id":"richtext_text","type":"richtext","label":"Text","default":"<p>This Privacy Policy describes how www.gridbase.net (the \u201cSite\u201d or \u201cwe\u201d) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br\/><br\/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\">info@gridbase.net<\/a>.<\/p>"}],"presets":[{"name":"gb-policy","category":"Liquify","blocks":[]}]} {% endschema %}
