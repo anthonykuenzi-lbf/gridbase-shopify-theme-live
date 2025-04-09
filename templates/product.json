@@ -20,10 +20,15 @@
             "text_question": "{{ block.repeater.question_number.value }}",
             "richtext_answer": "{{ block.repeater.answer_ | metafield_tag }}"
           }
+        },
+        "judge_me_reviews_preview_badge_RggtGg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
-        "faq_item_awWHmn"
+        "faq_item_awWHmn",
+        "judge_me_reviews_preview_badge_RggtGg"
       ],
       "settings": {
         "text_disclosure": ""
