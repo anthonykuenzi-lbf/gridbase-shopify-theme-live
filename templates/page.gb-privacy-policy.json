@@ -64,7 +64,25 @@
           },
           "blocks": {}
         },
-        "gb_rich_text_GqQr8j": {
+        "gb_table_YNYcnz": {
+          "type": "gb-table",
+          "settings": {},
+          "blocks": {
+            "gb_table_row_FWyiLW": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "Name",
+                "text_column_2_text": "Function",
+                "text_column_3_text": "Duration"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "gb_table_row_FWyiLW"
+          ]
+        },
+        "gb_rich_text_yUMEfb": {
           "type": "gb-rich-text",
           "settings": {
             "richtext_section_text": "<p>\n                  <strong>Lorem Ipsum Title</strong>‍\n                  This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.n</p>"
@@ -76,7 +94,8 @@
         "gb_rich_text_KmqjLt",
         "gb_table_iGRtDx",
         "gb_rich_text_Y9hhLf",
-        "gb_rich_text_GqQr8j"
+        "gb_table_YNYcnz",
+        "gb_rich_text_yUMEfb"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
