@@ -16,9 +16,9 @@
           "type": "faq-item",
           "repeater": "{{ product.metafields.custom.product_faq.value }}",
           "settings": {
-            "text_number": "{{ block.repeater.question.value }}",
-            "text_question": "{{ block.repeater.question_number.value }}",
-            "richtext_answer": "{{ block.repeater.answer_ | metafield_tag }}"
+            "text_number": "{{ block.repeater.question_number.value }}",
+            "text_question": "{{ block.repeater.question.value }}",
+            "richtext_answer": "<p>{{ block.repeater.answer_ | metafield_tag }}</p>"
           }
         }
       },
