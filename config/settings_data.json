@@ -70,6 +70,16 @@
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "6610233760104865948": {
+        "type": "shopify://apps/pushowl-brevo-email-push-sms/blocks/pushowl-app-embed-3d2ff2b5/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
