@@ -12,14 +12,14 @@
     "product_hero": {
       "type": "product_hero",
       "blocks": {
-        "faq_item_awWHmn": {
+        "faq_item_cLYF8H": {
           "type": "faq-item",
-          "repeater": "{{ product.metafields.custom.product_faq.value }}",
           "settings": {
-            "text_number": "{{ block.repeater.question_number.value }}",
-            "text_question": "{{ block.repeater.question.value }}",
-            "richtext_answer": "<p>{{ block.repeater.answer_ | metafield_tag }}</p>"
-          }
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p><br/>                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                                </p>"
+          },
+          "blocks": {}
         },
         "judge_me_reviews_preview_badge_Qw6R7f": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -27,7 +27,7 @@
         }
       },
       "block_order": [
-        "faq_item_awWHmn",
+        "faq_item_cLYF8H",
         "judge_me_reviews_preview_badge_Qw6R7f"
       ],
       "settings": {
