@@ -32,45 +32,7 @@ column-count: 5;
 }
 </style></div><div class="multi-column-break"><div class="h1-wrapper"><h1 class="h2"> {{ section.settings.textarea_heading }} </h1>
 <div class="line-3 dark"></div><div class="p1"> {{ section.settings.richtext_text }} </div>
-</div></div>{% for block in section.blocks %}
-    {% if block.type == "rich-text-section" %}
-                    <div li-block="Rich Text Section" class="p1-wrapper">
-                                    
-                                    <div class="rich-text-block-2 w-richtext"> {{ block.settings.richtext_section_text }} </div>
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-{% for block in section.blocks %}
-    {% if block.type == "table" %}
-                    <div li-block="Table" class="cell-grid-wrapper">
-                                    
-                                    {% for block in section.blocks %}
-    {% if block.type == "row" %}
-                    <div li-block="Row" class="cell-grid-2">
-                                    
-                                    <p class="mono cell">
-{{ block.settings.text_column_1_text }}
-</p>
-
-                                    
-                                    <p class="mono cell">
-{{ block.settings.text_column_2_text }}
-</p>
-
-                                    
-                                    <p class="mono cell">
-{{ block.settings.text_column_3_text }}
-</p>
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-
-                                    
-                            </div>
-            {% endif %}
-{% endfor %}
-</div></div> {% schema %} {"tag":"section","name":"gb-policy","class":"section policy","blocks":[{"name":"Rich Text Section","type":"rich-text-section","settings":[{"id":"richtext_section_text","type":"richtext","label":"Section Text","default":"<p>\n                <strong>Lorem Ipsum Title<\/strong>\u200d\n                This Privacy Policy describes how www.gridbase.net (the \u201cSite\u201d or \u201cwe\u201d) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br\/><br\/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\"><\/p>"}]},{"name":"Table","type":"table","settings":null},{"name":"Row","type":"row","settings":[{"id":"text_column_1_text","type":"text","label":"Column 1 Text","default":"Name"},{"id":"text_column_2_text","type":"text","label":"Column 2 Text","default":"Function"},{"id":"text_column_3_text","type":"text","label":"Column 3 Text","default":"Duration"}]},{"type":"@app"}],"settings":[{"id":"textarea_heading","type":"textarea","label":"Heading","default":"Privacy Policy"},{"id":"richtext_text","type":"richtext","label":"Text","default":"<p>This Privacy Policy describes how www.gridbase.net (the \u201cSite\u201d or \u201cwe\u201d) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br\/><br\/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\">info@gridbase.net<\/a>.<\/p>"}],"presets":[{"name":"gb-policy","category":"Liquify","blocks":[{"type":"rich-text-section"},{"type":"table"},{"type":"row"}]}]} {% endschema %}
+</div></div><div li-content-for-theme-blocks="">
+{% content_for 'blocks' %}
+</div>
+</div></div> {% schema %} {"tag":"section","name":"gb-policy","class":"section policy","blocks":[{"type":"rich-text-section"},{"type":"table"},{"type":"@app"}],"settings":[{"id":"textarea_heading","type":"textarea","label":"Heading","default":"Privacy Policy"},{"id":"richtext_text","type":"richtext","label":"Text","default":"<p>This Privacy Policy describes how www.gridbase.net (the \u201cSite\u201d or \u201cwe\u201d) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br\/><br\/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.net\">info@gridbase.net<\/a>.<\/p>"}],"presets":[{"name":"gb-policy","category":"Liquify","blocks":[]}]} {% endschema %}
