@@ -33,11 +33,18 @@
       "settings": {
         "text_disclosure": ""
       }
+    },
+    "product_recommended_xEttWN": {
+      "type": "product_recommended",
+      "settings": {
+        "text_headline": "Recommended"
+      }
     }
   },
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
-    "product_hero"
+    "product_hero",
+    "product_recommended_xEttWN"
   ]
 }
