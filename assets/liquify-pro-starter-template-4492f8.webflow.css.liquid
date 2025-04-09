@@ -1024,7 +1024,7 @@ figcaption {
 }
 
 .cart_quantity-wrapper {
-  border: 1px solid var(--base-color-neutral--neutral-lightest);
+  border: 1px solid var(--base-color-neutral--neutral-lighter);
   color: #000;
   border-radius: .3em;
   flex-direction: row;
@@ -1035,9 +1035,10 @@ figcaption {
 }
 
 .cart_quantity {
+  border-style: none none none solid;
+  border-width: 1px;
+  border-color: var(--gray-500) var(--gray-500) var(--gray-500) var(--base-color-neutral--neutral-lighter);
   background-color: var(--gray-200);
-  border: 1px #1111111a;
-  border-left-style: solid;
   border-radius: 0 .3em .3em 0;
   width: 3.3em;
   margin-bottom: 0;
@@ -6332,8 +6333,8 @@ figcaption {
 }
 
 .shop-nav-inline-wrapper {
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
   justify-content: center;
   align-items: center;
   display: flex;
