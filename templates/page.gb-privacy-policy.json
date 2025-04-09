@@ -12,10 +12,6 @@
     "gb_policy": {
       "type": "gb_policy",
       "blocks": {
-        "shop_shop_login_button_app_block_7RBkcf": {
-          "type": "shopify://apps/shop/blocks/shop-login-button-app-block/7cab7c4a-1dfc-4b7e-8e53-31f104f2fa4e",
-          "settings": {}
-        },
         "row_dMtEJf": {
           "type": "row",
           "settings": {
@@ -36,7 +32,6 @@
         }
       },
       "block_order": [
-        "shop_shop_login_button_app_block_7RBkcf",
         "row_dMtEJf",
         "row_tDkPgy"
       ],
