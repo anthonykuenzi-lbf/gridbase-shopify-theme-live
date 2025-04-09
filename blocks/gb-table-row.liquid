@@ -1,0 +1,19 @@
+<div li-block="GB Table Row" class="cell-grid-2">
+                    
+                    <p class="mono cell">
+{{ block.settings.text_column_1_text }}
+</p>
+
+                    
+                    <p class="mono cell">
+{{ block.settings.text_column_2_text }}
+</p>
+
+                    
+                    <p class="mono cell">
+{{ block.settings.text_column_3_text }}
+</p>
+
+                    
+                </div>
+     {% schema %} {"name":"GB Table Row","settings":[{"id":"text_column_1_text","type":"text","label":"Column 1 Text","default":"Name"},{"id":"text_column_2_text","type":"text","label":"Column 2 Text","default":"Function"},{"id":"text_column_3_text","type":"text","label":"Column 3 Text","default":"Duration"}],"presets":[{"name":"GB Table Row"}]} {% endschema %}
