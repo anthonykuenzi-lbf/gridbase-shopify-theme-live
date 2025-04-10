@@ -9,7 +9,8 @@
         <div class="faq-answer">
           <h4>Answer:</h4>
           {% if faq.answer != blank %}
-            <div>{{ faq.answer.value }}</div>
+            <!-- Render the raw HTML content in the answer -->
+            <div class="faq-answer-content">{{ faq.answer }}</div>
           {% else %}
             <p>Answer is missing!</p>
           {% endif %}
