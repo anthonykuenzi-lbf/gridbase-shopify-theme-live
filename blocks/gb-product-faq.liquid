@@ -1,35 +1,37 @@
 <div li-block="gb-product-faq" class="gb-product-faq">
-  <div li-for="faq in product.metafields.custom.product_faq">
-    <div class="accordian-item-wrapper">
-      <div
-        data-delay="0"
-        data-hover="false"
-        data-w-id="eddb2464-96b1-ed20-6d72-b0591362e184"
-        class="accordian-item w-dropdown"
-      >
-        <div class="accordian-toggle w-dropdown-toggle">
-          <div
-            style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)"
-            class="accordian-icon w-icon-dropdown-toggle"
-          ></div>
-          <div class="accordian-title-wrapper">
-            <div class="acordian-number-wrapper">
-              <div class="p1-6 bold">
-                {{ block.settings.text_number }}
+  {% for faq in product.metafields.custom.product_faq %}
+    <div li-for="faq in product.metafields.custom.product_faq">
+      <div class="accordian-item-wrapper">
+        <div
+          data-delay="0"
+          data-hover="false"
+          data-w-id="eddb2464-96b1-ed20-6d72-b0591362e184"
+          class="accordian-item w-dropdown"
+        >
+          <div class="accordian-toggle w-dropdown-toggle">
+            <div
+              style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)"
+              class="accordian-icon w-icon-dropdown-toggle"
+            ></div>
+            <div class="accordian-title-wrapper">
+              <div class="acordian-number-wrapper">
+                <div class="p1-6 bold">
+                  {{ block.settings.text_number }}
+                </div>
+                <div class="p1-6 bold">.</div>
               </div>
-              <div class="p1-6 bold">.</div>
-            </div>
-            <div class="p1 bold">
-              {{ block.settings.text_question }}
+              <div class="p1 bold">
+                {{ block.settings.text_question }}
+              </div>
             </div>
           </div>
+          <nav style="height:0px" class="accordian-body-wrapper w-dropdown-list">
+            <div class="rich-text-block w-richtext">{{ block.settings.richtext_answer }}</div>
+          </nav>
         </div>
-        <nav style="height:0px" class="accordian-body-wrapper w-dropdown-list">
-          <div class="rich-text-block w-richtext">{{ block.settings.richtext_answer }}</div>
-        </nav>
+        <div class="accordian-line"></div>
       </div>
-      <div class="accordian-line"></div>
     </div>
-  </div>
+  {% endfor %}
 </div>
 {% schema %} {"name":"gb-product-faq","settings":[{"id":"text_number","type":"text","label":"number","default":"1"},{"id":"text_question","type":"text","label":"Question","default":"How does Pocket work?"},{"id":"richtext_answer","type":"richtext","label":"Answer","default":"<p>\n                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                                <\/p>"}],"presets":[{"name":"gb-product-faq"}]} {% endschema %}
