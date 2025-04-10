@@ -2,5 +2,23 @@
   <div li-content-for-theme-blocks="">
     {% content_for 'blocks' %}
   </div>
+  {% comment %}
+    This snippet loops through all metaobject entries linked to the product under the metafield "custom.product_faq"
+  {% endcomment %}
+
+  {% assign faq_entries = product.metafields.custom.product_faq.value %}
+
+  {% if faq_entries != blank %}
+    <div class="product-faqs">
+      {% for faq in faq_entries %}
+        <div class="product-faq-item">
+          <h3 class="product-faq-question">{{ faq.question | escape }}</h3>
+          <div class="product-faq-answer">{{ faq.answer | escape }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No FAQs available for this product.</p>
+  {% endif %}
 </div>
 {% schema %} {"name":"Product FAQ Wrapper","blocks":[{"type":"faq-item"},{"type":"@app"}],"presets":[{"name":"Product FAQ Wrapper"}]} {% endschema %}
