@@ -1,19 +1,18 @@
-{% assign faq_metaobject = product.metafields.custom.product_faq %}
+{% assign product_faqs = product.metafields.custom.product_faq %}
 
-{% if faq_metaobject %}
+{% if product_faqs %}
   <div class="product-faqs">
     <h2>Product FAQs</h2>
-
-    {% for faq in faq_metaobject %}
+    {% for faq in product_faqs %}
       <div class="faq-item">
         <p>
-          <strong>Question #{{ faq.question_number }}</strong>
+          <strong>Question #{{ faq.fields.question_number }}</strong>
         </p>
         <p>
-          <strong>Q: {{ faq.question }}</strong>
+          <strong>Q: {{ faq.fields.question }}</strong>
         </p>
         <p>
-          <strong>A: {{ faq.answer }}</strong>
+          <strong>A: {{ faq.fields.answer }}</strong>
         </p>
       </div>
     {% endfor %}
@@ -21,4 +20,5 @@
 {% else %}
   <p>No FAQs available for this product.</p>
 {% endif %}
+
 {% schema %} {"name":"Product FAQ Wrapper"} {% endschema %}
