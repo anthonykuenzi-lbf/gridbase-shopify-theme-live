@@ -1,34 +1,22 @@
 {% assign faq_entries = product.metafields.custom.product_faq.value %}
 
 {% if faq_entries != blank %}
-  {% for faq in faq_entries %}
-    <div li-block="faq-item" class="faq-item">
-      <div class="accordian-item-wrapper">
-        <div data-delay="0" data-hover="false" class="accordian-item w-dropdown">
-          <div class="accordian-toggle w-dropdown-toggle">
-            <div class="accordian-icon w-icon-dropdown-toggle"></div>
-            <div class="accordian-title-wrapper">
-              <div class="acordian-number-wrapper">
-                <div class="p1-6 bold">{{ faq.question_number.value }}</div>
-                <div class="p1-6 bold">.</div>
-              </div>
-              <div class="p1 bold">{{ faq.question.value | escape }}</div>
-            </div>
-          </div>
-          <nav style="height:0px" class="accordian-body-wrapper w-dropdown-list">
-            <div class="rich-text-block w-richtext">
-              {% if faq.answer_ != blank %}
-                {{ faq.answer_.value }}
-              {% else %}
-                <p>Answer is missing!</p>
-              {% endif %}
-            </div>
-          </nav>
+  <div class="faq-list">
+    {% for faq in faq_entries %}
+      <div class="faq-item">
+        <h3 class="faq-question">Question Number: {{ faq.question_number.value }}</h3>
+        <p class="faq-question-text">Question: {{ faq.question.value | escape }}</p>
+        <div class="faq-answer">
+          <h4>Answer:</h4>
+          {% if faq.answer_ != blank %}
+            <div>{{ faq.answer_.value }}</div>
+          {% else %}
+            <p>Answer is missing!</p>
+          {% endif %}
         </div>
-        <div class="accordian-line"></div>
       </div>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 {% else %}
   <p>No FAQs available for this product.</p>
 {% endif %}
