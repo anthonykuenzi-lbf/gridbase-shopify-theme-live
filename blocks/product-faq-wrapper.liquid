@@ -52,8 +52,8 @@
 <div class="product-faq-container">
   <h2 class="product-faq-title">{{ section.settings.title }}</h2>
 
-  {% if product.metafields['gb-product-faq'] %}
-    {% assign faq_items = product.metafields['gb-product-faq'] %}
+  {% if product.metafields.gb_product_faq %}
+    {% assign faq_items = product.metafields.gb_product_faq %}
 
     {% if faq_items.size > 0 %}
       <div class="product-faq-list {% if section.settings.layout == 'accordion' %}faq-accordion{% else %}faq-list{% endif %}">
