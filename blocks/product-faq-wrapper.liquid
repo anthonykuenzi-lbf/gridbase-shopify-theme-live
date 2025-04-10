@@ -1,9 +1,24 @@
-<div li-block="Product FAQ Wrapper" class="faq-list-wrapper">
-                    
-                    <div li-content-for-theme-blocks="" class="div-block-41">
-{% content_for 'blocks' %}
-</div>
+{% assign faq_metaobject = product.metafields.custom.product_faq %}
 
-                    
-                </div>
-     {% schema %} {"name":"Product FAQ Wrapper","blocks":[{"type":"faq-item"},{"type":"@app"}],"presets":[{"name":"Product FAQ Wrapper"}]} {% endschema %}
+{% if faq_metaobject %}
+  <div class="product-faqs">
+    <h2>Product FAQs</h2>
+
+    {% for faq in faq_metaobject %}
+      <div class="faq-item">
+        <p>
+          <strong>Question #{{ faq.question_number }}</strong>
+        </p>
+        <p>
+          <strong>Q: {{ faq.question }}</strong>
+        </p>
+        <p>
+          <strong>A: {{ faq.answer }}</strong>
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No FAQs available for this product.</p>
+{% endif %}
+{% schema %} {"name":"Product FAQ Wrapper"} {% endschema %}
