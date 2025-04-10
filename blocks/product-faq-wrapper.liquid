@@ -1,33 +1,16 @@
-{% assign faq_entries = product.metafields.custom.product_faq.value %}
+{% assign faqs = product.metafields.custom.product_faq.value %}
 
-{% if faq_entries != blank %}
-  {% assign sorted_faqs = faq_entries | sort: 'question_number' %}
-  {% for faq in sorted_faqs %}
-    <div li-block="faq-item" class="faq-item">
-      <div class="accordian-item-wrapper">
-        <div data-delay="0" data-hover="false" class="accordian-item w-dropdown">
-          <div class="accordian-toggle w-dropdown-toggle">
-            <div class="accordian-icon w-icon-dropdown-toggle"></div>
-            <div class="accordian-title-wrapper">
-              <div class="acordian-number-wrapper">
-                <div class="p1-6 bold">{{ faq.question_number }}</div>
-                <div class="p1-6 bold">.</div>
-              </div>
-              <div class="p1 bold">{{ faq.question | escape }}</div>
-            </div>
-          </div>
-          <nav style="height:0px" class="accordian-body-wrapper w-dropdown-list">
-            <div class="rich-text-block w-richtext">
-              {{ faq.answer }}
-            </div>
-          </nav>
-        </div>
-        <div class="accordian-line"></div>
-      </div>
-    </div>
-  {% endfor %}
+{% if faqs != blank %}
+  <ul>
+    {% for faq in faqs %}
+      <li>
+        <strong>{{ faq.question_number }}. {{ faq.question }}</strong><br>
+        {{ faq.answer }}
+      </li>
+    {% endfor %}
+  </ul>
 {% else %}
-  <p>No FAQs available for this product.</p>
+  <p>No FAQs linked to this product.</p>
 {% endif %}
 
 {% schema %} {"name":"Product FAQ Wrapper","blocks":[{"type":"faq-item"},{"type":"@app"}],"presets":[{"name":"Product FAQ Wrapper"}]} {% endschema %}
