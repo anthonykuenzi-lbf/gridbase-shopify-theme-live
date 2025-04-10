@@ -1,20 +1,20 @@
-{% assign faq_entries = product.metafields.custom.product_faq.value %}
+{% assign faq_metaobject = product.metafields.custom.product_faq %}
 
-{% if faq_entries != blank %}
-  <div class="faq-list">
-    {% for faq in faq_entries %}
+{% if faq_metaobject %}
+  <div class="product-faqs">
+    <h2>Product FAQs</h2>
+
+    {% for faq in faq_metaobject %}
       <div class="faq-item">
-        <h3 class="faq-question">Question Number: {{ faq.question_number.value }}</h3>
-        <p class="faq-question-text">Question: {{ faq.question.value | escape }}</p>
-        <div class="faq-answer">
-          <h4>Answer:</h4>
-          {% if faq.answer != blank %}
-            <!-- Render the raw HTML content in the answer -->
-            <div class="faq-answer-content">{{ faq.answer }}</div>
-          {% else %}
-            <p>Answer is missing!</p>
-          {% endif %}
-        </div>
+        <p>
+          <strong>Question #{{ faq.question_number }}</strong>
+        </p>
+        <p>
+          <strong>Q: {{ faq.question }}</strong>
+        </p>
+        <p>
+          <strong>A: {{ faq.answer }}</strong>
+        </p>
       </div>
     {% endfor %}
   </div>
