@@ -12,23 +12,14 @@
     "product_hero": {
       "type": "product_hero",
       "blocks": {
-        "product_faq_wrapper_KUmKLC": {
-          "type": "product-faq-wrapper",
-          "settings": {},
-          "blocks": {
-            "faq_item_YN7x3V": {
-              "type": "faq-item",
-              "settings": {
-                "text_number": "1",
-                "text_question": "How does Pocket work?",
-                "richtext_answer": "<p>\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                                  </p>"
-              },
-              "blocks": {}
-            }
+        "gb_product_faq_rKLdiq": {
+          "type": "gb-product-faq",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p>\n                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                              </p>"
           },
-          "block_order": [
-            "faq_item_YN7x3V"
-          ]
+          "blocks": {}
         },
         "judge_me_reviews_preview_badge_Qw6R7f": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -36,7 +27,7 @@
         }
       },
       "block_order": [
-        "product_faq_wrapper_KUmKLC",
+        "gb_product_faq_rKLdiq",
         "judge_me_reviews_preview_badge_Qw6R7f"
       ],
       "settings": {
