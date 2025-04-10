@@ -1,16 +1,12 @@
 {% assign faqs = product.metafields.custom.product_faq.value %}
 
 {% if faqs != blank %}
-  <ul>
-    {% for faq in faqs %}
-      <li>
-        <strong>{{ faq.question_number }}. {{ faq.question }}</strong><br>
-        {{ faq.answer }}
-      </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>No FAQs found</p>
+  {% for faq in faqs %}
+    <div class="faq-item">
+      <h3>{{ faq.question_number }}. {{ faq.question }}</h3>
+      <div>{{ faq.answer }}</div>
+    </div>
+  {% endfor %}
 {% endif %}
 
 {% schema %} {"name":"Product FAQ Wrapper"} {% endschema %}
