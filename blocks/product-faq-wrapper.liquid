@@ -4,20 +4,16 @@
   </div>
   {% comment %}
     This snippet loops through all metaobject entries linked to the product under the metafield "custom.product_faq"
-    and sorts them by question_number.
   {% endcomment %}
 
   {% assign faq_entries = product.metafields.custom.product_faq.value %}
 
   {% if faq_entries != blank %}
-    {% assign sorted_faqs = faq_entries | sort: 'question_number' %}
     <div class="product-faqs">
-      {% for faq in sorted_faqs %}
+      {% for faq in faq_entries %}
         <div class="product-faq-item">
-          <h3 class="product-faq-question">{{ faq.question_number }}. {{ faq.question | escape }}</h3>
-          <div class="product-faq-answer">
-            {{ faq.answer | escape }}
-          </div>
+          <h3 class="product-faq-question">{{ faq.question | escape }}</h3>
+          <div class="product-faq-answer">{{ faq.answer | escape }}</div>
         </div>
       {% endfor %}
     </div>
