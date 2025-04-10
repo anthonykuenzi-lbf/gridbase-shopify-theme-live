@@ -17,7 +17,11 @@
           </div>
           <nav style="height:0px" class="accordian-body-wrapper w-dropdown-list">
             <div class="rich-text-block w-richtext">
-              {{ faq.answer.value }}
+              {% if faq.answer != blank %}
+                {{ faq.answer.value }}
+              {% else %}
+                <p>Answer is missing!</p>
+              {% endif %}
             </div>
           </nav>
         </div>
