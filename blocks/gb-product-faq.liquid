@@ -1,4 +1,7 @@
-<p>{{ product.metafields.custom.product_faq }}</p>
+{% for faq in product.metafields.custom.product_faq %}
+  <p>Question: {{ faq.question }}</p>
+  <p>Answer: {{ faq.answer }}</p>
+{% endfor %}
 
 <div li-block="gb-product-faq" class="gb-product-faq">
   {% for faq in product.metafields.custom.product_faq %}
