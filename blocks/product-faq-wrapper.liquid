@@ -1,17 +1,6 @@
-{% assign faqs = product.metafields.custom.product_faq.value %}
-
-{% if faqs != blank %}
-  {% assign sorted_faqs = faqs | sort: 'question_number' %}
-  {% for faq in sorted_faqs %}
-    <div class="faq-item">
-      <div class="question">{{ faq.question_number }}. {{ faq.question }}</div>
-      <div class="answer">
-        {{ faq.answer }}
-      </div>
-    </div>
-  {% endfor %}
-{% else %}
-  <p>No FAQs found</p>
-{% endif %}
-
-{% schema %} {"name":"Product FAQ Wrapper"} {% endschema %}
+<div li-block="Product FAQ Wrapper" class="faq-list-wrapper">
+  <div li-content-for-theme-blocks="">
+    {% content_for 'blocks' %}
+  </div>
+</div>
+{% schema %} {"name":"Product FAQ Wrapper","blocks":[{"type":"faq-item"},{"type":"@app"}],"presets":[{"name":"Product FAQ Wrapper"}]} {% endschema %}
