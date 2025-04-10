@@ -1,7 +1,4 @@
 <div li-block="gb-product-faq" class="gb-product-faq">
-  <pre>
-  {{ product.metafields.custom.product_faq | json }}
-</pre>
   {% for faq in product.metafields.custom.product_faq %}
     <div class="accordian-item-wrapper">
       <div
