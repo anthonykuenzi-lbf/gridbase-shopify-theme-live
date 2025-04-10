@@ -1,32 +1,22 @@
 <div li-block="Product FAQ Wrapper" class="faq-list-wrapper">
+  <div li-content-for-theme-blocks="">
+    {% content_for 'blocks' %}
+  </div>
+  {% comment %}
+    This snippet loops through all metaobject entries linked to the product under the metafield "custom.product_faq"
+  {% endcomment %}
+
   {% assign faq_entries = product.metafields.custom.product_faq.value %}
 
   {% if faq_entries != blank %}
-    {% assign sorted_faqs = faq_entries | sort: 'question_number' %}
-    {% for faq in sorted_faqs %}
-      <div li-block="faq-item" class="faq-item">
-        <div class="accordian-item-wrapper">
-          <div data-delay="0" data-hover="false" class="accordian-item w-dropdown">
-            <div class="accordian-toggle w-dropdown-toggle">
-              <div class="accordian-icon w-icon-dropdown-toggle"></div>
-              <div class="accordian-title-wrapper">
-                <div class="acordian-number-wrapper">
-                  <div class="p1-6 bold">{{ faq.question_number }}</div>
-                  <div class="p1-6 bold">.</div>
-                </div>
-                <div class="p1 bold">{{ faq.question | escape }}</div>
-              </div>
-            </div>
-            <nav style="height:0px" class="accordian-body-wrapper w-dropdown-list">
-              <div class="rich-text-block w-richtext">
-                {{ faq.answer }}
-              </div>
-            </nav>
-          </div>
-          <div class="accordian-line"></div>
+    <div class="product-faqs">
+      {% for faq in faq_entries %}
+        <div class="product-faq-item">
+          <h3 class="product-faq-question">{{ faq.question | escape }}</h3>
+          <div class="product-faq-answer">{{ faq.answer | escape }}</div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   {% else %}
     <p>No FAQs available for this product.</p>
   {% endif %}
