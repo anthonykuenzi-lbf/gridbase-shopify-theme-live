@@ -24,10 +24,20 @@
                 "richtext_answer": "<p><br/>                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/>                                  </p>"
               },
               "blocks": {}
+            },
+            "faq_item_gNnjiW": {
+              "type": "faq-item",
+              "settings": {
+                "text_number": "1",
+                "text_question": "How does Pocket work?",
+                "richtext_answer": "<p>\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                                  </p>"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "faq_item_4HgUjP"
+            "faq_item_4HgUjP",
+            "faq_item_gNnjiW"
           ]
         },
         "judge_me_reviews_preview_badge_Qw6R7f": {
