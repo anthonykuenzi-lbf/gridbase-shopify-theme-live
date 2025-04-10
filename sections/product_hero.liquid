@@ -24,7 +24,23 @@
 </div></div></template>
     </div>
 {% endif %}{% endform %}
-<div class="hide w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="hide w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div><div class="product-body-wrapper"><div class="product-header_description"><div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div></div></div><div li-content-for-theme-blocks="" class="div-block-40">
+<div class="hide w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="hide w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div><div class="product-body-wrapper"><div class="product-header_description"><div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div></div></div>{% for block in section.blocks %}
+    {% if block.type == "faq-item" %}
+                    <div li-block="faq-item" class="faq-item">
+                                    
+                                    <div class="accordian-item-wrapper"><div data-delay="0" data-hover="false" data-w-id="0b250a2c-dd5c-c2ab-29cc-863b051ba30b" class="accordian-item w-dropdown"><div class="accordian-toggle w-dropdown-toggle"><div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="accordian-icon w-icon-dropdown-toggle"></div><div class="accordian-title-wrapper"><div class="acordian-number-wrapper"><div class="p1-6 bold">
+{{ block.settings.text_number }}
+</div>
+<div class="p1-6 bold">.</div></div><div class="p1 bold">
+{{ block.settings.text_question }}
+</div>
+</div></div><nav style="height:0px" class="accordian-body-wrapper w-dropdown-list"><div class="rich-text-block w-richtext"> {{ block.settings.richtext_answer }} </div>
+</nav></div><div class="accordian-line"></div></div>
+                                    
+                            </div>
+            {% endif %}
+{% endfor %}
+<div li-content-for-theme-blocks="" class="div-block-40">
 {% content_for 'blocks' %}
 </div>
 <div class="p1 bold">
