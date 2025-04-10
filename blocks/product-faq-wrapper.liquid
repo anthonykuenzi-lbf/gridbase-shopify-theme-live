@@ -2,10 +2,8 @@
   Product FAQ Block
   Displays FAQ content from product metafields
 
-  Required metafields:
-  - gb-product-faq.Question: Contains the FAQ question text
-  - gb-product-faq.Question_Number: Contains the ordering number for the FAQ
-  - gb-product-faq.Answer: Contains the answer text for the FAQ
+  Required metafields namespace: custom.product_faq
+  With fields: Question, Question_Number, Answer
 {% endcomment %}
 
 {% schema %}
@@ -52,24 +50,25 @@
 <div class="product-faq-container">
   <h2 class="product-faq-title">{{ section.settings.title }}</h2>
 
-  {% if product.metafields.gb_product_faq %}
-    {% assign faq_items = product.metafields.gb_product_faq %}
+  {% comment %} Specifically target custom.product_faq metafields {% endcomment %}
+  {% assign faq_items = product.metafields.custom.product_faq %}
 
-    {% if faq_items.size > 0 %}
-      <div class="product-faq-list {% if section.settings.layout == 'accordion' %}faq-accordion{% else %}faq-list{% endif %}">
-        {% assign sorted_faqs = faq_items.Question | sort_natural: faq_items.Question_Number %}
+  {% if faq_items != blank %}
+    <div class="product-faq-list {% if section.settings.layout == 'accordion' %}faq-accordion{% else %}faq-list{% endif %}">
+      {% comment %} Determine if this is a single FAQ or multiple FAQs {% endcomment %}
+      {% if faq_items.first.Question %}
+        {% comment %} Handle multiple FAQs (array of objects) {% endcomment %}
+        {% assign sorted_faqs = faq_items | sort: 'Question_Number' %}
 
-        {% for question in sorted_faqs %}
-          {% assign question_index = forloop.index0 %}
-          {% assign question_number = faq_items.Question_Number[question_index] %}
-          {% assign answer = faq_items.Answer[question_index] %}
-
+        {% for faq in sorted_faqs %}
           <div class="faq-item" id="faq-item-{{ forloop.index }}">
             <div class="faq-question {% if section.settings.layout == 'accordion' %}accordion-toggle{% endif %}">
-              {% if section.settings.show_numbers and question_number != blank %}
-                <span class="faq-question-number">{{ question_number }}.</span>
+              {% if section.settings.show_numbers and faq.Question_Number != blank %}
+                <span class="faq-question-number">{{ faq.Question_Number }}.</span>
+              {% elsif section.settings.show_numbers %}
+                <span class="faq-question-number">{{ forloop.index }}.</span>
               {% endif %}
-              <h3>{{ question }}</h3>
+              <h3>{{ faq.Question }}</h3>
               {% if section.settings.layout == 'accordion' %}
                 <span class="accordion-icon">+</span>
               {% endif %}
@@ -77,17 +76,36 @@
 
             <div class="faq-answer {% if section.settings.layout == 'accordion' %}accordion-content{% endif %}">
               <div class="answer-content">
-                {{ answer }}
+                {{ faq.Answer }}
               </div>
             </div>
           </div>
         {% endfor %}
-      </div>
-    {% else %}
-      <p class="no-faqs-message">No FAQs available for this product.</p>
-    {% endif %}
+      {% else %}
+        {% comment %} Handle single FAQ (direct object) {% endcomment %}
+        <div class="faq-item" id="faq-item-1">
+          <div class="faq-question {% if section.settings.layout == 'accordion' %}accordion-toggle{% endif %}">
+            {% if section.settings.show_numbers and faq_items.Question_Number != blank %}
+              <span class="faq-question-number">{{ faq_items.Question_Number }}.</span>
+            {% elsif section.settings.show_numbers %}
+              <span class="faq-question-number">1.</span>
+            {% endif %}
+            <h3>{{ faq_items.Question }}</h3>
+            {% if section.settings.layout == 'accordion' %}
+              <span class="accordion-icon">+</span>
+            {% endif %}
+          </div>
+
+          <div class="faq-answer {% if section.settings.layout == 'accordion' %}accordion-content{% endif %}">
+            <div class="answer-content">
+              {{ faq_items.Answer }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
   {% else %}
-    <p class="no-faqs-message">No FAQs available for this product.</p>
+    <p class="no-faqs-message">No FAQs available for this product. Please check the metafield configuration.</p>
   {% endif %}
 </div>
 
