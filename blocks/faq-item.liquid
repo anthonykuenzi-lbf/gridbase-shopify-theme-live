@@ -1,11 +1,7 @@
 {% assign faq_entries = product.metafields.custom.product_faq.value %}
 
 {% if faq_entries != blank %}
-  {% assign sorted_faqs = faq_entries %}
-
-  {% assign sorted_faqs = sorted_faqs | sort: 'question_number.value' %}
-
-  {% for faq in sorted_faqs %}
+  {% for faq in faq_entries %}
     <div li-block="faq-item" class="faq-item">
       <div class="accordian-item-wrapper">
         <div data-delay="0" data-hover="false" class="accordian-item w-dropdown">
