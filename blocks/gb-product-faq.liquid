@@ -1,5 +1,7 @@
+{% assign faq_metaobject = product.metafields.custom.product_faq %}
+
 <div li-block="gb-product-faq" class="gb-product-faq">
-  {% for faq in product.metafields.custom.product_faq %}
+  {% for faq in faq_metaobject %}
     <div li-for="faq in product.metafields.custom.product_faq">
       <div class="accordian-item-wrapper">
         <div
