@@ -1,10 +1,24 @@
 {% assign faqs = product.metafields.custom.product_faq.value %}
 
 {% if faqs != blank %}
-  {% for faq in faqs %}
-    <div class="faq-item">
-      <h3>{{ faq.question_number }}. {{ faq.question }}</h3>
-      <div>{{ faq.answer }}</div>
+  {% assign sorted_faqs = faqs | sort: 'question_number' %}
+  {% for faq in sorted_faqs %}
+    <div li-block="faq-item" class="faq-item">
+      <div class="accordian-item-wrapper">
+        <div class="accordian-item w-dropdown">
+          <div class="accordian-toggle w-dropdown-toggle">
+            <div class="accordian-title-wrapper">
+              <div class="acordian-number-wrapper">
+                <span>{{ faq.question_number }}</span><span>.</span>
+              </div>
+              <div>{{ faq.question }}</div>
+            </div>
+          </div>
+          <div class="accordian-body-wrapper w-dropdown-list">
+            <div>{{ faq.answer }}</div>
+          </div>
+        </div>
+      </div>
     </div>
   {% endfor %}
 {% endif %}
