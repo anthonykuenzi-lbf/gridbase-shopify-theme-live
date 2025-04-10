@@ -1,7 +1,17 @@
-{% for faq in product.metafields.custom.product_faq %}
-  <p>Question: {{ faq.question }}</p>
-  <p>Answer: {{ faq.answer }}</p>
-{% endfor %}
+{% assign faqs = product.metafields.product_faq | parse_json %}
+
+{% if faqs %}
+  <div class="product-faqs">
+    {% for faq in faqs %}
+      <div class="faq-item">
+        <h3>Question {{ faq.question_number }}: {{ faq.question }}</h3>
+        <p>{{ faq.answer }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No FAQs available for this product.</p>
+{% endif %}
 
 <div li-block="gb-product-faq" class="gb-product-faq">
   {% for faq in product.metafields.custom.product_faq %}
