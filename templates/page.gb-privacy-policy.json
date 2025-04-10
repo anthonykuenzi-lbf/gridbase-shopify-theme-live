@@ -18,81 +18,10 @@
             "richtext_section_text": "<p><strong>Lorem Ipsum Title</strong></p><p>This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.</p><p>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at </p>"
           },
           "blocks": {}
-        },
-        "gb_rich_text_Y9hhLf": {
-          "type": "gb-rich-text",
-          "settings": {
-            "richtext_section_text": "<p>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at</p>"
-          },
-          "blocks": {}
-        },
-        "gb_rich_text_Tq8Wfm": {
-          "type": "gb-rich-text",
-          "settings": {
-            "richtext_section_text": "<p><br/>                  <strong>Lorem Ipsum Title</strong>‍<br/>                  This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at </p>"
-          },
-          "blocks": {}
-        },
-        "gb_rich_text_MRGzhz": {
-          "type": "gb-rich-text",
-          "settings": {
-            "richtext_section_text": "<p><br/>                  <strong>Lorem Ipsum Title</strong>‍<br/>                  This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at </p>"
-          },
-          "blocks": {}
-        },
-        "gb_table_iGRtDx": {
-          "type": "gb-table",
-          "settings": {},
-          "blocks": {
-            "gb_table_row_piCXfF": {
-              "type": "gb-table-row",
-              "settings": {
-                "text_column_1_text": "Name",
-                "text_column_2_text": "Function",
-                "text_column_3_text": "Duration"
-              },
-              "blocks": {}
-            },
-            "gb_table_row_C7XzFR": {
-              "type": "gb-table-row",
-              "settings": {
-                "text_column_1_text": "Name",
-                "text_column_2_text": "Function",
-                "text_column_3_text": "Duration"
-              },
-              "blocks": {}
-            },
-            "gb_table_row_ffndR6": {
-              "type": "gb-table-row",
-              "settings": {
-                "text_column_1_text": "Name",
-                "text_column_2_text": "Function",
-                "text_column_3_text": "Duration"
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "gb_table_row_piCXfF",
-            "gb_table_row_C7XzFR",
-            "gb_table_row_ffndR6"
-          ]
-        },
-        "gb_rich_text_gA7TYB": {
-          "type": "gb-rich-text",
-          "settings": {
-            "richtext_section_text": "<p><br/>                  <strong>Lorem Ipsum Title</strong>‍<br/>                  This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at </p>"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "gb_rich_text_KmqjLt",
-        "gb_rich_text_Y9hhLf",
-        "gb_rich_text_Tq8Wfm",
-        "gb_rich_text_MRGzhz",
-        "gb_table_iGRtDx",
-        "gb_rich_text_gA7TYB"
+        "gb_rich_text_KmqjLt"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
