@@ -1,37 +1,9 @@
 <div li-block="Product FAQ Wrapper" class="faq-list-wrapper">
-  <div li-content-for-theme-blocks="">
-    {% content_for 'blocks' %}
-  </div>
-{% assign faq_entries = product.metafields.custom.product_faq.value %}
+                    
+                    <div li-content-for-theme-blocks="" class="div-block-41">
+{% content_for 'blocks' %}
+</div>
 
-{% if faq_entries != blank %}
-  {% assign sorted_faqs = faq_entries | sort: 'question_number.value' %}
-  {% for faq in sorted_faqs %}
-    <div li-block="faq-item" class="faq-item">
-      <div class="accordian-item-wrapper">
-        <div data-delay="0" data-hover="false" class="accordian-item w-dropdown">
-          <div class="accordian-toggle w-dropdown-toggle">
-            <div class="accordian-icon w-icon-dropdown-toggle"></div>
-            <div class="accordian-title-wrapper">
-              <div class="acordian-number-wrapper">
-                <div class="p1-6 bold">{{ faq.question_number.value }}</div>
-                <div class="p1-6 bold">.</div>
-              </div>
-              <div class="p1 bold">{{ faq.question.value | escape }}</div>
-            </div>
-          </div>
-          <nav style="height:0px" class="accordian-body-wrapper w-dropdown-list">
-            <div class="rich-text-block w-richtext">
-              {{ faq.answer.value }}
-            </div>
-          </nav>
-        </div>
-        <div class="accordian-line"></div>
-      </div>
-    </div>
-  {% endfor %}
-{% else %}
-  <p>No FAQs available for this product.</p>
-{% endif %}
-
-{% schema %} {"name":"Product FAQ Wrapper","blocks":[{"type":"faq-item"},{"type":"@app"}],"presets":[{"name":"Product FAQ Wrapper"}]} {% endschema %}
+                    
+                </div>
+     {% schema %} {"name":"Product FAQ Wrapper","blocks":[{"type":"faq-item"},{"type":"@app"}],"presets":[{"name":"Product FAQ Wrapper"}]} {% endschema %}
