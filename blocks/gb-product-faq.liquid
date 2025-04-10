@@ -1,4 +1,4 @@
-{% assign faqs = product.metafields.product_faq | parse_json %}
+{% assign faqs = product.metafields.custom.product_faq | parse_json %}
 
 {% if faqs %}
   <div class="product-faqs">
