@@ -8,8 +8,8 @@
         <p class="faq-question-text">Question: {{ faq.question.value | escape }}</p>
         <div class="faq-answer">
           <h4>Answer:</h4>
-          {% if faq.answer_ != blank %}
-            <div>{{ faq.answer_.value }}</div>
+          {% if faq.answer != blank %}
+            <div>{{ faq.answer.value }}</div>
           {% else %}
             <p>Answer is missing!</p>
           {% endif %}
