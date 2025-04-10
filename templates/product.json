@@ -21,6 +21,15 @@
           },
           "blocks": {}
         },
+        "faq_item_kBJiDD": {
+          "type": "faq-item",
+          "settings": {
+            "text_number": "1",
+            "text_question": "How does Pocket work?",
+            "richtext_answer": "<p>\n                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n                                </p>"
+          },
+          "blocks": {}
+        },
         "judge_me_reviews_preview_badge_Qw6R7f": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
@@ -28,6 +37,7 @@
       },
       "block_order": [
         "faq_item_cLYF8H",
+        "faq_item_kBJiDD",
         "judge_me_reviews_preview_badge_Qw6R7f"
       ],
       "settings": {
