@@ -1,4 +1,8 @@
-<script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
+<<pre>
+  {{ product.metafields.custom.product_faq | json }}
+</pre>
+  
+  script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"><div id="w-node-dde72f15-2dd1-3c3f-ef72-b299bc1979d2-3be0c667" class="swiper-container is-product-gallery"><div class="swiper is-product-gallery"><div id="my-gallery" class="swiper-wrapper is-product-gallery">{% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-gallery">
                                     
                             <div class="product-header_gallery-lightbox"><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" loading="lazy" class="product-header_gallery-image">
