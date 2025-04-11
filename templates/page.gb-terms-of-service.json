@@ -148,7 +148,7 @@
         "gb_rich_text_zY6Wb9": {
           "type": "gb-rich-text",
           "settings": {
-            "richtext_section_text": "<p><strong>SECTION 20 - CONTACT INFORMATION</strong></p><p>Questions about the Terms of Service should be sent to us at info@gridbase.net.</p><p>Our contact information is posted below:</p><p>Gridbase, LLC</p><p>info@gridbase.net</p><p>7612 White Settlement Rd</p><p>White Settlement, TX,76108</p><p>817-995-4514</p>"
+            "richtext_section_text": "<p><strong>SECTION 20 - CONTACT INFORMATION</strong></p><p>Questions about the Terms of Service should be sent to us at info@gridbase.net.</p><p>Our contact information is posted below:</p><p>Gridbase, LLC<br/>info@gridbase.net</p><p>7612 White Settlement Rd<br/>White Settlement, TX,76108</p><p>817-995-4514</p>"
           },
           "blocks": {}
         }
