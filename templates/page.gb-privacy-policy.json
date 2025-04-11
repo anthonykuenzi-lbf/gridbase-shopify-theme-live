@@ -234,6 +234,15 @@
               },
               "blocks": {}
             },
+            "gb_table_row_fpUkr6": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_evids",
+                "text_column_2_text": "Shopify analytics.",
+                "text_column_3_text": "session"
+              },
+              "blocks": {}
+            },
             "gb_table_row_g9FCkQ": {
               "type": "gb-table-row",
               "settings": {
@@ -246,6 +255,7 @@
           },
           "block_order": [
             "gb_table_row_x10_tmd3wT",
+            "gb_table_row_fpUkr6",
             "gb_table_row_g9FCkQ"
           ]
         }
