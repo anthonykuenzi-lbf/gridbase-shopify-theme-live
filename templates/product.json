@@ -42,6 +42,7 @@
     },
     "product_recommended_xEttWN": {
       "type": "product_recommended",
+      "disabled": true,
       "settings": {
         "text_headline": ""
       }
