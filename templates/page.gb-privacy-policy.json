@@ -15,13 +15,29 @@
         "gb_rich_text_KmqjLt": {
           "type": "gb-rich-text",
           "settings": {
-            "richtext_section_text": "<p><strong>Lorem Ipsum Title</strong></p><p>This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.</p><p>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at </p>"
+            "richtext_section_text": "<p><strong>Collecting Personal Information</strong></p><p>When you visit the Site, we collect certain information about your device, your interaction with the Site, and information necessary to process your purchases. We may also collect additional information if you contact us for customer support. In this Privacy Policy, we refer to any information about an identifiable individual (including the information below) as “Personal Information”. See the list below for more information about what Personal Information we collect and why.</p><p>Device information</p><ul><li>Purpose of collection: to load the Site accurately for you, and to perform analytics on Site usage to optimize our Site.</li><li>Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels. </li><li>Disclosure for a business purpose: Shared with our processor Shopify. </li><li>Personal Information collected: version of web browser, IP address, time zone, cookie information, what sites or products you view, search terms, and how you interact with the Site </li></ul><p></p><p>Order information</p><ul><li>Purpose of collection: to provide products or services to you to fulfill our contract, to process your payment information, arrange for shipping, and provide you with invoices and/or order confirmations, communicate with you, screen our orders for potential risk or fraud, and when in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services.</li><li>Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels. </li><li>Disclosure for a business purpose: Shared with our processor Shopify. </li><li>Personal Information collected: name, billing address, shipping address, payment information (including credit card numbers, Shop Pay, Apple Pay, Google Pay, Shopify Payments) email address, and phone number.</li></ul><p></p><p>Customer support information</p><ul><li>Purpose of collection:  to provide products or services to you to fulfill our contract, to process your payment information, arrange for shipping, and provide you with invoices and/or order confirmations, communicate with you, screen our orders for potential risk or fraud, and when in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services.</li><li>Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels. </li><li>Disclosure for a business purpose: Shared with our processor Shopify. </li><li>Personal Information collected: name, billing address, shipping address, payment information (including credit card numbers, Shop Pay, Apple Pay, Google Pay, Shopify Payments) email address, and phone number.</li><li>Purpose of collection: to provide products or services to you to fulfill our contract, to process your payment information, arrange for shipping, and provide you with invoices and/or order confirmations, communicate with you, screen our orders for potential risk or fraud, and when in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services.</li><li>Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels. </li><li>Disclosure for a business purpose: <em>[</em>Shared with our processor Shopify. </li><li>name, billing address, shipping address, payment information (including credit card numbers, Shop Pay, Apple Pay, Google Pay, Shopify Payments) email address, and phone number.</li></ul>"
+          },
+          "blocks": {}
+        },
+        "gb_rich_text_6dwmQX": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><br/>                  <strong>Lorem Ipsum Title</strong>‍<br/>                  This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at </p>"
+          },
+          "blocks": {}
+        },
+        "gb_rich_text_z43rXg": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p>\n                  <strong>Lorem Ipsum Title</strong>‍\n                  This Privacy Policy describes how www.gridbase.net (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.<br/><br/>After reviewing this policy, if you have additional questions, want more information about our privacy practices, or would like to make a complaint, please contact us by e-mail at <a href=\"mailto:info@gridbase.n</p>"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "gb_rich_text_KmqjLt"
+        "gb_rich_text_KmqjLt",
+        "gb_rich_text_6dwmQX",
+        "gb_rich_text_z43rXg"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
