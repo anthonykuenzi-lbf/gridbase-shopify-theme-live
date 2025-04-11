@@ -198,17 +198,54 @@
           "type": "gb-table",
           "settings": {},
           "blocks": {
+            "gb_table_row_x10_tmd3wT": {
+              "type": "gb-table-row-x10",
+              "settings": {
+                "text_a1": "Name",
+                "text_b1": "Function",
+                "text_c1": "Duration",
+                "text_a2": "Name",
+                "text_b2": "Function",
+                "text_c2": "Duration",
+                "text_a3": "Name",
+                "text_b3": "Function",
+                "text_c3": "Duration",
+                "text_a4": "Name",
+                "text_b4": "Function",
+                "text_c4": "Duration",
+                "text_a5": "Name",
+                "text_b5": "Function",
+                "text_c5": "Duration",
+                "text_a6": "Name",
+                "text_b6": "Function",
+                "text_c6": "Duration",
+                "text_a7": "Name",
+                "text_b7": "Function",
+                "text_c7": "Duration",
+                "text_a8": "Name",
+                "text_b8": "Function",
+                "text_c8": "Duration",
+                "text_a9": "Name",
+                "text_b9": "Function",
+                "text_c9": "Duration",
+                "text_a10": "Name",
+                "text_b10": "Function",
+                "text_c10": "Duration"
+              },
+              "blocks": {}
+            },
             "gb_table_row_g9FCkQ": {
               "type": "gb-table-row",
               "settings": {
-                "text_column_1_text": "Name",
-                "text_column_2_text": "Function",
-                "text_column_3_text": "Duration"
+                "text_column_1_text": "_shopify_ga",
+                "text_column_2_text": "Shopify and Google Analytics.",
+                "text_column_3_text": "session"
               },
               "blocks": {}
             }
           },
           "block_order": [
+            "gb_table_row_x10_tmd3wT",
             "gb_table_row_g9FCkQ"
           ]
         }
