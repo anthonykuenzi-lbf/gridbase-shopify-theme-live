@@ -107,10 +107,46 @@
                 "text_c10": "1y"
               },
               "blocks": {}
+            },
+            "gb_table_row_x10_TpQqQH": {
+              "type": "gb-table-row-x10",
+              "settings": {
+                "text_a1": "cart",
+                "text_b1": "Used in connection with shopping cart.",
+                "text_c1": "2w",
+                "text_b2": "cart_currency",
+                "text_c2": "Used in connection with shopping cart.",
+                "text_a3": "2w",
+                "text_b3": "Function",
+                "text_c3": "Duration",
+                "text_a4": "Name",
+                "text_b4": "Function",
+                "text_c4": "Duration",
+                "text_a5": "Name",
+                "text_b5": "Function",
+                "text_c5": "Duration",
+                "text_a6": "Name",
+                "text_b6": "Function",
+                "text_c6": "Duration",
+                "text_a7": "Name",
+                "text_b7": "Function",
+                "text_c7": "Duration",
+                "text_a8": "Name",
+                "text_b8": "Function",
+                "text_c8": "Duration",
+                "text_a9": "Name",
+                "text_b9": "Function",
+                "text_c9": "Duration",
+                "text_a10": "Name",
+                "text_b10": "Function",
+                "text_c10": "Duration"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "gb_table_row_x10_Ug3iPH"
+            "gb_table_row_x10_Ug3iPH",
+            "gb_table_row_x10_TpQqQH"
           ]
         },
         "gb_rich_text_UWhXmm": {
