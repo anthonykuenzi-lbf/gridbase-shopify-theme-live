@@ -110,11 +110,71 @@
                 "text_column_3_text": "2y"
               },
               "blocks": {}
+            },
+            "gb_table_row_zbDniU": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_secure_session_id",
+                "text_column_2_text": "Used in connection with navigation through a storefront.",
+                "text_column_3_text": "24h"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_UEcVdt": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_country",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "session"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_bn87Km": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_m",
+                "text_column_2_text": "Used for managing customer privacy settings.",
+                "text_column_3_text": "1y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_UMQHTK": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_tm",
+                "text_column_2_text": "Used for managing customer privacy settings.",
+                "text_column_3_text": "30min"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_aBHyRz": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_tw",
+                "text_column_2_text": "Used for managing customer privacy settings.",
+                "text_column_3_text": "2w"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_tN3erg": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "Name",
+                "text_column_2_text": "Function",
+                "text_column_3_text": "Duration"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "gb_table_row_b7Ngzr",
-            "gb_table_row_LbBEEU"
+            "gb_table_row_LbBEEU",
+            "gb_table_row_zbDniU",
+            "gb_table_row_UEcVdt",
+            "gb_table_row_bn87Km",
+            "gb_table_row_UMQHTK",
+            "gb_table_row_aBHyRz",
+            "gb_table_row_tN3erg"
           ]
         }
       },
