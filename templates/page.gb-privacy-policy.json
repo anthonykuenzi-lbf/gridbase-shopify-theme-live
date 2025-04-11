@@ -68,6 +68,11 @@
           },
           "blocks": {}
         },
+        "gb_table_3dNkAw": {
+          "type": "gb-table",
+          "settings": {},
+          "blocks": {}
+        },
         "gb_table_NTYKVh": {
           "type": "gb-table",
           "settings": {},
@@ -95,6 +100,7 @@
         "gb_rich_text_KNzzPK",
         "gb_rich_text_nY8Yrp",
         "gb_rich_text_XBxtMU",
+        "gb_table_3dNkAw",
         "gb_table_NTYKVh",
         "gb_rich_text_UWhXmm",
         "gb_table_iirU8R"
