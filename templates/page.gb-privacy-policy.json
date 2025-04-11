@@ -53,6 +53,13 @@
             "richtext_section_text": "<p><strong>Retention</strong></p><p>When you place an order through the Site, we will retain your Personal Information for our records unless and until you ask us to erase this information. For more information on your right of erasure, please see the ‘Your rights’ section below.</p><p>Automatic decision-making</p><p>If you are a resident of the EEA, you have the right to object to processing based solely on automated decision-making (which includes profiling), when that decision-making has a legal effect on you or otherwise significantly affects you.</p><p>We <em>[DO/DO NOT]</em> engage in fully automated decision-making that has a legal or otherwise significant effect using customer data.</p><p>Our processor Shopify uses limited automated decision-making to prevent fraud that does not have a legal or otherwise significant effect on you.</p><p>Services that include elements of automated decision-making include:</p><ul><li>Temporary blacklist of IP addresses associated with repeated failed transactions. This blacklist persists for a small number of hours.</li><li>Temporary blacklist of credit cards associated with blacklisted IP addresses. This blacklist persists for a small number of days.</li></ul>"
           },
           "blocks": {}
+        },
+        "gb_rich_text_KNzzPK": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><strong>Your rights</strong></p><p><strong>Right to Know What Data is Collected</strong> – Sellers must disclose what personal information (name, email, payment details, etc.) is collected and how it’s used.</p><p><strong>Right to Data Access & Portability</strong> – Under GDPR, you can request a copy of your personal data from the seller and transfer it elsewhere.</p><p><strong>Right to Correct or Delete Data</strong> – You can request corrections to inaccurate data or ask for its deletion if no longer needed (except for legal/tax purposes).</p><p><strong>Right to Opt-Out of Marketing</strong> – In the U.S., you can <strong>unsubscribe</strong> from marketing emails anytime. Under GDPR, sellers need your <strong>explicit consent</strong> before sending promotions.</p><p><strong>Right to Secure Transactions</strong> – Shopify ensures PCI-compliant payment processing, meaning your financial details are protected during purchases.</p><p><strong>Right to Request No Data Sale (CCPA)</strong> – If you're a California resident, you can request that your data <strong>not be sold to third parties</strong>.</p><p><strong>Right to Refunds & Returns</strong> – Refunds depend on the seller’s policy, which must be clearly stated before purchase. Shopify itself does not handle refunds.</p><p><strong>Right to File Complaints</strong> – If a seller mishandles your data, you can file a complaint with regulatory authorities (FTC in the U.S., GDPR authorities in the EU).<br/><br/></p>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -61,7 +68,8 @@
         "gb_rich_text_reiqf9",
         "gb_rich_text_WAr4bA",
         "gb_rich_text_xAVCcg",
-        "gb_rich_text_Ug3jQP"
+        "gb_rich_text_Ug3jQP",
+        "gb_rich_text_KNzzPK"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
