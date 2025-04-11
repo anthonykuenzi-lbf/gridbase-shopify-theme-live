@@ -144,6 +144,13 @@
             "richtext_section_text": "<p><strong>SECTION 19 - CHANGES TO TERMS OF SERVICE</strong></p><p>You can review the most current version of the Terms of Service at any time at this page.</p><p>We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.</p>"
           },
           "blocks": {}
+        },
+        "gb_rich_text_zY6Wb9": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><strong>SECTION 20 - CONTACT INFORMATION</strong></p><p>Questions about the Terms of Service should be sent to us at info@gridbase.net.</p><p>Our contact information is posted below:</p><p>Gridbase, LLC</p><p>info@gridbase.net</p><p>7612 White Settlement Rd</p><p>White Settlement, TX,76108</p><p>817-995-4514</p>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -165,7 +172,8 @@
         "gb_rich_text_HJeUmg",
         "gb_rich_text_kpEeHi",
         "gb_rich_text_NQccqM",
-        "gb_rich_text_F3yhXn"
+        "gb_rich_text_F3yhXn",
+        "gb_rich_text_zY6Wb9"
       ],
       "settings": {
         "textarea_heading": "Terms of Service",
