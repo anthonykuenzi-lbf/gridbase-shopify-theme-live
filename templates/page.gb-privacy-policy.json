@@ -265,6 +265,13 @@
             "richtext_section_text": "<p>The length of time that a cookie remains on your computer or mobile device depends on whether it is a “persistent” or “session” cookie. Session cookies last until you stop browsing and persistent cookies last until they expire or are deleted. Most of the cookies we use are persistent and will expire between 30 minutes and two years from the date they are downloaded to your device.</p><p>You can control and manage cookies in various ways. Please keep in mind that removing or blocking cookies can negatively impact your user experience and parts of our website may no longer be fully accessible.</p><p>Most browsers automatically accept cookies, but you can choose whether or not to accept cookies through your browser controls, often found in your browser’s “Tools” or “Preferences” menu. For more information on how to modify your browser settings or how to block, manage or filter cookies can be found in your browser’s help file or through such sites as: <a href=\"https://www.gridbase.net/policies/www.allaboutcookies.org\"><span style=\"text-decoration:underline\">www.allaboutcookies.org</span></a>.</p><p>Additionally, please note that blocking cookies may not completely prevent how we share information with third parties such as our advertising partners. To exercise your rights or opt-out of certain uses of your information by these parties, please follow the instructions in the “Behavioural Advertising” section above.</p>"
           },
           "blocks": {}
+        },
+        "gb_rich_text_8fQQMt": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><strong>Do Not Track</strong></p><p>Please note that because there is no consistent industry understanding of how to respond to “Do Not Track” signals, we do not alter our data collection and usage practices when we detect such a signal from your browser.</p><p><strong>Changes</strong></p><p>We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons.</p><p><strong>Complaints</strong></p><p>As noted above, if you would like to make a complaint, please contact us by e-mail or by mail using the details provided under “Contact” above.</p><p>If you are not satisfied with our response to your complaint, you have the right to lodge your complaint with the relevant data protection authority. You can contact your local data protection authority, or our supervisory authority here: <em>[Add contact information or website for the data protection authority in your jurisdiction. For example: </em><a href=\"https://ico.org.uk/make-a-complaint/\"><em> </em><span style=\"text-decoration:underline\"><em>https://ico.org.uk/make-a-complaint/</em></span></a><em>]</em></p><p><strong>Last updated: </strong><em><strong>[04.11.2025]</strong></em></p>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -279,7 +286,8 @@
         "gb_table_NTYKVh",
         "gb_rich_text_UWhXmm",
         "gb_table_iirU8R",
-        "gb_rich_text_pYAX43"
+        "gb_rich_text_pYAX43",
+        "gb_rich_text_8fQQMt"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
