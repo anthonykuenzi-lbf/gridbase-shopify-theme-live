@@ -164,6 +164,24 @@
                 "text_column_3_text": "1min"
               },
               "blocks": {}
+            },
+            "gb_table_row_FyQE6r": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_tracking_consent",
+                "text_column_2_text": "Tracking preferences.",
+                "text_column_3_text": "1y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_4LknPg": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "c",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "1y"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -174,7 +192,9 @@
             "gb_table_row_bn87Km",
             "gb_table_row_UMQHTK",
             "gb_table_row_aBHyRz",
-            "gb_table_row_tN3erg"
+            "gb_table_row_tN3erg",
+            "gb_table_row_FyQE6r",
+            "gb_table_row_4LknPg"
           ]
         }
       },
