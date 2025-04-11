@@ -258,6 +258,13 @@
             "gb_table_row_fpUkr6",
             "gb_table_row_g9FCkQ"
           ]
+        },
+        "gb_rich_text_pYAX43": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p>The length of time that a cookie remains on your computer or mobile device depends on whether it is a “persistent” or “session” cookie. Session cookies last until you stop browsing and persistent cookies last until they expire or are deleted. Most of the cookies we use are persistent and will expire between 30 minutes and two years from the date they are downloaded to your device.</p><p>You can control and manage cookies in various ways. Please keep in mind that removing or blocking cookies can negatively impact your user experience and parts of our website may no longer be fully accessible.</p><p>Most browsers automatically accept cookies, but you can choose whether or not to accept cookies through your browser controls, often found in your browser’s “Tools” or “Preferences” menu. For more information on how to modify your browser settings or how to block, manage or filter cookies can be found in your browser’s help file or through such sites as: <a href=\"https://www.gridbase.net/policies/www.allaboutcookies.org\"><span style=\"text-decoration:underline\">www.allaboutcookies.org</span></a>.</p><p>Additionally, please note that blocking cookies may not completely prevent how we share information with third parties such as our advertising partners. To exercise your rights or opt-out of certain uses of your information by these parties, please follow the instructions in the “Behavioural Advertising” section above.</p>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -271,7 +278,8 @@
         "gb_rich_text_XBxtMU",
         "gb_table_NTYKVh",
         "gb_rich_text_UWhXmm",
-        "gb_table_iirU8R"
+        "gb_table_iirU8R",
+        "gb_rich_text_pYAX43"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
