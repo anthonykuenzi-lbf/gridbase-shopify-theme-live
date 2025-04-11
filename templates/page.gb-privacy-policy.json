@@ -143,11 +143,48 @@
                 "text_c10": "2w"
               },
               "blocks": {}
+            },
+            "gb_table_row_x10_benWpd": {
+              "type": "gb-table-row-x10",
+              "settings": {
+                "text_a1": "master_device_id",
+                "text_b1": "Used in connection with merchant login.",
+                "text_c1": "2y",
+                "text_a2": "previous_step",
+                "text_b2": "Used in connection with checkout.",
+                "text_c2": "1y",
+                "text_a3": "remember_me",
+                "text_b3": "Used in connection with checkout.",
+                "text_c3": "1y",
+                "text_a4": "secure_customer_sig",
+                "text_b4": "Used in connection with customer login.",
+                "text_c4": "20y",
+                "text_a5": "shopify_pay",
+                "text_b5": "Used in connection with checkout.",
+                "text_c5": "1y",
+                "text_a6": "shopify_pay_redirect",
+                "text_b6": "Used in connection with checkout.",
+                "text_c6": "30 minutes, 3w or 1y depending on value",
+                "text_a7": "storefront_digest",
+                "text_b7": "Used in connection with customer login.",
+                "text_c7": "2y",
+                "text_a8": "tracked_start_checkout",
+                "text_b8": "Used in connection with checkout.",
+                "text_c8": "1y",
+                "text_a9": "checkout_one_experiment",
+                "text_b9": "Used in connection with checkout.",
+                "text_c9": "session",
+                "text_a10": "",
+                "text_b10": "",
+                "text_c10": ""
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "gb_table_row_x10_Ug3iPH",
-            "gb_table_row_x10_8CPznQ"
+            "gb_table_row_x10_8CPznQ",
+            "gb_table_row_x10_benWpd"
           ]
         },
         "gb_rich_text_UWhXmm": {
