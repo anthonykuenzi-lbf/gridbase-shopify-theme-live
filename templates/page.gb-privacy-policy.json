@@ -85,9 +85,37 @@
         "gb_rich_text_9xN8cw": {
           "type": "gb-rich-text",
           "settings": {
-            "richtext_section_text": "<p><strong>Cookies Necessary for the Functioning of the Store</strong></p>"
+            "richtext_section_text": "<p><strong>Cookies Necessary for the Functioning of the Store.</strong></p>"
           },
           "blocks": {}
+        },
+        "gb_table_NTYKVh": {
+          "type": "gb-table",
+          "settings": {},
+          "blocks": {
+            "gb_table_row_b7Ngzr": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "Name",
+                "text_column_2_text": "Function",
+                "text_column_3_text": "Duration"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_LbBEEU": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_ab",
+                "text_column_2_text": "Used in connection with access to admin.",
+                "text_column_3_text": "2y"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "gb_table_row_b7Ngzr",
+            "gb_table_row_LbBEEU"
+          ]
         }
       },
       "block_order": [
@@ -101,7 +129,8 @@
         "gb_rich_text_TadgAw",
         "gb_rich_text_nY8Yrp",
         "gb_rich_text_XBxtMU",
-        "gb_rich_text_9xN8cw"
+        "gb_rich_text_9xN8cw",
+        "gb_table_NTYKVh"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
