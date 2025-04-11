@@ -245,6 +245,114 @@
                 "text_column_3_text": "1y"
               },
               "blocks": {}
+            },
+            "gb_table_row_rENr3X": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "dynamic_checkout_shown_on_cart",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "30min"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_UmVMyR": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "hide_shopify_pay_for_checkout",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "session"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_LrEEcX": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "keep_alive",
+                "text_column_2_text": "Used in connection with buyer localization.",
+                "text_column_3_text": "2w"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_wPEKX4": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "master_device_id",
+                "text_column_2_text": "Used in connection with merchant login.",
+                "text_column_3_text": "2y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_QCgf7z": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "previous_step",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "1y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_UFCTp7": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "remember_me",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "1y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_apkJxN": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "secure_customer_sig",
+                "text_column_2_text": "Used in connection with customer login.",
+                "text_column_3_text": "20y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_kmnEJd": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "shopify_pay",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "1y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_h8hJpR": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "shopify_pay_redirect",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "30 minutes, 3w or 1y depending on value"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_LCyikk": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "storefront_digest",
+                "text_column_2_text": "Used in connection with customer login.",
+                "text_column_3_text": "2y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_C9KXCp": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "tracked_start_checkout",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "1y"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_W6QV6j": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "checkout_one_experiment",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "session"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -264,7 +372,19 @@
             "gb_table_row_eDw3hd",
             "gb_table_row_BEbDaE",
             "gb_table_row_MMwDCH",
-            "gb_table_row_LNKz8F"
+            "gb_table_row_LNKz8F",
+            "gb_table_row_rENr3X",
+            "gb_table_row_UmVMyR",
+            "gb_table_row_LrEEcX",
+            "gb_table_row_wPEKX4",
+            "gb_table_row_QCgf7z",
+            "gb_table_row_UFCTp7",
+            "gb_table_row_apkJxN",
+            "gb_table_row_kmnEJd",
+            "gb_table_row_h8hJpR",
+            "gb_table_row_LCyikk",
+            "gb_table_row_C9KXCp",
+            "gb_table_row_W6QV6j"
           ]
         }
       },
