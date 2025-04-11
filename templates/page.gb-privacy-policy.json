@@ -72,75 +72,45 @@
           "type": "gb-table",
           "settings": {},
           "blocks": {
-            "gb_table_row_4YqpxR": {
-              "type": "gb-table-row",
-              "settings": {
-                "text_column_1_text": "Name",
-                "text_column_2_text": "Function",
-                "text_column_3_text": "Duration"
-              },
-              "blocks": {}
-            },
             "gb_table_row_x10_Ug3iPH": {
               "type": "gb-table-row-x10",
               "settings": {
                 "text_a1": "Name",
                 "text_b1": "Function",
                 "text_c1": "Duration",
-                "text_b2": "Function",
-                "text_c2": "Duration",
-                "text_a3": "Name",
-                "text_b3": "Function",
-                "text_c3": "Duration",
-                "text_a4": "Name",
-                "text_b4": "Function",
-                "text_c4": "Duration",
-                "text_a5": "Name",
-                "text_b5": "Function",
-                "text_c5": "Duration",
-                "text_a6": "Name",
-                "text_b6": "Function",
-                "text_c6": "Duration",
-                "text_a7": "Name",
-                "text_b7": "Function",
-                "text_c7": "Duration",
-                "text_a8": "Name",
-                "text_b8": "Function",
-                "text_c8": "Duration",
-                "text_a9": "Name",
-                "text_b9": "Function",
-                "text_c9": "Duration",
-                "text_a10": "Name",
-                "text_b10": "Function",
-                "text_c10": "Duration"
-              },
-              "blocks": {}
-            },
-            "gb_table_row_x5_9LwkdB": {
-              "type": "gb-table-row-x5",
-              "settings": {
-                "text_a1": "Name",
-                "text_b1": "Function",
-                "text_c1": "Duration",
-                "text_b2": "Function",
-                "text_c2": "Duration",
-                "text_a3": "Name",
-                "text_b3": "Function",
-                "text_c3": "Duration",
-                "text_a4": "Name",
-                "text_b4": "Function",
-                "text_c4": "Duration",
-                "text_a5": "Name",
-                "text_b5": "Function",
-                "text_c5": "Duration"
+                "text_a2": "_ab",
+                "text_b2": "Used in connection with access to admin.",
+                "text_c2": "2y",
+                "text_a3": "_secure_session_id",
+                "text_b3": "Used in connection with navigation through a storefront.",
+                "text_c3": "24h",
+                "text_a4": "_shopify_country",
+                "text_b4": "Used in connection with checkout.",
+                "text_c4": "session",
+                "text_a5": "_shopify_m",
+                "text_b5": "Used for managing customer privacy settings.",
+                "text_c5": "1y",
+                "text_a6": "_shopify_tm",
+                "text_b6": "Used for managing customer privacy settings.",
+                "text_c6": "30min",
+                "text_a7": "_shopify_tw",
+                "text_b7": "Used for managing customer privacy settings.",
+                "text_c7": "2w",
+                "text_a8": "_storefront_u",
+                "text_b8": "Used to facilitate updating customer account information.",
+                "text_c8": "1min",
+                "text_a9": "_tracking_consent",
+                "text_b9": "Tracking preferences.",
+                "text_c9": "1y",
+                "text_a10": "c",
+                "text_b10": "Used in connection with checkout.",
+                "text_c10": "1y"
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "gb_table_row_4YqpxR",
-            "gb_table_row_x10_Ug3iPH",
-            "gb_table_row_x5_9LwkdB"
+            "gb_table_row_x10_Ug3iPH"
           ]
         },
         "gb_rich_text_UWhXmm": {
