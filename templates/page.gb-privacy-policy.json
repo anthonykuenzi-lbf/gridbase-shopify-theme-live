@@ -46,6 +46,13 @@
             "richtext_section_text": "<p><strong>Lawful basis</strong></p><p>Pursuant to the General Data Protection Regulation (“GDPR”), if you are a resident of the European Economic Area (“EEA”), we process your personal information under the following lawful bases:</p><ul><li>Your consent;</li><li>The performance of the contract between you and the Site;</li><li>Compliance with our legal obligations;</li><li>To protect your vital interests;</li><li>To perform a task carried out in the public interest;</li><li>For our legitimate interests, which do not override your fundamental rights and freedoms.</li></ul>"
           },
           "blocks": {}
+        },
+        "gb_rich_text_Ug3jQP": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><strong>Retention</strong></p><p>When you place an order through the Site, we will retain your Personal Information for our records unless and until you ask us to erase this information. For more information on your right of erasure, please see the ‘Your rights’ section below.</p><p>Automatic decision-making</p><p>If you are a resident of the EEA, you have the right to object to processing based solely on automated decision-making (which includes profiling), when that decision-making has a legal effect on you or otherwise significantly affects you.</p><p>We <em>[DO/DO NOT]</em> engage in fully automated decision-making that has a legal or otherwise significant effect using customer data.</p><p>Our processor Shopify uses limited automated decision-making to prevent fraud that does not have a legal or otherwise significant effect on you.</p><p>Services that include elements of automated decision-making include:</p><ul><li>Temporary blacklist of IP addresses associated with repeated failed transactions. This blacklist persists for a small number of hours.</li><li>Temporary blacklist of credit cards associated with blacklisted IP addresses. This blacklist persists for a small number of days.</li></ul>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -53,7 +60,8 @@
         "gb_rich_text_6dwmQX",
         "gb_rich_text_reiqf9",
         "gb_rich_text_WAr4bA",
-        "gb_rich_text_xAVCcg"
+        "gb_rich_text_xAVCcg",
+        "gb_rich_text_Ug3jQP"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
