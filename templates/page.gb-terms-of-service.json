@@ -109,6 +109,13 @@
             "richtext_section_text": "<p><strong>SECTION 14 - INDEMNIFICATION</strong></p><p>You agree to indemnify, defend and hold harmless Gribdase, LLC and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, Service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law or the rights of a third-party.</p>"
           },
           "blocks": {}
+        },
+        "gb_rich_text_99DUpg": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p>SECTION 15 - SEVERABILITY</p><p>In the event that any provision of these Terms of Service is determined to be unlawful, void or unenforceable, such provision shall nonetheless be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions.</p>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -125,7 +132,8 @@
         "gb_rich_text_TCa6LH",
         "gb_rich_text_UawR6t",
         "gb_rich_text_PhH9b4",
-        "gb_rich_text_dLY9FL"
+        "gb_rich_text_dLY9FL",
+        "gb_rich_text_99DUpg"
       ],
       "settings": {
         "textarea_heading": "Terms of Service",
