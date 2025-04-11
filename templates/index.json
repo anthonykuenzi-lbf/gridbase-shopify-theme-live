@@ -34,7 +34,7 @@
       "settings": {
         "collection_collection": "featured",
         "collection_collection_limit": 4,
-        "url_button_url": "",
+        "url_button_url": "shopify://collections/shop-all",
         "text_button_text": "Shop All"
       }
     },
