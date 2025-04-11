@@ -386,6 +386,13 @@
             "gb_table_row_C9KXCp",
             "gb_table_row_W6QV6j"
           ]
+        },
+        "gb_rich_text_UWhXmm": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><strong>Reporting and Analytics</strong></p>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -400,7 +407,8 @@
         "gb_rich_text_nY8Yrp",
         "gb_rich_text_XBxtMU",
         "gb_rich_text_9xN8cw",
-        "gb_table_NTYKVh"
+        "gb_table_NTYKVh",
+        "gb_rich_text_UWhXmm"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
