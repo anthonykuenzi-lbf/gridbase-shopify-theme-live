@@ -182,6 +182,33 @@
                 "text_column_3_text": "1y"
               },
               "blocks": {}
+            },
+            "gb_table_row_i6at6U": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "cart",
+                "text_column_2_text": "Used in connection with shopping cart.",
+                "text_column_3_text": "2w"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_RBdTwT": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "cart_currency",
+                "text_column_2_text": "Used in connection with shopping cart.",
+                "text_column_3_text": "2w"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_hnh9ff": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "cart_sig",
+                "text_column_2_text": "Used in connection with checkout.",
+                "text_column_3_text": "2w"
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -194,7 +221,10 @@
             "gb_table_row_aBHyRz",
             "gb_table_row_tN3erg",
             "gb_table_row_FyQE6r",
-            "gb_table_row_4LknPg"
+            "gb_table_row_4LknPg",
+            "gb_table_row_i6at6U",
+            "gb_table_row_RBdTwT",
+            "gb_table_row_hnh9ff"
           ]
         }
       },
