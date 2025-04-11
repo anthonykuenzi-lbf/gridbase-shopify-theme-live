@@ -57,35 +57,21 @@
         "gb_rich_text_KNzzPK": {
           "type": "gb-rich-text",
           "settings": {
-            "richtext_section_text": "<p><strong>Your rights</strong></p><p><strong>Right to Know What Data is Collected</strong> – Sellers must disclose what personal information (name, email, payment details, etc.) is collected and how it’s used.</p><p><strong>Right to Data Access & Portability</strong> – Under GDPR, you can request a copy of your personal data from the seller and transfer it elsewhere.</p><p><strong>Right to Correct or Delete Data</strong> – You can request corrections to inaccurate data or ask for its deletion if no longer needed (except for legal/tax purposes).</p><p><strong>Right to Opt-Out of Marketing</strong> – In the U.S., you can <strong>unsubscribe</strong> from marketing emails anytime. Under GDPR, sellers need your <strong>explicit consent</strong> before sending promotions.</p><p><strong>Right to Secure Transactions</strong> – Shopify ensures PCI-compliant payment processing, meaning your financial details are protected during purchases.</p><p><strong>Right to Request No Data Sale (CCPA)</strong> – If you're a California resident, you can request that your data <strong>not be sold to third parties</strong>.</p><p><strong>Right to Refunds & Returns</strong> – Refunds depend on the seller’s policy, which must be clearly stated before purchase. Shopify itself does not handle refunds.</p><p><strong>Right to File Complaints</strong> – If a seller mishandles your data, you can file a complaint with regulatory authorities (FTC in the U.S., GDPR authorities in the EU).<br/><br/></p>"
-          },
-          "blocks": {}
-        },
-        "gb_rich_text_TadgAw": {
-          "type": "gb-rich-text",
-          "settings": {
-            "richtext_section_text": "<p><strong>GDPR</strong></p><p>If you are a resident of the EEA, you have the right to access the Personal Information we hold about you, to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise these rights, please contact us through the contact information above. </p><p>Your Personal Information will be initially processed in Ireland and then will be transferred outside of Europe for storage and further processing, including to Canada and the United States. For more information on how data transfers comply with the GDPR, see Shopify’s GDPR Whitepaper: <a href=\"https://help.shopify.com/en/manual/your-account/privacy/GDPR\"> <span style=\"text-decoration:underline\">https://help.shopify.com/en/manual/your-account/privacy/GDPR</span></a>.<br/></p>"
+            "richtext_section_text": "<p><strong>Your rights</strong></p><p><strong>Right to Know What Data is Collected</strong> – Sellers must disclose what personal information (name, email, payment details, etc.) is collected and how it’s used.</p><p><strong>Right to Data Access & Portability</strong> – Under GDPR, you can request a copy of your personal data from the seller and transfer it elsewhere.</p><p><strong>Right to Correct or Delete Data</strong> – You can request corrections to inaccurate data or ask for its deletion if no longer needed (except for legal/tax purposes).</p><p><strong>Right to Opt-Out of Marketing</strong> – In the U.S., you can <strong>unsubscribe</strong> from marketing emails anytime. Under GDPR, sellers need your <strong>explicit consent</strong> before sending promotions.</p><p><strong>Right to Secure Transactions</strong> – Shopify ensures PCI-compliant payment processing, meaning your financial details are protected during purchases.</p><p><strong>Right to Request No Data Sale (CCPA)</strong> – If you're a California resident, you can request that your data <strong>not be sold to third parties</strong>.</p><p><strong>Right to Refunds & Returns</strong> – Refunds depend on the seller’s policy, which must be clearly stated before purchase. Shopify itself does not handle refunds.</p><p><strong>Right to File Complaints</strong> – If a seller mishandles your data, you can file a complaint with regulatory authorities (FTC in the U.S., GDPR authorities in the EU).<br/><br/><strong>GDPR</strong></p><p>If you are a resident of the EEA, you have the right to access the Personal Information we hold about you, to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise these rights, please contact us through the contact information above. </p><p>Your Personal Information will be initially processed in Ireland and then will be transferred outside of Europe for storage and further processing, including to Canada and the United States. For more information on how data transfers comply with the GDPR, see Shopify’s GDPR Whitepaper: <a href=\"https://help.shopify.com/en/manual/your-account/privacy/GDPR\"> <span style=\"text-decoration:underline\">https://help.shopify.com/en/manual/your-account/privacy/GDPR</span></a>.<br/></p><p><strong>CCPA</strong></p><p>If you are a resident of California, you have the right to access the Personal Information we hold about you (also known as the ‘Right to Know’), to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise these rights, please contact us through the contact information above. If you would like to designate an authorized agent to submit these requests on your behalf, please contact us at the address above.</p>"
           },
           "blocks": {}
         },
         "gb_rich_text_nY8Yrp": {
           "type": "gb-rich-text",
           "settings": {
-            "richtext_section_text": "<p><strong>CCPA</strong></p><p>If you are a resident of California, you have the right to access the Personal Information we hold about you (also known as the ‘Right to Know’), to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise these rights, please contact us through the contact information above. If you would like to designate an authorized agent to submit these requests on your behalf, please contact us at the address above.</p>"
+            "richtext_section_text": ""
           },
           "blocks": {}
         },
         "gb_rich_text_XBxtMU": {
           "type": "gb-rich-text",
           "settings": {
-            "richtext_section_text": "<p><strong>Cookies</strong></p><p>A cookie is a small amount of information that’s downloaded to your computer or device when you visit our Site. We use a number of different cookies, including functional, performance, advertising, and social media or content cookies. Cookies make your browsing experience better by allowing the website to remember your actions and preferences (such as login and region selection). This means you don’t have to re-enter this information each time you return to the site or browse from one page to another. Cookies also provide information on how people use the website, for instance whether it’s their first time visiting or if they are a frequent visitor.</p><p>We use the following cookies to optimize your experience on our Site and to provide our services.</p>"
-          },
-          "blocks": {}
-        },
-        "gb_rich_text_9xN8cw": {
-          "type": "gb-rich-text",
-          "settings": {
-            "richtext_section_text": "<p><strong>Cookies Necessary for the Functioning of the Store.</strong></p>"
+            "richtext_section_text": "<p><strong>Cookies</strong></p><p>A cookie is a small amount of information that’s downloaded to your computer or device when you visit our Site. We use a number of different cookies, including functional, performance, advertising, and social media or content cookies. Cookies make your browsing experience better by allowing the website to remember your actions and preferences (such as login and region selection). This means you don’t have to re-enter this information each time you return to the site or browse from one page to another. Cookies also provide information on how people use the website, for instance whether it’s their first time visiting or if they are a frequent visitor.</p><p>We use the following cookies to optimize your experience on our Site and to provide our services.</p><p><strong>Cookies Necessary for the Functioning of the Store.</strong></p>"
           },
           "blocks": {}
         },
@@ -393,6 +379,84 @@
             "richtext_section_text": "<p><strong>Reporting and Analytics</strong></p>"
           },
           "blocks": {}
+        },
+        "gb_table_iirU8R": {
+          "type": "gb-table",
+          "settings": {},
+          "blocks": {
+            "gb_table_row_zHhJyr": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "Name",
+                "text_column_2_text": "Function",
+                "text_column_3_text": "Duration"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_irwdyf": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_landing_page",
+                "text_column_2_text": "Track landing pages.",
+                "text_column_3_text": "2w"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_RikXD4": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_orig_referrer",
+                "text_column_2_text": "Track landing pages.",
+                "text_column_3_text": "2w"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_FzY3dn": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_s",
+                "text_column_2_text": "Shopify analytics.",
+                "text_column_3_text": "30min"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_LMxytG": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_d",
+                "text_column_2_text": "Shopify analytics.",
+                "text_column_3_text": "session"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_MMPGEe": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_s",
+                "text_column_2_text": "Shopify analytics.",
+                "text_column_3_text": "30min"
+              },
+              "blocks": {}
+            },
+            "gb_table_row_VFAmiB": {
+              "type": "gb-table-row",
+              "settings": {
+                "text_column_1_text": "_shopify_sa_p",
+                "text_column_2_text": "Shopify analytics relating to marketing & referrals.",
+                "text_column_3_text": "30min"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "gb_table_row_zHhJyr",
+            "gb_table_row_irwdyf",
+            "gb_table_row_RikXD4",
+            "gb_table_row_FzY3dn",
+            "gb_table_row_LMxytG",
+            "gb_table_row_MMPGEe",
+            "gb_table_row_VFAmiB"
+          ]
         }
       },
       "block_order": [
@@ -403,12 +467,11 @@
         "gb_rich_text_xAVCcg",
         "gb_rich_text_Ug3jQP",
         "gb_rich_text_KNzzPK",
-        "gb_rich_text_TadgAw",
         "gb_rich_text_nY8Yrp",
         "gb_rich_text_XBxtMU",
-        "gb_rich_text_9xN8cw",
         "gb_table_NTYKVh",
-        "gb_rich_text_UWhXmm"
+        "gb_rich_text_UWhXmm",
+        "gb_table_iirU8R"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
