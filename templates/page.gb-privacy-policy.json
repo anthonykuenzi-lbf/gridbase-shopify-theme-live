@@ -81,6 +81,13 @@
             "richtext_section_text": "<p><strong>Cookies</strong></p><p>A cookie is a small amount of information that’s downloaded to your computer or device when you visit our Site. We use a number of different cookies, including functional, performance, advertising, and social media or content cookies. Cookies make your browsing experience better by allowing the website to remember your actions and preferences (such as login and region selection). This means you don’t have to re-enter this information each time you return to the site or browse from one page to another. Cookies also provide information on how people use the website, for instance whether it’s their first time visiting or if they are a frequent visitor.</p><p>We use the following cookies to optimize your experience on our Site and to provide our services.</p>"
           },
           "blocks": {}
+        },
+        "gb_rich_text_9xN8cw": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><strong>Cookies Necessary for the Functioning of the Store</strong></p>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -93,7 +100,8 @@
         "gb_rich_text_KNzzPK",
         "gb_rich_text_TadgAw",
         "gb_rich_text_nY8Yrp",
-        "gb_rich_text_XBxtMU"
+        "gb_rich_text_XBxtMU",
+        "gb_rich_text_9xN8cw"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
