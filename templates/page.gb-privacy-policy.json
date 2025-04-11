@@ -39,13 +39,21 @@
             "richtext_section_text": "<p><strong>Using Personal Information</strong></p><p>We use your personal Information to provide our services to you, which includes: offering products for sale, processing payments, shipping and fulfillment of your order, and keeping you up to date on new products, services, and offers. Including customers outside of United States of America.</p>"
           },
           "blocks": {}
+        },
+        "gb_rich_text_xAVCcg": {
+          "type": "gb-rich-text",
+          "settings": {
+            "richtext_section_text": "<p><strong>Lawful basis</strong></p><p>Pursuant to the General Data Protection Regulation (“GDPR”), if you are a resident of the European Economic Area (“EEA”), we process your personal information under the following lawful bases:</p><ul><li>Your consent;</li><li>The performance of the contract between you and the Site;</li><li>Compliance with our legal obligations;</li><li>To protect your vital interests;</li><li>To perform a task carried out in the public interest;</li><li>For our legitimate interests, which do not override your fundamental rights and freedoms.</li></ul>"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "gb_rich_text_KmqjLt",
         "gb_rich_text_6dwmQX",
         "gb_rich_text_reiqf9",
-        "gb_rich_text_WAr4bA"
+        "gb_rich_text_WAr4bA",
+        "gb_rich_text_xAVCcg"
       ],
       "settings": {
         "textarea_heading": "Privacy Policy",
