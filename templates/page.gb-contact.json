@@ -17,11 +17,25 @@
         "textarea_contact_email": "info@gridbase.net",
         "socials_menu": "gb-socials"
       }
+    },
+    "gb_social_highlights_UfWKKA": {
+      "type": "gb_social_highlights",
+      "settings": {
+        "image_profile_photo": "shopify://shop_images/gb-social-logo.webp",
+        "text_handle": "gridbasedotnet",
+        "url_button_link": "",
+        "text_button_text": "Join Our Community",
+        "image_image_1": "shopify://shop_images/gridbase_A7400061.webp",
+        "image_image_2": "shopify://shop_images/gridbase_A7400061.webp",
+        "image_image_3": "shopify://shop_images/gridbase_A7400061.webp",
+        "image_image_4": "shopify://shop_images/gridbase_A7400061.webp"
+      }
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
-    "gb_contact_PMybMU"
+    "gb_contact_PMybMU",
+    "gb_social_highlights_UfWKKA"
   ]
 }
