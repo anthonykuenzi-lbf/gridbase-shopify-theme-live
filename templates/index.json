@@ -123,6 +123,7 @@
     "gb_social_highlights_iG3znU": {
       "type": "gb_social_highlights",
       "settings": {
+        "image_profile_photo": "shopify://shop_images/gb-social-logo.webp",
         "text_handle": "gridbasedotnet",
         "url_button_link": "https://www.instagram.com/gridbasedotnet/",
         "text_button_text": "Join Our Community",
