@@ -25,7 +25,7 @@
           "type": "block",
           "settings": {
             "textarea_block_title": "02 - Free .STL Files.",
-            "checkbox_show_image": true,
+            "checkbox_show_image": false,
             "richtext_block_text": "<p>Have some fun with our <a href=\"https://github.com/gridbasedotnet/FIGHTERWING\"><span style=\"text-decoration:underline\">free .STL files</span></a>, including accessories like spare mag holders that integrate seamlessly with the <a href=\"https://www.trex-arms.com/store/trex-arms-sidecar-holster/?color_ref=1&hardwared_holster_accessory_and_color_refs=%5B%7B%22holster_accessory_ref%22%3A5%2C%22color_ref%22%3A1%7D%5D&non_hardwared_holster_accessory_and_color_refs=%5B%5D&clip_material=%22plastic%22&hardwared_holster_accessories=%5B%7B%22holster_accessory_variation_ref%22%3A5%2C%22color_ref%22%3A1%7D%5D&non_hardwared_holster_accessories=%5B%5D&holster_availability_ref=289&handedness=%22Right%22&threaded=false\"><span style=\"text-decoration:underline\">T-Rex Arms Sidecar</span></a> holster.</p>"
           }
         },
