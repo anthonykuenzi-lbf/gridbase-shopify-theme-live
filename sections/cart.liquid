@@ -1,209 +1,47 @@
-<div class="padding-global padding-section-small">
-  <div class="container-large">
-    <div class="headline-wrapper">
-      <a
-        href="{{ routes.root_url }}"
-        li-object:href="routes.root_url"
-        class="text-size-small text-style-link hide-mobile-landscape"
-        >Continue shopping</a
-      >
-    </div>
-    {% if cart.item_count > 0 %}
-      <div li-if="cart.item_count > 0" class="cart_form-block w-form">
-        {% form 'cart', cart, class: 'cart_grid-wrapper' %}
-          <div class="cart_table outline-solid-1">
-            <div class="cart_grid is-header w-hidden-tiny">
-              <div id="w-node-e70215e6-46ed-17af-2aa7-195241f33afb-3be0c65a" class="cart_table-header">
-                <p class="text-size-regular caps">Product</p>
-              </div>
-              <div class="cart_table-header"><p class="text-size-regular caps">Quantity</p></div>
-              <div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b01-3be0c65a" class="cart_table-header">
-                <p class="text-size-regular caps">Price</p>
-              </div>
-            </div>
-            {% for item in cart.items %}
-              <div li-for="item in cart.items" class="cart_grid">
-                <div id="w-node-_51dd9338-e259-f546-1410-ab7878c921b7-3be0c65a" class="display-inlineflex">
-                  <a
-                    href="{{ item.url }}"
-                    li-object:href="item.url"
-                    id="w-node-_51dd9338-e259-f546-1410-ab7878c921b8-3be0c65a"
-                    class="link-block-7 w-inline-block"
-                    ><img
-                      src="{{ item.image |  img_url: 'small' }}"
-                      li-object:src="item.image |  img_url: 'small'"
-                      alt=""
-                      class="cart_image"
-                    >
-                  </a>
-                  <div class="cart_info-order">
-                    <a
-                      href="{{ item.product.title }}"
-                      li-object:href="item.product.title"
-                      li-object="item.title"
-                      class="text-size-regular"
-                    >
-                      {{- item.title -}}
-                    </a>
-                    {%- if item.product.has_only_default_variant == false %}
-                      <div li-if="item.product.has_only_default_variant == false">
-                        {% for option in item.options_with_values %}
-                          <div li-for="option in item.options_with_values" class="cart_variant_info_wrapper">
+<div class="padding-global padding-section-small"><div class="container-large"><div class="headline-wrapper"><a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="text-size-small text-style-link hide-mobile-landscape">Continue shopping</a></div>{% if cart.item_count > 0 %}    <div li-if="cart.item_count > 0" class="cart_form-block w-form">
+    {% form 'cart', cart, class: 'cart_grid-wrapper' %}
+<div class="cart_table outline-solid-1"><div class="cart_grid is-header w-hidden-tiny"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33afb-3be0c65a" class="cart_table-header"><p class="text-size-regular caps">Product</p></div><div class="cart_table-header"><p class="text-size-regular caps">Quantity</p></div><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b01-3be0c65a" class="cart_table-header"><p class="text-size-regular caps">Price</p></div></div>{% for item in cart.items %}    <div li-for="item in cart.items" class="cart_grid">
+                                    
+                            <div id="w-node-_51dd9338-e259-f546-1410-ab7878c921b7-3be0c65a" class="display-inlineflex"><a href="{{ item.url }}" li-object:href="item.url" id="w-node-_51dd9338-e259-f546-1410-ab7878c921b8-3be0c65a" class="link-block-7 w-inline-block"><img src="{{ item.image |  img_url: 'small' }}" li-object:src="item.image |  img_url: 'small'" alt="" class="cart_image">
+</a><div class="cart_info-order"><a href="{{ item.product.title }}" li-object:href="item.product.title" li-object="item.title" class="text-size-regular">{{ item.title }}</a>{% if item.product.has_only_default_variant == false %}    <div li-if="item.product.has_only_default_variant == false">
+    {% for option in item.options_with_values %}    <div li-for="option in item.options_with_values" class="cart_variant_info_wrapper">
+                                    
                             <div li-object="option.name" class="text-size-regular">{{ option.name }}</div>
-
+                            
                             <div class="text-size-regular">:</div>
-
+                            
                             <div li-object="option.value" class="text-size-regular left-space">{{ option.value }}</div>
-                          </div>
-                        {% endfor %}
-                      </div>
-                    {% endif -%}
-                    {%- for property in item.properties %}
-                      {%- assign property_first_char = property.first | slice: 0 -%}
-                      <div li-for="property in item.properties">
-                        {% if property.last != blank and property_first_char != '_' %}
-                          <div li-if="property.first != blank" class="cart_variant_info_wrapper">
-                            <div li-object="property.first" class="text-size-regular">{{ property.first }}</div>
-                            <div class="text-size-regular">:</div>
-                            <div li-object="property.last" class="text-size-regular left-space">
-                              {{ property.last }}
-                            </div>
-                          </div>
-                        {% endif %}
-                      </div>
-                    {% endfor %}
-                    <div class="hide">
-                      <p item="price" class="cart_price">$13</p>
-                      <p item="original-price" class="cart_price away">$18</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="w-node-_51dd9338-e259-f546-1410-ab7878c921c7-3be0c65a" class="cart_table-item anzahl">
-                  <div class="cart_quantity-wrapper">
-                    <div>Quantity</div>
-                    <input
-                      class="cart_quantity w-input"
-                      li-object:value="item.quantity"
-                      maxlength="256"
-                      name="updates[]"
-                      data-name="updates[]"
-                      placeholder="1"
-                      type="number"
-                      id="updates[]"
-                      required=""
-                      value="{{ item.quantity }}"
-                    >
-                  </div>
-                  <a
-                    href="{{ item.url_to_remove }}"
-                    li-object:href="item.url_to_remove"
-                    class="text-size-tiny text-style-link text-align-center w-inline-block"
-                  >
-                    <div>Remove</div>
-                  </a>
-                </div>
-
-                <div id="w-node-_3d7cbf18-159c-e09d-034b-aa8947f77c7f-3be0c65a" class="cart_price-info">
-                  <div li-object="item.final_line_price | money" class="text-size-regular">
-                    {{ item.final_line_price | money }}
-                  </div>
-                  {% if item.original_line_price > item.final_line_price %}
-                    <div li-if="item.original_line_price > item.final_line_price">
-                      <div
-                        li-object="item.original_line_price | money"
-                        class="text-size-regular text-style-strikethrough"
-                      >
-                        {{ item.original_line_price | money }}
-                      </div>
-                    </div>
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-          <div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0a-3be0c65a" class="cart_wrapper-right">
-            <div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0b-3be0c65a" class="cart_table outline-solid-1">
-              <div class="cart_grid is-header w-hidden-tiny">
-                <div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0d-3be0c65a" class="cart_table-header">
-                  <p class="text-size-regular caps">Summary</p>
-                </div>
-              </div>
-              <div class="cart_content">
-                <div class="cart_wrapper">
-                  <div class="cart_details-wrapper">
-                    <div class="text-size-regular">Sum <span class="text-size-tiny">(inkl. Vat.)</span></div>
-                    <div class="cart_details-price">
-                      {% if cart.total_discounts > 0 %}
-                        <div li-if="cart.total_discounts > 0">
-                          <div li-object="cart.original_total_price | money" class="text-style-strikethrough">
-                            {{ cart.original_total_price | money }}
-                          </div>
+                            
                         </div>
-                      {% endif %}
-                      <div li-object="cart.total_price | money" class="heading-style-h3">
-                        {{ cart.total_price | money }}
-                      </div>
-                    </div>
-                  </div>
-                  {% if cart.total_discounts > 0 %}
-                    <div li-if="cart.total_discounts > 0" class="cart_details-wrapper">
-                      <div class="text-size-regular">Discount</div>
-                      <div li-object="cart.total_discount | money">{{ cart.total_discount | money }}</div>
-                    </div>
-                  {% endif %}
-                </div>
-                <div class="cart_action">
-                  <input
-                    type="submit"
-                    data-wait="Please wait..."
-                    class="button w-button"
-                    value="Checkout"
-                    name="checkout"
-                  >
-                  <input
-                    type="submit"
-                    data-wait="Please wait..."
-                    class="button is-outline w-button"
-                    value="Update cart"
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="cart_table outline-solid-1">
-              <div class="cart_grid is-header w-hidden-tiny">
-                <div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b23-3be0c65a" class="cart_table-header">
-                  <p class="text-size-regular">Comment</p>
-                </div>
-              </div>
-              <div class="cart_content">
-                <div class="form_field-wrapper">
-                  <textarea
-                    class="form_input is-text-area w-input"
-                    maxlength="5000"
-                    name="note"
-                    data-name="field"
-                    placeholder="Comment"
-                    id="CartNote"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-        {% endform %}
-        <div class="w-form-done"><div>Thank you! Your submission has been received!</div></div>
-        <div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div>
-      </div>
-    {% endif -%}
-    {%- if cart.item_count == 0 %}
-      <div li-if="cart.item_count == 0" class="cart_empty outline-solid-1">
-        <div>
-          {{ section.settings.text_cart_empty }}
-        </div>
-
-        <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="button w-button">Shop Now</a>
-      </div>
-    {% endif %}
-  </div>
+{% endfor %}    </div>
+{% endif %}{% for property in item.properties %}    <div li-for="property in item.properties">
+                                    
+                            {% if property.last != blank and property_first_char != '_' %}    <div li-if="property.last != blank and property_first_char != '_'" class="cart_variant_info_wrapper">
+    <div li-object="property.first" class="text-size-regular">{{ property.first }}</div><div class="text-size-regular">:</div><div li-object="property.last" class="text-size-regular left-space">{{ property.last }}</div>    </div>
+{% endif %}
+                            
+                        </div>
+{% endfor %}<div class="hide"><p item="price" class="cart_price">$13</p><p item="original-price" class="cart_price away">$18</p></div></div></div>
+                            
+                            <div id="w-node-_51dd9338-e259-f546-1410-ab7878c921c7-3be0c65a" class="cart_table-item anzahl"><div class="cart_quantity-wrapper"><div>Quantity</div><input class="cart_quantity w-input" li-object:value="item.quantity" maxlength="256" name="updates[]" data-name="updates[]" placeholder="1" type="number" id="updates[]" required="" value="{{ item.quantity }}">
+</div><a href="{{ item.url_to_remove }}" li-object:href="item.url_to_remove" class="text-size-tiny text-style-link text-align-center w-inline-block"><div>Remove</div></a></div>
+                            
+                            <div id="w-node-_3d7cbf18-159c-e09d-034b-aa8947f77c7f-3be0c65a" class="cart_price-info"><div li-object="item.final_line_price | money" class="text-size-regular">{{ item.final_line_price | money }}</div>{% if item.original_line_price > item.final_line_price %}    <div li-if="item.original_line_price > item.final_line_price">
+    <div li-object="item.original_line_price | money" class="text-size-regular text-style-strikethrough">{{ item.original_line_price | money }}</div>    </div>
+{% endif %}</div>
+                            
+                        </div>
+{% endfor %}</div><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0a-3be0c65a" class="cart_wrapper-right"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0b-3be0c65a" class="cart_table outline-solid-1"><div class="cart_grid is-header w-hidden-tiny"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b0d-3be0c65a" class="cart_table-header"><p class="text-size-regular caps">Summary</p></div></div><div class="cart_content"><div class="cart_wrapper"><div class="cart_details-wrapper"><div class="text-size-regular">Sum <span class="text-size-tiny">(inkl. Vat.)</span></div><div class="cart_details-price">{% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0">
+    <div li-object="cart.original_total_price | money" class="text-style-strikethrough">{{ cart.original_total_price | money }}</div>    </div>
+{% endif %}<div li-object="cart.total_price | money" class="heading-style-h3">{{ cart.total_price | money }}</div></div></div>{% if cart.total_discounts > 0 %}    <div li-if="cart.total_discounts > 0" class="cart_details-wrapper">
+    <div class="text-size-regular">Discount</div><div li-object="cart.total_discount | money">{{ cart.total_discount | money }}</div>    </div>
+{% endif %}</div><div class="cart_action"><input type="submit" data-wait="Please wait..." class="button w-button" value="Checkout" name="checkout">
+<input type="submit" data-wait="Please wait..." class="button is-outline w-button" value="Update cart">
+</div></div></div><div class="cart_table outline-solid-1"><div class="cart_grid is-header w-hidden-tiny"><div id="w-node-e70215e6-46ed-17af-2aa7-195241f33b23-3be0c65a" class="cart_table-header"><p class="text-size-regular">Comment</p></div></div><div class="cart_content"><div class="form_field-wrapper"><textarea class="form_input is-text-area w-input" maxlength="5000" name="note" data-name="field" placeholder="Comment" id="CartNote"></textarea></div></div></div></div>{% endform %}
+<div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div>    </div>
+{% endif %}{% if cart.item_count == 0 %}    <div li-if="cart.item_count == 0" class="cart_empty outline-solid-1">
+    <div>
+{{ section.settings.text_cart_empty }}
 </div>
-{% schema %} {"tag":"section","name":"Cart","class":"section_account","settings":[{"id":"text_cart_empty","type":"text","label":"Cart Empty","default":"No Products yet."}],"presets":[{"name":"Cart","category":"Liquify","blocks":[]}]} {% endschema %}
+<a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="button w-button">Shop Now</a>    </div>
+{% endif %}</div></div> {% schema %} {"tag":"section","name":"Cart","class":"section_account","settings":[{"id":"text_cart_empty","type":"text","label":"Cart Empty","default":"No Products yet."}],"presets":[{"name":"Cart","category":"Liquify","blocks":[]}]} {% endschema %}
