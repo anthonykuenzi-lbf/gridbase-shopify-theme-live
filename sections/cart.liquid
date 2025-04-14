@@ -53,13 +53,13 @@
                         {% endfor %}
                       </div>
 
-                      {%- if property.first != blank -%}
-                        {%- for property in item.properties -%}
+                      {%- for property in item.properties -%}
+                        {%- if property.first != blank -%}
                           <div class="product-option">
                             <dt>{{ property.first }}:{{ property.last }}</dt>
                           </div>
-                        {%- endfor -%}
-                      {%- endif -%}
+                        {%- endif -%}
+                      {%- endfor -%}
                     {% endif %}
 
                     <div class="hide">
