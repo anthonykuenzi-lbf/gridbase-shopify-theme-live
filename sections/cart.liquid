@@ -58,19 +58,7 @@
                         {% endfor %}
                       </div>
                     {% endif -%}
-                    {%- for property in item.properties %}
-                      <div li-for="property in item.properties">
-                        {% if property.last != blank and property_first_char != '_' %}
-                          <div li-if="property.first != blank" class="cart_variant_info_wrapper">
-                            <div li-object="property.first" class="text-size-regular">{{ property.first }}</div>
-                            <div class="text-size-regular">:</div>
-                            <div li-object="property.last" class="text-size-regular left-space">
-                              {{ property.last }}
-                            </div>
-                          </div>
-                        {% endif %}
-                      </div>
-                    {% endfor %}
+
                     <div class="hide">
                       <p item="price" class="cart_price">$13</p>
                       <p item="original-price" class="cart_price away">$18</p>
