@@ -1,9 +1,3 @@
-<div style="background: #f8f8f8; padding: 10px; margin: 10px 0;">
-  Properties debug:
-  {% for property in item.properties %}
-    <div>Key: {{ property.first }} | Value: {{ property.last }}</div>
-  {% endfor %}
-</div>
 <div class="padding-global padding-section-small">
   <div class="container-large">
     <div class="headline-wrapper">
@@ -28,6 +22,12 @@
               </div>
             </div>
             {% for item in cart.items %}
+              <div style="background: #f8f8f8; padding: 10px; margin: 10px 0;">
+                Properties debug:
+                {% for property in item.properties %}
+                  <div>Key: {{ property.first }} | Value: {{ property.last }}</div>
+                {% endfor %}
+              </div>
               <div li-for="item in cart.items" class="cart_grid">
                 <div id="w-node-_51dd9338-e259-f546-1410-ab7878c921b7-3be0c65a" class="display-inlineflex">
                   <a
