@@ -19,18 +19,10 @@
               "url_link": "shopify://products/pocket",
               "text_announcement": "Pocket V2 Available Now"
             }
-          },
-          "announcement_hr69F7": {
-            "type": "announcement",
-            "settings": {
-              "url_link": "shopify://products/shtf-radio-basics",
-              "text_announcement": "SHTF: Radio Basics"
-            }
           }
         },
         "block_order": [
-          "announcement_6qXP3h",
-          "announcement_hr69F7"
+          "announcement_6qXP3h"
         ],
         "settings": {
           "checkbox_show_announcement_bar": true,
