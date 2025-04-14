@@ -154,8 +154,9 @@
             class="product-add-to-cart-button w-button"
             @click="addToCart($event, true)"
             :disabled="!addToCartButton"
-            >Add to Cart</a
           >
+            {{- 'products.product.add_to_cart' | t -}}
+          </a>
         </div>
       </template>
       <template x-if="!selected_or_first_available_variant.available">
