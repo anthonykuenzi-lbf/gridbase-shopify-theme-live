@@ -50,16 +50,27 @@
 
                             <div li-object="option.value" class="text-size-regular left-space">{{ option.value }}</div>
                           </div>
-                          {%- for property in item.properties -%}
-                            {%- if property.last != blank and property_first_char != '_' -%}
-                              <div class="product-option">
-                                <dt>{{ property.first }}:{{ property.last }}</dt>
-                              </div>
-                            {%- endif -%}
-                          {%- endfor -%}
                         {% endfor %}
                       </div>
+                      {%- for property in item.properties -%}
+                        {%- assign property_first_char = property.first | slice: 0 -%}
+                        {%- if property.last != blank and property_first_char != '_' -%}
+                          <div class="product-option">
+                            <dt>{{ property.first }}:</dt>
+                            <dd>
+                              {%- if property.last contains '/uploads/' -%}
+                                <a href="{{ property.last }}" class="link" target="_blank">
+                                  {{ property.last | split: '/' | last }}
+                                </a>
+                              {%- else -%}
+                                {{ property.last }}
+                              {%- endif -%}
+                            </dd>
+                          </div>
+                        {%- endif -%}
+                      {%- endfor -%}
                     {% endif %}
+
                     <div class="hide">
                       <p item="price" class="cart_price">$13</p>
                       <p item="original-price" class="cart_price away">$18</p>
