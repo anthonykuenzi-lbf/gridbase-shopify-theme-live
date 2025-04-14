@@ -161,7 +161,7 @@
       </template>
       <template x-if="!selected_or_first_available_variant.available">
         <div li-js-if="!selected_or_first_available_variant.available" class="product-header_out-of-stock">
-          <a href="#" class="product-add-to-cart-button out-of-stock w-button">Out of Stock</a>
+          <a href="#" class="product-add-to-cart-button out-of-stock w-button">{{ 'products.product.sold_out' | t }}</a>
         </div>
       </template>
     </div>
