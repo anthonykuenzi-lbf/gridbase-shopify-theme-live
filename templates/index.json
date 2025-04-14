@@ -119,6 +119,18 @@
         "bullet_CNi8Cf"
       ],
       "settings": {}
+    },
+    "gb_social_highlights_iG3znU": {
+      "type": "gb_social_highlights",
+      "settings": {
+        "text_handle": "gridbasedotnet",
+        "url_button_link": "",
+        "text_button_text": "Join Our Community",
+        "image_image_1": "shopify://shop_images/gridbase_A7400061.webp",
+        "image_image_2": "shopify://shop_images/gridbase_A7400061.webp",
+        "image_image_3": "shopify://shop_images/gridbase_A7400061.webp",
+        "image_image_4": "shopify://shop_images/gridbase_A7400061.webp"
+      }
     }
   },
   "layout": "theme",
@@ -129,6 +141,7 @@
     "gb_featured_products_qiXgid",
     "gb_where_would_i_use_HQ9NhY",
     "gb_brand_values_FXWCqf",
-    "scroll_banner_wcmHJq"
+    "scroll_banner_wcmHJq",
+    "gb_social_highlights_iG3znU"
   ]
 }
