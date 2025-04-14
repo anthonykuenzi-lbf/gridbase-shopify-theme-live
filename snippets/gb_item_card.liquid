@@ -1,4 +1,16 @@
-<script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
+<div class="w-embed"><style>.notifyButtonStyle{
+    cursor: pointer;
+    background-color: #0000;
+    margin: .9rem 0 0;
+    padding: 0;
+    font-size: .9rem;
+    line-height: 100%;
+    text-decoration: underline;
+    position: static;
+    color: currentColor;
+    text-transform: none;
+    }
+</style></div><script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="product-item_component" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"><div class="shop-item"><div class="product-item_image-link"><a li-object:href="product.url" href="{{ product.url }}" class="product-item_image-wrapper w-inline-block">{% if product.images.size > 1 %}    <div li-if="product.images.size > 1" class="product-item_image _2">
     <img li-object:alt="product.featured_image.alt" loading="lazy" li-object:src="product.images[1] | img_url: 'master'" src="{{ product.images[1] | img_url: 'master' }}" alt="{{ product.featured_image.alt }}" class="product-item_image_asset">
     </div>
@@ -9,4 +21,4 @@
 {% endif %}<div li-object="product.price | money" class="text-size-regular">{{ product.price | money }}</div></div>    </div>
 {% endif %}{% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="product-item-price-wrapper">
     <div class="product-item_price"><div class="text-size-regular">Sold Out</div></div>    </div>
-{% endif %}</a><div class="notifybuttonstyle"><div>Notify Me</div></div></div></div>
+{% endif %}</a></div></div>
