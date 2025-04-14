@@ -54,7 +54,7 @@
                       </div>
 
                       {%- for property in item.properties -%}
-                        {%- if property.last != blank -%}
+                        {%- if property.first != blank and property_first_char != '_' -%}
                           <div class="product-option">
                             <dt>{{ property.first }}:{{ property.last }}</dt>
                           </div>
