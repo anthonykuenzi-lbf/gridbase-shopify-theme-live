@@ -1,12 +1,24 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "cart": {
-            "type": "cart"
-        }
-    },
-    "layout": "cart",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "cart"
-    ]
+  "sections": {
+    "cart_xnLgt3": {
+      "type": "cart",
+      "settings": {
+        "text_cart_empty": "No Products yet."
+      }
+    }
+  },
+  "layout": "cart",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "cart_xnLgt3"
+  ]
 }
