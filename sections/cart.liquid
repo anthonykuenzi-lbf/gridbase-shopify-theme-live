@@ -60,14 +60,14 @@
                     {% endif -%}
                     {%- for property in item.properties %}
                       <div li-for="property in item.properties">
-                        {% if property.first != blank %}
-                          <div li-if="property.first != blank" class="cart_variant_info_wrapper">
-                            <div li-object="property.first" class="text-size-regular">{{ property.first }}</div>
-                            <div class="text-size-regular">:</div>
-                            <div li-object="property.last" class="text-size-regular left-space">
-                              {{ property.last }}
-                            </div>
+                        <div li-if="property.first != blank" class="cart_variant_info_wrapper">
+                          <div li-object="property.first" class="text-size-regular">{{ property.first }}</div>
+                          <div class="text-size-regular">:</div>
+                          <div li-object="property.last" class="text-size-regular left-space">
+                            {{ property.last }}
                           </div>
+                        </div>
+                        {% if property.first != blank %}
                         {% endif %}
                       </div>
                     {% endfor %}
