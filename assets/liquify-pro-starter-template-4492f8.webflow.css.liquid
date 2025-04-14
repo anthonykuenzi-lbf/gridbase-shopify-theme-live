@@ -4856,10 +4856,10 @@ figcaption {
 }
 
 .social-feed-mockup {
-  background-color: #161616;
+  padding-right: var(--desktop-padding);
   padding-bottom: 64px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: var(--desktop-padding);
+  background-color: #161616;
 }
 
 .social-feed-mockup-slider-wrapper {
@@ -4880,7 +4880,7 @@ figcaption {
 .social-feed-mockup-info {
   justify-content: space-between;
   align-items: center;
-  padding: 32px;
+  padding: 32px 0;
   display: flex;
 }
 
@@ -4993,11 +4993,6 @@ figcaption {
 }
 
 .link-block-5 {
-  background-color: #9a9087;
-  background-image: url({{ 'gb-filler-image.svg' | asset_url }});
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: 50%;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
@@ -5015,8 +5010,8 @@ figcaption {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
 }
 
@@ -6424,6 +6419,11 @@ figcaption {
   line-height: 100%;
   text-decoration: underline;
   position: static;
+}
+
+.social-feed-image {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -8007,8 +8007,8 @@ figcaption {
   }
 
   .social-feed-mockup {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-right: var(--mobile-padding);
+    padding-left: var(--mobile-padding);
   }
 
   .social-feed-mockup-info {
@@ -8020,8 +8020,17 @@ figcaption {
     font-size: .7rem;
   }
 
+  .social-feed-mockup-text.bold.small {
+    font-size: 10px;
+    line-height: 100%;
+  }
+
   .social-feed-mockup-follow-us {
     padding: 6px 8px;
+  }
+
+  .instagram-icon {
+    width: 12px;
   }
 
   .social-feed-mockup-slider {
