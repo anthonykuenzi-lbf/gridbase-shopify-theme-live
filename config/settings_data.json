@@ -12,20 +12,10 @@
     "sections": {
       "header": {
         "type": "header",
-        "blocks": {
-          "announcement_6qXP3h": {
-            "type": "announcement",
-            "settings": {
-              "url_link": "shopify://products/pocket",
-              "text_announcement": "Pocket V2 Available Now"
-            }
-          }
-        },
-        "block_order": [
-          "announcement_6qXP3h"
-        ],
         "settings": {
           "checkbox_show_announcement_bar": true,
+          "url_link": "shopify://products/pocket",
+          "text_announcement": "Sample Announcement",
           "nav_menu": "gb-header-nav",
           "collection_search_bestseller": "",
           "collection_search_bestseller_limit": 6
