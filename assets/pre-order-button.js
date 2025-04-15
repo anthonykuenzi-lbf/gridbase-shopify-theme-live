@@ -41,28 +41,58 @@
   
   // Function to update selected variant label
   function updateSelectedVariantLabel(isPreOrder) {
-    // Find checked radio button
-    const selectedInput = document.querySelector('input[type="radio"]:checked');
-    if (!selectedInput) return;
+    // Find all checked radio buttons for variants
+    const selectedInputs = document.querySelectorAll('input[type="radio"]:checked');
     
-    // Find its label
-    const variantId = selectedInput.getAttribute('id');
-    const variantLabel = document.querySelector(`[for="${variantId}"]`);
-    
-    // If found, update the label
-    if (variantLabel) {
-      // Store original text
-      if (!originalTexts[variantId]) {
-        originalTexts[variantId] = variantLabel.textContent;
+    selectedInputs.forEach(selectedInput => {
+      // Try multiple ways to find the label
+      let variantLabel = null;
+      
+      // Method 1: Find by "for" attribute
+      const variantId = selectedInput.getAttribute('id');
+      if (variantId) {
+        variantLabel = document.querySelector(`[for="${variantId}"]`);
       }
       
-      // Update or restore text
-      if (isPreOrder && !variantLabel.textContent.includes('(Pre-order)')) {
-        variantLabel.textContent = `${originalTexts[variantId]} (Pre-order)`;
-      } else if (!isPreOrder && variantLabel.textContent.includes('(Pre-order)')) {
-        variantLabel.textContent = originalTexts[variantId];
+      // Method 2: Find within parent label
+      if (!variantLabel) {
+        const parentLabel = selectedInput.closest('label');
+        if (parentLabel) {
+          variantLabel = parentLabel.querySelector('.product-variant-picker-button') || 
+                        parentLabel.querySelector('.w-form-label') ||
+                        parentLabel;
+        }
       }
-    }
+      
+      // Method 3: Find nearby span elements
+      if (!variantLabel) {
+        const parentContainer = selectedInput.closest('.product-header_radio');
+        if (parentContainer) {
+          variantLabel = parentContainer.querySelector('span');
+        }
+      }
+      
+      // If found, update the label
+      if (variantLabel) {
+        const labelId = variantId || `label-${selectedInput.name}-${selectedInput.value}`;
+        
+        // Store original text
+        if (!originalTexts[labelId]) {
+          originalTexts[labelId] = variantLabel.textContent.trim();
+        }
+        
+        // Update or restore text
+        if (isPreOrder && !variantLabel.textContent.includes('(Pre-order)')) {
+          variantLabel.textContent = `${originalTexts[labelId]} (Pre-order)`;
+        } else if (!isPreOrder && variantLabel.textContent.includes('(Pre-order)')) {
+          variantLabel.textContent = originalTexts[labelId];
+        }
+      }
+    });
+    
+    // Debug: Log which elements we're finding
+    console.log('Selected inputs:', selectedInputs.length);
+    console.log('Is pre-order:', isPreOrder);
   }
   
   // Function to update everything with throttling
