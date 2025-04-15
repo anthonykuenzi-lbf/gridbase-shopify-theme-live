@@ -1,62 +1,115 @@
 /**
- * Pre-Order Button Script for Shopify
+ * Lightweight Pre-Order Button and Variant Script for Shopify
  * 
- * This script looks for "properties[Pre-order item]" in the line item properties
- * and changes the "Add to Cart" button text to "Pre-Order" when found.
+ * This script:
+ * 1. Changes the "Add to Cart" button text to "Pre-Order" when pre-order property exists
+ * 2. Adds "(Pre-order)" to selected variant labels
  */
 
 (function() {
+  // Store original texts to avoid repeated DOM updates
+  const originalTexts = {};
+  let lastUpdateTime = 0;
+  let updateScheduled = false;
+  
+  // Function to check if pre-order property exists
+  function isPreOrderVariant() {
+    return !!document.querySelector('input[name="properties[Pre-order item]"]') || 
+           !!document.querySelector('select[name="properties[Pre-order item]"]') ||
+           !!document.querySelector('textarea[name="properties[Pre-order item]"]');
+  }
+  
   // Function to update the button text
-  function updateButtonText() {
-    // Find all Add to Cart buttons (excluding out of stock)
+  function updateButtonText(isPreOrder) {
     const addToCartButtons = document.querySelectorAll('.product-add-to-cart-button:not(.out-of-stock)');
     
-    // If no buttons found, exit
-    if (!addToCartButtons.length) return;
-    
-    // Check if pre-order property exists
-    const preOrderPropertyExists = !!document.querySelector('input[name="properties[Pre-order item]"]') || 
-                                  !!document.querySelector('select[name="properties[Pre-order item]"]') ||
-                                  !!document.querySelector('textarea[name="properties[Pre-order item]"]');
-    
-    // Update button text based on property existence
     addToCartButtons.forEach(button => {
-      if (preOrderPropertyExists) {
+      // Store original text if not already stored
+      if (!originalTexts['button']) {
+        originalTexts['button'] = button.textContent;
+      }
+      
+      // Update text based on pre-order status
+      if (isPreOrder) {
         button.textContent = 'Pre-Order';
-      } else {
-        // Only change it back if it was "Pre-Order" (to avoid changing custom text)
-        if (button.textContent === 'Pre-Order') {
-          button.textContent = 'Add to Cart';
-        }
+      } else if (button.textContent === 'Pre-Order') {
+        // Only change back if it was changed by our script
+        button.textContent = originalTexts['button'];
       }
     });
   }
   
-  // Run once on page load
-  function initialize() {
-    updateButtonText();
+  // Function to update selected variant label
+  function updateSelectedVariantLabel(isPreOrder) {
+    // Find checked radio button
+    const selectedInput = document.querySelector('input[type="radio"]:checked');
+    if (!selectedInput) return;
     
-    // Set up a mutation observer to detect changes to the form
-    const productForm = document.querySelector('form[action*="/cart/add"]') || 
-                        document.querySelector('.product-header_form-block');
+    // Find its label
+    const variantId = selectedInput.getAttribute('id');
+    const variantLabel = document.querySelector(`[for="${variantId}"]`);
     
-    if (productForm) {
-      const observer = new MutationObserver(function() {
-        updateButtonText();
-      });
+    // If found, update the label
+    if (variantLabel) {
+      // Store original text
+      if (!originalTexts[variantId]) {
+        originalTexts[variantId] = variantLabel.textContent;
+      }
       
-      observer.observe(productForm, {
-        attributes: true,
-        childList: true,
-        subtree: true
-      });
+      // Update or restore text
+      if (isPreOrder && !variantLabel.textContent.includes('(Pre-order)')) {
+        variantLabel.textContent = `${originalTexts[variantId]} (Pre-order)`;
+      } else if (!isPreOrder && variantLabel.textContent.includes('(Pre-order)')) {
+        variantLabel.textContent = originalTexts[variantId];
+      }
     }
-    
-    // Also set up an interval as a fallback
-    setInterval(updateButtonText, 1000);
   }
   
-  // Initialize when DOM is loaded
+  // Function to update everything with throttling
+  function updatePreOrderElements() {
+    // Check if we need to throttle updates (max once per 250ms)
+    const now = Date.now();
+    if (now - lastUpdateTime < 250) {
+      if (!updateScheduled) {
+        updateScheduled = true;
+        setTimeout(function() {
+          updatePreOrderElements();
+          updateScheduled = false;
+        }, 250);
+      }
+      return;
+    }
+    
+    // Update timestamp
+    lastUpdateTime = now;
+    
+    // Check pre-order status once
+    const isPreOrder = isPreOrderVariant();
+    
+    // Update elements
+    updateButtonText(isPreOrder);
+    updateSelectedVariantLabel(isPreOrder);
+  }
+  
+  // Initialize
+  function initialize() {
+    // Initial update
+    updatePreOrderElements();
+    
+    // Listen for clicks on variant options
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('input[type="radio"]') || 
+          e.target.closest('.product-variant-picker-button')) {
+        // Wait a bit for the variant to actually change
+        setTimeout(updatePreOrderElements, 50);
+      }
+    });
+    
+    // Also set up a lightweight interval for cases where the click isn't caught
+    setInterval(updatePreOrderElements, 1000);
+  }
+  
+  // Initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initialize);
   } else {
