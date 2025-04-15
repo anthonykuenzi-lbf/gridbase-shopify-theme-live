@@ -44,7 +44,7 @@
         "service_item_block_MLApyi": {
           "type": "service-item-block",
           "settings": {
-            "block_image": "shopify://shop_images/gb-banner-where-would-I-use-this-vibe-image-gridbase-pocket_8ee4b801-64df-4175-8c06-7ea1a654ea0b.webp",
+            "block_image": "shopify://shop_images/gridbase-device-banner.webp",
             "textarea_service_item_type": "Consulting",
             "textarea_service_item_description": "Discreet security tools for intelligence gathering, counter-surveillance, and situational awareness in high-risk environments.",
             "textarea_service_item_text": "Surveillance & covert devices"
