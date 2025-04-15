@@ -12,8 +12,8 @@
     "gb_hero_974wpx": {
       "type": "gb_hero",
       "settings": {
-        "image_desktop_image": "shopify://shop_images/sentinalxl1.jpg",
-        "image_mobile_image": "shopify://shop_images/sentinalxl1.jpg",
+        "image_desktop_image": "shopify://shop_images/gb-website-images_gridbase-sentinel-banner-desktop.webp",
+        "image_mobile_image": "shopify://shop_images/gb-website-images_gridbase-sentinel-banner-mobile.webp",
         "textarea_headline": "Pre-order the 128gb Sentinel Drive",
         "richtext_text": "<p>Gridbase is your one stop shop for alternative internet solutions and communication networks. We specialize in providing products that hold the power of the internet in your hand with off-grid capabilities.</p>",
         "url_url": "shopify://products/sentinel-drive",
@@ -128,10 +128,10 @@
         "text_handle": "gridbasedotnet",
         "url_button_link": "https://www.instagram.com/gridbasedotnet/",
         "text_button_text": "Join Our Community",
-        "image_image_1": "shopify://shop_images/gridbase_A7400061.webp",
-        "image_image_2": "shopify://shop_images/gridbase_A7400061.webp",
-        "image_image_3": "shopify://shop_images/gridbase_A7400061.webp",
-        "image_image_4": "shopify://shop_images/gridbase_A7400061.webp"
+        "image_image_1": "shopify://shop_images/gb-website-images_instagram-01.webp",
+        "image_image_2": "shopify://shop_images/gb-website-images_instagram-03.webp",
+        "image_image_3": "shopify://shop_images/gb-website-images_instagram-02.webp",
+        "image_image_4": "shopify://shop_images/gb-website-images_instagram-014.webp"
       }
     }
   },
