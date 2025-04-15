@@ -14,8 +14,8 @@
         "type": "header",
         "settings": {
           "checkbox_show_announcement_bar": true,
-          "url_link": "shopify://products/pocket",
-          "text_announcement": "Sample Announcement",
+          "url_link": "shopify://products/sentinel-drive",
+          "text_announcement": "The Sentinel Drive Available Now",
           "nav_menu": "gb-header-nav",
           "collection_search_bestseller": "",
           "collection_search_bestseller_limit": 6
