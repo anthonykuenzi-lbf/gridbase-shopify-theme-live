@@ -60,7 +60,7 @@
                     {% endif -%}
                     {%- for property in item.properties %}
                       <div li-for="property in item.properties">
-                        {% if property.last != blank and property_first_char != '_' %}
+                        {% if property.last != blank %}
                           <div
                             li-if="property.last != blank and property_first_char != '_'"
                             class="cart_variant_info_wrapper"
