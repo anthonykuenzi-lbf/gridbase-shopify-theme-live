@@ -1,7 +1,7 @@
 <div class="w-embed w-script"><script src="{{ 'pre-order-button.js' | asset_url }}"></script></div><script src="{{ 'liquify_custom.js' | asset_url }}" type="text/javascript"></script>
 <div li-element="product-variant-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)"><div id="w-node-dde72f15-2dd1-3c3f-ef72-b299bc1979d2-3be0c667" class="swiper-container is-product-gallery"><div class="swiper is-product-gallery"><div id="my-gallery" class="swiper-wrapper is-product-gallery">{% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-gallery">
                                     
-                            <div class="product-header_gallery-lightbox"><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" loading="lazy" class="product-header_gallery-image">
+                            <div class="product-header_gallery-lightbox"><img width="Auto" li-object:src="image.src | product_img_url: 'master'" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" loading="lazy" li-object:alt="image.alt" class="product-header_gallery-image">
 </div>
                             
                         </div>
@@ -9,7 +9,7 @@
                                     <img loading="lazy" li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" src="{{ image.src | product_img_url: 'master' }}" alt="{{ image.alt }}" class="product_thumbnail-image">
 
                         </div>
-{% endfor %}</div></div></div><div class="swiper-slide is-product-thumbnail is-active hide"></div></div><div id="w-node-_7048b639-be81-c25f-3e39-a62262971160-3be0c667" class="product-header_product-details"><div class="product-info-wrapper"><div class="product-title-wrapper"><div li-object="product.vendor" class="product-vendor">{{ product.vendor }}</div><h1 li-object:text="product.title" class="product-title">
+{% endfor %}</div></div></div></div><div id="w-node-_7048b639-be81-c25f-3e39-a62262971160-3be0c667" class="product-header_product-details"><div class="product-info-wrapper"><div class="product-title-wrapper"><div li-object="product.vendor" class="product-vendor">{{ product.vendor }}</div><h1 li-object:text="product.title" class="product-title">
 {{ product.title }}
 </h1><div class="product-header_price-wrapper"><div li-js-price="price" class="product-price" x-text="LiquifyHelper.moneyFormat(price, true, '{{ shop.money_with_currency_format }}')">$55</div><template x-if="selected_or_first_available_variant.compare_at_price > selected_or_first_available_variant.price">
             <div li-js-if="selected_or_first_available_variant.compare_at_price > selected_or_first_available_variant.price">
