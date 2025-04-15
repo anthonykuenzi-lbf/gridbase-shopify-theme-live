@@ -61,7 +61,7 @@
                       this.cart.item_count = data.item_count;
 
                       this.cart.items = data.items.map((item) => {
-                          item.title = this.htmlspecialchars_decode(product.title)
+                          product.title = this.htmlspecialchars_decode(product.title)
                           return item
                       })
 
