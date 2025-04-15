@@ -2083,6 +2083,7 @@ figcaption {
 .swiper.is-product-gallery {
   flex: 1;
   height: auto;
+  position: relative;
 }
 
 .swiper-wrapper {
@@ -2105,9 +2106,6 @@ figcaption {
 .swiper-wrapper.is-product-gallery {
   justify-content: flex-start;
   align-items: flex-start;
-  height: auto;
-  position: static;
-  top: 0;
 }
 
 .swiper-slide {
@@ -2134,11 +2132,13 @@ figcaption {
 }
 
 .swiper-slide.is-product-gallery {
+  object-fit: cover;
   flex-flow: column;
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
   height: 100%;
+  min-height: 0;
 }
 
 .swiper_button-wrapper {
@@ -2203,7 +2203,6 @@ figcaption {
 }
 
 .product-header_gallery-lightbox {
-  object-fit: cover;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -2214,7 +2213,6 @@ figcaption {
   background-color: var(--sand);
   width: 100%;
   height: 100%;
-  min-height: 100vh;
 }
 
 .product_thumbnail-image {
@@ -2519,12 +2517,10 @@ figcaption {
   background-color: var(--black);
   flex-flow: column;
   width: 100%;
-  min-width: 100%;
-  height: auto;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   position: sticky;
-  top: 0;
+  top: 94px;
 }
 
 .footer_main-wrapper {
