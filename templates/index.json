@@ -14,9 +14,9 @@
       "settings": {
         "image_desktop_image": "shopify://shop_images/sentinalxl1.jpg",
         "image_mobile_image": "shopify://shop_images/sentinalxl1.jpg",
-        "textarea_headline": "Pocket V2<br>Available Now.",
+        "textarea_headline": "Pre-order the 128gb Sentinel Drive",
         "richtext_text": "<p>Gridbase is your one stop shop for alternative internet solutions and communication networks. We specialize in providing products that hold the power of the internet in your hand with off-grid capabilities.</p>",
-        "url_url": "shopify://products/pocket",
+        "url_url": "shopify://products/sentinel-drive",
         "text_button_text": "Shop Now"
       }
     },
