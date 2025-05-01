@@ -14,7 +14,7 @@
       "settings": {
         "textarea_headline": "Our team is composed of talented silent professionals who thrive off of solving evolving problems in a rapidly changing industry.",
         "checkbox_show_buttons": true,
-        "url_button_1_url": "",
+        "url_button_1_url": "shopify://pages/contactx",
         "text_button_1_text": "Reach Out",
         "text_button_2_text": "Book a Class",
         "url_button_2_url": ""
@@ -76,6 +76,15 @@
             "textarea_service_item_description": "Expert guidance on secure, resilient communication setups, from emergency preparedness to decentralized networking solutions for businesses&nbspand&nbspindividuals.",
             "textarea_service_item_text": "Communication Consulting"
           }
+        },
+        "service_item_block_zJ4qMb": {
+          "type": "service-item-block",
+          "settings": {
+            "block_image": "shopify://shop_images/gridbase-custom-projects.webp",
+            "textarea_service_item_type": "Service",
+            "textarea_service_item_description": "From first sketch to final deployment, we take your mission requirements and translate them into reality. Our team operates at the intersection of hardware, software, and systems integration to design and deliver one-off, high-performance solutions. Whether you’re tackling a technical edge case, need a final push to completion, building from scratch, or integrating across legacy and modern platforms, we can help you develop mission specific tools and products that work when you need them most.",
+            "textarea_service_item_text": "Product Development"
+          }
         }
       },
       "block_order": [
@@ -84,7 +93,8 @@
         "service_item_block_MLApyi",
         "service_item_block_DCrcYi",
         "service_item_block_tqideH",
-        "service_item_block_R6cia9"
+        "service_item_block_R6cia9",
+        "service_item_block_zJ4qMb"
       ],
       "settings": {
         "textarea_service_sub_text": "Nothing we have ever done has been intended to be a “one size fits all” solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and solved."
