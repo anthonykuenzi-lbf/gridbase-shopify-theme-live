@@ -17,11 +17,17 @@
         "textarea_contact_email": "info@gridbase.net",
         "socials_menu": "gb-socials"
       }
+    },
+    "gb_form_mqKt8G": {
+      "type": "gb_form",
+      "name": "gb-form",
+      "settings": {}
     }
   },
   "layout": "page.contact",
   "wrapper": "main.main-wrapper",
   "order": [
-    "gb_contact"
+    "gb_contact",
+    "gb_form_mqKt8G"
   ]
 }
