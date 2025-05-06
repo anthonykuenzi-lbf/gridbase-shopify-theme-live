@@ -99,18 +99,12 @@
       "settings": {
         "textarea_service_sub_text": "Nothing we have ever done has been intended to be a “one size fits all” solution and we understand that you, our clients, have an unusual set of problems that need to be heard, addressed, and solved."
       }
-    },
-    "gb_form_8FkhzQ": {
-      "type": "gb_form",
-      "name": "gb-form",
-      "settings": {}
     }
   },
   "layout": "page",
   "wrapper": "main.main-wrapper",
   "order": [
     "gb_large_heading_sol_8dgyfU",
-    "gb_services_xP8FjX",
-    "gb_form_8FkhzQ"
+    "gb_services_xP8FjX"
   ]
 }
